@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Welcome to loosenthedark.tech! Here you'll find an overview of my work to date...">
+  <!-- /meta tags -->
+
+  <!-- title -->
+  <title>Paul Harrington 💻 loosenthedark | Web Developer</title>
+  <!-- /title -->
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/images/laptop-code-solid.svg" type="image/png">
+  <!-- /favicon -->
+
+  <!-- Font Awesome JS -->
+  <script src="https://kit.fontawesome.com/4ca5255d6d.js" crossorigin="anonymous"></script>
+  <!-- /Font Awesome JS -->
+
+  <!-- stylesheets -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/toolkit.css">
+  <link rel="stylesheet" href="assets/css/application.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+  <!-- /stylesheets -->
+
+  <style>
+    /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+    /* this chunk of css is not part of the toolkit :) */
+    body {
+      width: 1px;
+      min-width: 100%;
+      *width: 100%;
+    }
+  </style>
+
+</head>
+
+<body class="with-top-navbar">
+
+  <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-ltd app-navbar">
+    <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand py-0" href="../index.html">
+      <img src="assets/images/brand-white.png" alt="brand">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link py-2_5 pt-3" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link py-2_5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Projects </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item py-2" href="https://clipadvisor-flask-app.herokuapp.com/"
+              target="_blank">Clipadvisor</a>
+            <a class="dropdown-item py-2" href="http://loosenthedark.tech/strikeforce/">StrikeForce</a>
+            <a class="dropdown-item py-2" href="http://loosenthedark.tech/matter-of-heart-psychotherapy/">Matter of
+              Heart Psychotherapy</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-2_5" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-2_5" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="profile-header">
+      <div class="container">
+        <div class="container-inner mt-4">
+          <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
+          <h2 class="profile-header-user">Paul Harrington</h2>
+          <p class="profile-header-bio mb-2">
+            Junior Full Stack Developer
+          </p>
+          <p class="profile-header-bio social-icons mb-4">
+            <a href="https://github.com/loosenthedark" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/paulharrington05/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/loosenthedark" target="_blank"><i class="fab fa-twitter"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <nav class="profile-header-nav">
+        <ul class="nav nav-tabs justify-content-center px-3">
+          <li class="nav-item active">
+            <a class="nav-link px-2 py-3" href="#">Recent Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 py-3" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 py-3" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container card-container pt-3 pb-5 bg-light">
+      <div>
+        <div class="row">
+          <div class="col-lg-4 pb-3">
+            <div class="card card-profile border-0">
+              <div class="card-header bg-barber-red"></div>
+              <div class="card-block text-xs-center">
+                <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png">
+                <h4 class="card-title">Clipadvisor</h4>
+                <p class="mb-4">Data-centric Python+Flask application with full CRUD functionality, enabling users to
+                  post, view,
+                  edit and delete reviews of barbers</p>
+                <a class="btn btn-see-more btn-sm py-3 px-4" href="https://clipadvisor-flask-app.herokuapp.com/"
+                  target="_blank" role="button">
+                  <span class="text-see-more"> View Project</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 pb-3">
+            <div class="card card-profile border-0">
+              <div class="card-header bg-strikeforce"></div>
+              <div class="card-block text-xs-center">
+                <img class="card-profile-img p-3" src="assets/images/cog-solid-spruce.png">
+                <h4 class="card-title">StrikeForce</h4>
+                <p class="mb-4">Interactive Frontend website leveraging an external API to create incisive data
+                  visualisations of English Premier League goalscoring trends</p>
+                <a class="btn btn-see-more btn-sm py-3 px-4" href="http://loosenthedark.tech/strikeforce/"
+                  role="button">
+                  <span class="text-see-more"> View Project</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card card-profile border-0">
+              <div class="card-header bg-mofh"></div>
+              <div class="card-block text-xs-center">
+                <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png">
+                <h4 class="card-title">Matter of Heart Psychotherapy</h4>
+                <p class="mb-4">Bespoke responsive Frontend site for a local business, built using Bootstrap 4
+                  components
+                  and plugins as well as custom HTML and CSS</p>
+                <a class="btn btn-see-more btn-sm py-3 px-4"
+                  href="http://loosenthedark.tech/matter-of-heart-psychotherapy/" role="button">
+                  <span class="text-see-more">View Project</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <a href="#" id="btn-back-to-top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><i class="fas fa-chevron-up"></i></a>
+
+  <footer>
+    <p class="copyright mb-0 mx-3 pb-3 text-center">
+      © 2021 Paul Harrington
+    </p>
+  </footer>
+
+  <!-- library & CDN scripts -->
+  <script src="assets/js/libraries/jquery.min.js"></script>
+  <script src="assets/js/libraries/tether.min.js"></script>
+  <script src="assets/js/libraries/chart.js"></script>
+  <script src="assets/js/libraries/toolkit.js"></script>
+  <script src="assets/js/libraries/application.js"></script>
+  <!-- /library & CDN scripts -->
+
+  <script>
+    // execute/clear BS loaders for docs
+    $(function () {
+      if (window.BS && window.BS.loader && window.BS.loader.length) {
+        while (BS.loader.length) { (BS.loader.pop())() }
+      }
+    })
+  </script>
+
+  <!-- custom script -->
+  <script src="assets/js/script.js"></script>
+  <!-- /custom script -->
+
+</body>
+
+</html>
