@@ -49,8 +49,8 @@
     }
   </style>
 
-  <script>
-    /* Initialise EmailJS SDK */
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
     (function () {
       emailjs.init("user_Xqu28mWZuK1KkKdLu5olD");
     })();
@@ -67,8 +67,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand py-0" href="../index.html">
-      <img src="assets/images/brand-white.png" alt="brand">
+    <a class="navbar-brand py-0" href="index.html">
+      <img src="assets/images/brand-white.png" alt="loosenthedark brand logo">
     </a>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -108,6 +108,7 @@
           </p>
           <p class="profile-header-bio social-icons mb-4">
             <a href="https://github.com/loosenthedark" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:hello@loosenthedark.tech" target="_blank"><i class="fas fa-at"></i></a>
             <a href="https://www.linkedin.com/in/paulharrington05/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/loosenthedark" target="_blank"><i class="fab fa-twitter"></i></a>
           </p>
@@ -135,13 +136,16 @@
       <div class="row">
         <div class="col-lg-4 pb-3 mb-3">
           <form role="form" class="mx-auto text-center app-login-form mt-3" id="contact-form" method="POST" novalidate>
-            <h6 class="text-white mx-auto mb-4">I'd love to hear from you on any of the channels above, or else post a
+            <h6 class="text-white mx-auto mb-4">I'd love to hear from you via any of the channels above, or else post a
               message below and I'll get back to you as soon as I can!</h6>
+            <div class="form-group mx-auto">
+              <div id="error-message" class='mt-1'></div>
+            </div>
             <div class="form-group mx-auto">
               <input type="text" name="name" id="name" class="form-control" placeholder="Name">
             </div>
             <div class="form-group mx-auto">
-              <input type="hidden" name="contact-number">
+              <input type="hidden" name="contact_number">
               <input type="email" name="email" id="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-group mx-auto">
@@ -149,15 +153,38 @@
                 placeholder="Please post your message here..."></textarea>
             </div>
             <div class="mb-2">
-              <!-- <button class="btn btn-primary">Send</button> -->
-              <button class="btn btn-send btn-sm py-3 px-5" href="https://clipadvisor-flask-app.herokuapp.com/"
-                target="_blank" role="button">
+              <button class="btn btn-send btn-sm py-3 px-5" type="submit">
                 <span class="text-see-more" id="text-send">Send</span>
               </button>
             </div>
           </form>
         </div>
       </div>
+      <!-- Modal -->
+      <div class="modal fade" id='modal-contact' tabindex="-1" role="dialog">
+        <div class="modal-dialog-wrapper">
+          <div class="modal-dialog modal-sm vertical-align-center" role="document">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header bg-ltd">
+                <a class="navbar-brand pr-4 py-0 d-block mx-auto" href="index.html">
+                  <img width="200" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
+                </a><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body py-4 text-center">
+                <p class='px-3 mb-2'>Thanks for reaching out!</p>
+                <p class='px-3 mb-1'>I'll do my best to get back to you as soon as possible <i class="pl-1 fas fa-handshake"></i></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary py-3 px-5 mx-auto" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End modal -->
     </div>
   </main>
 

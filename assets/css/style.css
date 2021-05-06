@@ -81,7 +81,8 @@ h6 {
 }
 
 .btn-see-more,
-.btn-send {
+.btn-send,
+.btn-secondary {
   color: #fff;
   text-transform: uppercase;
   border-radius: 0.45rem;
@@ -132,7 +133,7 @@ footer {
 }
 
 .social-icons>a:not(:last-of-type) {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 .copyright {
@@ -279,4 +280,126 @@ textarea:focus {
   margin-right: 1rem;
   position: relative;
   top: -.3rem;
+}
+
+.alert {
+  color: #434857;
+  width: 100%;
+  font-weight: 600;
+  padding: .35rem 1rem;
+  font-size: .9rem;
+  position: relative;
+}
+
+.alert-warning {
+  background-color: #e4d836;
+  border: 2px solid #8a6d3b;
+}
+
+.alert-danger {
+  background-color: #ea6272;
+  border-color: #b4182b;
+  color: #430910;
+}
+
+.alert-para {
+  margin: .125rem .25rem .6rem;
+  line-height: 1.2;
+}
+
+.alert-para-inner {
+  margin-bottom: .2rem;
+}
+
+.alert .icon {
+  font-size: 1.35rem;
+}
+
+.alert-dismissible .close {
+  position: absolute;
+  top: .1rem;
+  right: .3rem;
+}
+
+.emphasise {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  top: .6rem;
+  right: 1.2rem;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fdfdfd;
+}
+
+.modal-body {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.fa-handshake {
+  font-size: 1.4rem;
+  color: #005960;
+  position: relative;
+  top: .15rem;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: pointer;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgb(130 138 145 / 50%);
+}
+
+.btn-secondary:active {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+  box-shadow: 0 0 0 0.2rem rgb(0 92 191 / 50%);
+}
+
+/* Code block adapted from https://stackoverflow.com/questions/50579924/bootstrap-modal-not-showing-properly-centered */
+
+.modal-dialog-wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  max-width: inherit;
+  /* For Bootstrap 4 - to prevent the modal window from stretching full width */
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
 }
