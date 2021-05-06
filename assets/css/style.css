@@ -5,6 +5,28 @@ h6 {
   max-width: 18.5rem;
 }
 
+.btn {
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  text-decoration: none;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgb(38 143 255 / 50%);
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
 .profile-header-nav .nav-item.active>.nav-link {
   background-color: #005960;
   font-weight: 400;
@@ -226,13 +248,13 @@ footer {
 }
 
 .form-control {
-  padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
   border-radius: .25rem;
 }
 
 textarea {
-  padding: .6rem .75rem;
+  padding: .75rem .75rem;
   color: #464a4c;
   border-radius: .25rem;
 }
