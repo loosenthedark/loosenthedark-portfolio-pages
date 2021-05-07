@@ -1,8 +1,31 @@
+h4.card-title {
+  font-size: 1.7rem;
+}
+
 h6 {
   font-weight: 300;
   line-height: 1.3;
-  font-size: .9rem;
-  max-width: 18.5rem;
+  font-size: 1rem;
+  max-width: 20rem;
+}
+
+.navbar {
+  padding-top: .5rem;
+  padding-bottom: .7rem;
+}
+
+.navbar-toggler-icon {
+  height: 2.15rem;
+  width: 2.15rem;
+}
+
+.navbar-brand {
+  padding-top: .2rem;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .dropdown-item {
+  font-size: 1.15rem;
 }
 
 .btn {
@@ -37,6 +60,7 @@ h6 {
   border: .3rem solid #005960;
   border-left: none;
   background-color: #303030;
+  min-height: 4rem;
 }
 
 .profile-header-nav .nav-item:first-of-type>.nav-link {
@@ -57,6 +81,10 @@ h6 {
 .profile-header-nav .nav-link {
   font-size: .75rem;
   width: 100%;
+}
+
+.card-block>p {
+  font-size: 1.1rem;
 }
 
 .bg-ltd {
@@ -108,10 +136,18 @@ h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+.card-profile .card-header {
+  height: 8rem;
+}
+
+.card-profile .card-about-header {
+  height: 9.25rem;
+}
+
 .profile-header {
   background: url(../images/main-wallpaper_min.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 25rem;
+  min-height: 28.5rem;
 }
 
 .card-container,
@@ -122,6 +158,14 @@ footer {
 .py-2_5 {
   padding-top: .65rem;
   padding-bottom: .65rem;
+}
+
+.mt-4_5 {
+  margin-top: 2rem;
+}
+
+.mb-4_5 {
+  margin-bottom: 2rem;
 }
 
 .social-icons {
@@ -245,7 +289,7 @@ footer {
 }
 
 .form-group {
-  max-width: 19rem;
+  max-width: 17.5rem;
 }
 
 .form-control {
@@ -402,4 +446,45 @@ textarea:focus {
   /* To center horizontally */
   margin: 0 auto;
   pointer-events: all;
+}
+
+#about-laptop {
+  animation: laptop-move 3000ms ease-in-out 1000ms 1 normal forwards;
+  position: relative;
+  opacity: 0;
+}
+
+@keyframes laptop-move {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  40% {
+    left: -3rem;
+    opacity: 1;
+  }
+
+  60% {
+    left: 3rem;
+    opacity: 1;
+  }
+
+  70% {
+    left: -1.5rem;
+    opacity: 1;
+  }
+
+  85% {
+    left: 1.5rem;
+    opacity: 1;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
 }

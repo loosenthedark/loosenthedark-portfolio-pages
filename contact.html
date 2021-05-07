@@ -72,25 +72,25 @@
     </a>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+      <ul class="navbar-nav pt-1 mr-auto">
+        <li class="nav-item">
           <a class="nav-link py-2_5 pt-3" href="index.html">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link py-2_5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        <li class="nav-item">
+          <a class="nav-link py-2_5 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="collapse" data-target="#dropdown-menu"
             aria-haspopup="true" aria-expanded="false">Recent Projects </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item py-2" href="https://clipadvisor-flask-app.herokuapp.com/"
+          <div class="dropdown-menu collapse mb-2" id="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item pl-3 py-2_5" href="https://clipadvisor-flask-app.herokuapp.com/"
               target="_blank">Clipadvisor</a>
-            <a class="dropdown-item py-2" href="http://loosenthedark.tech/strikeforce/">StrikeForce</a>
-            <a class="dropdown-item py-2" href="http://loosenthedark.tech/matter-of-heart-psychotherapy/">Matter of
+            <a class="dropdown-item pl-3 py-2_5" href="http://loosenthedark.tech/strikeforce/">StrikeForce</a>
+            <a class="dropdown-item pl-3 py-2_5" href="http://loosenthedark.tech/matter-of-heart-psychotherapy/">Matter of
               Heart Psychotherapy</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link py-2_5" href="about.html">About Me</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link py-2_5" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -100,13 +100,13 @@
   <header>
     <div class="profile-header">
       <div class="container">
-        <div class="container-inner mt-4">
+        <div class="container-inner mt-5">
           <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
           <h2 class="profile-header-user">Paul Harrington</h2>
           <p class="profile-header-bio mb-2">
             Junior Full Stack Developer
           </p>
-          <p class="profile-header-bio social-icons mb-4">
+          <p class="profile-header-bio social-icons mb-5">
             <a href="https://github.com/loosenthedark" target="_blank"><i class="fab fa-github"></i></a>
             <a href="mailto:hello@loosenthedark.tech" target="_blank"><i class="fas fa-at"></i></a>
             <a href="https://www.linkedin.com/in/paulharrington05/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -116,15 +116,15 @@
       </div>
 
       <nav class="profile-header-nav">
-        <ul class="nav nav-tabs justify-content-center px-3">
-          <li class="nav-item">
-            <a class="nav-link px-2 py-3" href="index.html">Recent Projects</a>
+        <ul class="nav nav-tabs justify-content-center px-3 d-flex">
+          <li class="nav-item d-flex">
+            <a class="nav-link flex-column d-flex px-2 py-3 justify-content-center" href="index.html">Recent Projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link px-2 py-3" href="about.html">About Me</a>
+          <li class="nav-item d-flex">
+            <a class="nav-link flex-column d-flex px-2 py-3 justify-content-center" href="about.html">About Me</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link px-2 py-3" href="contact.html">Contact</a>
+          <li class="nav-item active d-flex">
+            <a class="nav-link flex-column d-flex px-2 py-3 justify-content-center" href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
@@ -132,7 +132,7 @@
   </header>
 
   <main id="contact-main">
-    <div class="container card-container contact-container py-3 bg-light">
+    <div class="container card-container contact-container py-4 bg-light">
       <div class="row">
         <div class="col-lg-4 pb-3 mb-3">
           <form role="form" class="mx-auto text-center app-login-form mt-3" id="contact-form" method="POST" novalidate>
@@ -148,7 +148,7 @@
               <input type="hidden" name="contact_number">
               <input type="email" name="email" id="email" class="form-control" placeholder="Email">
             </div>
-            <div class="form-group mx-auto">
+            <div class="form-group mx-auto mb-4">
               <textarea class="w-100" name="message" id="message" rows="5"
                 placeholder="Please post your message here..."></textarea>
             </div>
