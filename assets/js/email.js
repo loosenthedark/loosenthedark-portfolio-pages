@@ -66,53 +66,71 @@ window.onload = function () {
       if (isNameValid == "" || isEmailValid == "" || isMessageValid == "") {
         nameAlert +=
           "<div class='alert alert-warning text-center alert-contact alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>Please fill out all fields!</p></div>";
-        document.getElementById("error-message").innerHTML = nameAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = nameAlert;
+        }, 1000);
         return false;
       }
       // name validation
       if (!isName(isNameValid)) {
         nameAlert +=
           "<div class='alert alert-warning text-center alert-contact alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>Please enter a <span class='underline'>valid</span> name!</p>";
-        document.getElementById("error-message").innerHTML = nameAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = nameAlert;
+        }, 1000);
         return false;
       } else if (!isNameTooShort(isNameValid)) {
         nameAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>The name you have entered is too short! Please try again.</p>";
-        document.getElementById("error-message").innerHTML = nameAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = nameAlert;
+        }, 1000);
         return false;
       } else if (!isNameTooLong(isNameValid)) {
         nameAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>The name you have entered is too long! Please try again (max. 30 characters)</p>";
-        document.getElementById("error-message").innerHTML = nameAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = nameAlert;
+        }, 1000);
         return false;
       }
       // email validation
       if (!isEmail(isEmailValid)) {
         emailAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para alert-para-inner'>Please enter a <span class='underline'>valid</span> email address!</p><p class='alert-para'>e.g. <span class='emphasise'>yourname@gmail.com</span></p></div>";
-        document.getElementById("error-message").innerHTML = emailAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = emailAlert;
+        }, 1000);
         return false;
       } else if (!isEmailTooShort(isEmailValid)) {
         emailAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>The email you have entered is too short! Please try again.</p>";
-        document.getElementById("error-message").innerHTML = emailAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = emailAlert;
+        }, 1000);
         return false;
       } else if (!isEmailTooLong(isEmailValid)) {
         emailAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>The email you have entered is too long! Please try again (max. 100 characters)</p>";
-        document.getElementById("error-message").innerHTML = emailAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = emailAlert;
+        }, 1000);
         return false;
       }
       // message validation
       if (!isMessageTooShort(isMessageValid)) {
         messageAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>Your message is too short! Please try again.</p>";
-        document.getElementById("error-message").innerHTML = messageAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = messageAlert;
+        }, 1000);
         return false;
       } else if (!isMessageTooLong(isMessageValid)) {
         messageAlert +=
           "<div class='alert alert-warning text-center alert-contact' alert-dismissible fade show' role='alert'><button type='button' class='p-0 close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><span class='icon icon-warning'></span><br><p class='alert-para'>Your message is too long! Please try again (max. 1,000 characters)</p>";
-        document.getElementById("error-message").innerHTML = messageAlert;
+        setTimeout(() => {
+          document.getElementById("error-message").innerHTML = messageAlert;
+        }, 1000);
         return false;
       }
       // generate a five digit number for the contact-number variable

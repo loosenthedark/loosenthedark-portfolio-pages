@@ -1,6 +1,8 @@
 ## References & Resources
 
-* 'Undulating negative space' photo by <a href="https://unsplash.com/@vanschneider?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tobias van Schneider</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> compressed using [TinyJPG](https://tinyjpg.com/) and used with permission
+* 'Undulating negative space' photo by [Tobias van Schneider](https://unsplash.com/@vanschneider?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), compressed using [TinyJPG](https://tinyjpg.com/) and used with permission
+
+* 'Black computer keyboard' photo by [Lukas Mayer](https://www.pexels.com/@lmay) from [Pexels](https://www.pexels.com/photo/black-computer-keyboard-785429/), compressed using [TinyJPG](https://tinyjpg.com/), edited using [PicResize](https://picresize.com/) and used with permission
 
 * loosenthedark logo (`.navbar-brand > img`) designed using [Canva](https://t.co/4M8BxU5BYW?amp=1) and a customised [Font Awesome SVG icon](https://fontawesome.com/icons/laptop-code?style=solid)
 

@@ -9,16 +9,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Welcome to loosenthedark! Here you'll find an overview of my work to date...">
 
-  <meta property="og:title" content="Paul Harrington <loosenthedark> 💻 Web Developer" />
+  <meta property="og:title" content="Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer" />
   <meta property="og:image" content="assets/images/main-wallpaper_min.jpg" />
   <meta property="og:description"
     content="Welcome to loosenthedark! Here you'll find an overview of my work to date..." />
   <meta property="og:url" content="http://loosenthedark.tech/" />
-
   <!-- /meta tags -->
 
   <!-- title -->
-  <title>Paul Harrington 💻 loosenthedark | Web Developer</title>
+  <title>Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer</title>
   <!-- /title -->
 
   <!-- favicon -->
@@ -55,7 +54,7 @@
 
 <body class="with-top-navbar">
 
-  <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-ltd app-navbar">
+  <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-ltd app-navbar py-lg-2">
     <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse"
       data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
       aria-label="Toggle navigation">
@@ -75,7 +74,7 @@
           <a class="nav-link py-2_5 px-md-3 dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-toggle="collapse" data-target="#dropdown-menu" aria-haspopup="true" aria-expanded="false">Recent
             Projects </a>
-          <div class="dropdown-menu collapse mb-2" id="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-menu collapse mb-2 py-md-3" id="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item pl-3 py-2_5" href="https://clipadvisor-flask-app.herokuapp.com/"
               target="_blank">Clipadvisor</a>
             <a class="dropdown-item pl-3 py-2_5" href="http://loosenthedark.tech/strikeforce/">StrikeForce</a>
@@ -97,13 +96,13 @@
   <header>
     <div class="profile-header">
       <div class="container">
-        <div class="container-inner mt-5">
+        <div class="container-inner mt-5 mt-lg-3">
           <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
           <h1 class="profile-header-user">Paul Harrington</h1>
           <p class="profile-header-bio mb-2">
             Junior Full Stack Developer
           </p>
-          <p class="profile-header-bio social-icons mb-5">
+          <p class="profile-header-bio social-icons mb-5 mb-lg-4">
             <a href="https://github.com/loosenthedark" target="_blank"><i class="fab fa-github"></i></a>
             <a href="mailto:hello@loosenthedark.tech" target="_blank"><i class="fas fa-at"></i></a>
             <a href="https://www.linkedin.com/in/paulharrington05/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -132,23 +131,25 @@
   </header>
 
   <main>
-    <div class="container card-container pt-3 pt-md-5 pb-5 px-md-5 bg-light">
+    <div class="container card-container pt-3 pt-md-5 pb-5 px-md-5 px-lg-0 pt-lg-0 bg-light">
       <div class="row">
-        <div class="col-lg-4 pb-3 pb-md-5">
+        <div class="col-12 pb-3 pb-md-5">
           <div class="card card-profile border-0">
             <div class="card-header bg-barber-red"></div>
             <div class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center"
               id="card-block-clipadvisor">
               <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png" alt="Python icon">
-              <h4 class="card-title mt-2 mt-md-3 mb-3 mb-md-4">Clipadvisor</h4>
-              <p class="mb-4 mx-2 mx-md-5 px-md-3">Data-centric Python+Flask application with full CRUD functionality,
-                enabling users to
-                post, view,
-                edit and delete reviews of barbers</p>
-              <img class="d-none d-md-block mb-md-4" src="assets/images/clipadvisor-responsive.png" width="560"
-                alt="Clipadvisor responsive device screenshots">
-              <img class="d-none d-lg-block mb-lg-4" src="assets/images/clipadvisor-responsive.gif" width="560"
-                alt="Clipadvisor responsive devices gif">
+              <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Clipadvisor</h4>
+              <div class="project-wrapper d-none d-lg-flex">
+                <p class="mb-4 mx-2 mx-md-5 px-md-3 project-blurb">Data-centric Python+Flask application with full CRUD functionality,
+                  enabling users to
+                  post, view,
+                  edit and delete reviews of barbers</p>
+                <img class="d-none d-md-block mb-md-4" src="assets/images/clipadvisor-responsive.png" width="560"
+                  alt="Clipadvisor responsive device screenshots">
+                <!-- <img class="d-none d-lg-block mb-lg-4" src="assets/images/clipadvisor-responsive.gif" width="560"
+                alt="Clipadvisor responsive devices gif"> -->
+              </div>
               <a class="btn btn-see-more btn-sm my-2 mt-md-3 mb-md-4 py-3 px-4 px-md-5"
                 href="https://clipadvisor-flask-app.herokuapp.com/" target="_blank" role="button">
                 <span class="text-see-more">View Project</span>
@@ -156,20 +157,22 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 pb-3 pb-md-5">
+        <div class="col-12 pb-3 pb-md-5">
           <div class="card card-profile border-0">
             <div class="card-header bg-strikeforce"></div>
             <div class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center"
               id="card-block-strikeforce">
               <img class="card-profile-img p-3" src="assets/images/jquery.png" alt="jQuery icon">
-              <h4 class="card-title mt-2 mt-md-3 mb-3 mb-md-4">StrikeForce</h4>
-              <p class="mb-4 mx-2 mx-md-5 px-md-3">Interactive Frontend website leveraging an external API to create
-                dynamic data
-                visualisations of English Premier League goalscoring trends</p>
-              <img class="d-none d-md-block mb-md-4" src="assets/images/strikeforce-responsive.png" width="560"
-                alt="StrikeForce responsive device screenshots">
-              <img class="d-none d-lg-block mb-lg-4" src="assets/images/strikeforce-responsive.gif" width="560"
-                alt="StrikeForce responsive devices gif">
+              <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">StrikeForce</h4>
+              <div class="project-wrapper d-none d-lg-flex">
+                <p class="mb-4 mx-2 mx-md-5 px-md-3 project-blurb">Interactive Frontend website leveraging an external API to create
+                  dynamic data
+                  visualisations of English Premier League goalscoring trends</p>
+                <img class="d-none d-md-block mb-md-4" src="assets/images/strikeforce-responsive.png" width="560"
+                  alt="StrikeForce responsive device screenshots">
+                <!-- <img class="d-none d-lg-block mb-lg-4" src="assets/images/strikeforce-responsive.gif" width="560"
+                alt="StrikeForce responsive devices gif"> -->
+              </div>
               <a class="btn btn-see-more btn-sm my-2 mt-md-3 mb-md-4 py-3 px-4 px-md-5"
                 href="http://loosenthedark.tech/strikeforce/" role="button">
                 <span class="text-see-more">View Project</span>
@@ -177,21 +180,23 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-md-4">
+        <div class="col-12 mb-md-4">
           <div class="card card-profile border-0">
             <div class="card-header bg-mofh"></div>
             <div class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center"
               id="card-block-mofh">
               <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png" alt="Bootstrap icon">
-              <h4 class="card-title mt-2 mt-md-3 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
-              <p class="mb-4 mx-2 mx-md-5 px-md-3">Bespoke responsive Frontend site for a local business, built using
-                Bootstrap 4
-                components
-                and plugins as well as custom HTML and CSS</p>
-              <img class="d-none d-md-block mb-md-4" src="assets/images/mofh-responsive.png" width="560"
-                alt="Matter of Heart responsive device screenshots">
-              <img class="d-none d-lg-block mb-lg-4" src="assets/images/mofh-responsive.gif" width="560"
-                alt="Matter of Heart responsive devices gif">
+              <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
+              <div class="project-wrapper d-none d-lg-flex">
+                <p class="mb-4 mx-2 mx-md-5 px-md-3 project-blurb">Bespoke responsive Frontend site for a local business, built using
+                  Bootstrap 4
+                  components
+                  and plugins as well as custom HTML and CSS</p>
+                <img class="d-none d-md-block mb-md-4" src="assets/images/mofh-responsive.png" width="560"
+                  alt="Matter of Heart responsive device screenshots">
+                <!-- <img class="d-none d-lg-block mb-lg-4" src="assets/images/mofh-responsive.gif" width="560"
+                alt="Matter of Heart responsive devices gif"> -->
+              </div>
               <a class="btn btn-see-more btn-sm my-2 mt-md-3 mb-md-4 py-3 px-4 px-md-5"
                 href="http://loosenthedark.tech/matter-of-heart-psychotherapy/" role="button">
                 <span class="text-see-more">View Project</span>
