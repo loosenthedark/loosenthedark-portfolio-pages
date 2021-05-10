@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -39,6 +43,10 @@ nav {
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-item {
   font-size: 1.15rem;
+}
+
+#dropdown-menu {
+  border-radius: 0 0 .25rem .25rem;
 }
 
 .btn {
@@ -85,7 +93,7 @@ nav {
 }
 
 .profile-header-nav .nav-item:not(.active)>.nav-link:hover {
-  background-color: #fff;
+  background-color: #f8f8f8;
 
 }
 
@@ -324,6 +332,7 @@ footer {
 .card-header.bg-ltd {
   position: relative;
   top: -.3rem;
+  border-radius: 0;
 }
 
 .about-container {
@@ -335,6 +344,11 @@ footer {
 .card-about-header {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.card-about.rounded-top {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
 }
 
 .get-in-touch {
@@ -421,6 +435,7 @@ textarea:focus {
   background-color: #005960;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: .7rem;
   position: relative;
   top: -.3rem;
 }
@@ -654,8 +669,14 @@ textarea:focus {
 
   .dropdown-menu {
     left: unset;
-    margin-top: .575rem;
+    margin-top: .825rem;
     border: none;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #005960;
+    color: #fff;
   }
 
   .profile-header .media-object {
@@ -667,7 +688,7 @@ textarea:focus {
   }
 
   .social-icons {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   h4.card-title {
@@ -698,6 +719,11 @@ textarea:focus {
   .py-md-3_5 {
     padding-top: 1.3rem !important;
     padding-bottom: 1.3rem !important;
+  }
+
+  .dropdown-menu {
+    border: .05rem solid #005960;
+    border-top: none;
   }
 
   .dropdown-item.py-2_5 {
@@ -833,6 +859,10 @@ textarea:focus {
 
 @media (min-width: 992px) {
 
+  .mt-lg-4_5 {
+    margin-top: 2.25rem !important;
+  }
+
   .app-navbar .navbar-brand img {
     width: 14rem;
   }
@@ -843,8 +873,8 @@ textarea:focus {
   }
 
   .profile-header-nav .nav-item {
-    flex: 0 0 25%;
-    max-width: 16.5rem;
+    flex: 0 0 33.3333333333333333333333333%;
+    max-width: 16rem;
   }
 
   .py-md-3_5 {
@@ -852,8 +882,13 @@ textarea:focus {
     padding-bottom: .9rem !important;
   }
 
+  .card-profile {
+    border-radius: .35rem .35rem .25rem .25rem;
+  }
+
   .card-profile .card-header {
     height: 6rem;
+    border-radius: .35rem .35rem 0 0;
   }
 
   .card-profile-img {
@@ -862,7 +897,7 @@ textarea:focus {
   }
 
   .profile-header-nav .nav-item>.nav-link {
-    border: .225rem solid #005960;
+    border-right: .225rem solid #005960;
     border-left: none;
     border-top: none;
   }
@@ -886,4 +921,47 @@ textarea:focus {
     padding-top: .375rem;
     padding-bottom: .375rem;
   }
+
+  .nav-tabs.nav-tabs-landing {
+    max-width: 48rem;
+  }
+
+  .project-wrapper {
+    margin-top: -1.5rem;
+  }
+
+  .carousel-item {
+    height: 22rem;
+    width: 38.5rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    font-size: 3rem;
+    font-weight: 700;
+    color: red;
+  }
+
+  .carousel-img {
+    position: relative;
+    left: 1.5rem;
+  }
+
+  #carousel-img-strikeforce {
+    right: 1.5rem;
+  }
+
+  .project-blurb {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  #project-hero-wrapper-strikeforce {
+    order: -1;
+  }
+
+  .dropdown-menu {
+    margin-top: .55rem;
+  }
+
 }

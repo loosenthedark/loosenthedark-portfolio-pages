@@ -161,7 +161,7 @@ $(document).ready(function () {
   $(document).on("shown.bs.modal", "#modal-contact", function () {
     setTimeout(function () {
       $("#modal-contact").modal("hide");
-    }, 5000);
+    }, 7000);
   });
   $(document).on("hidden.bs.modal", "#modal-contact", function () {
     window.location.href = "index.html";

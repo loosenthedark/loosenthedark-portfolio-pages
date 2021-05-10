@@ -1,4 +1,21 @@
 $(document).ready(function () {
+  // 'Offset scroll anchor in HTML with Bootstrap 4 fixed navbar' code block adapted from https://stackoverflow.com/questions/49331572/offset-scroll-anchor-in-html-with-bootstrap-4-fixed-navbar/49331692 | https://codepen.io/anon/pen/NYRvaL
+  var divId;
+  $(".dropdown-item").click(function () {
+    divId = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(divId).offset().top - 62.08,
+      },
+      300
+    );
+  });
+
+  $(".navbar-nav .dropdown-item").on("click", function () {
+    $('.navbar-collapse').collapse('hide');
+    $('.dropdown-menu').collapse('hide');
+  });
+
   if ($(window).scrollTop() <= 500) {
     $("#btn-back-to-top").hide();
   }
@@ -45,22 +62,22 @@ $(document).ready(function () {
   };
 
   $(".social-links").click(function () {
-    $(this).children().css({"transform": "scale(1)", "color": "#fff"});
+    $(this).children().css({ transform: "scale(1)", color: "#fff" });
   });
 
   $(".social-links").mouseenter(function () {
-    $(this).children().css({"transform": "scale(1.4)", "color": "#005960"});
+    $(this).children().css({ transform: "scale(1.4)", color: "#005960" });
   });
 
   $(".social-links").mouseleave(function () {
-    $(this).children().css({"transform": "scale(1)", "color": "#fff"});
+    $(this).children().css({ transform: "scale(1)", color: "#fff" });
   });
 
   $(".social-links").focusin(function () {
-    $(this).children().css({"transform": "scale(1.4)", "color": "#005960"});
+    $(this).children().css({ transform: "scale(1.4)", color: "#005960" });
   });
 
   $(".social-links").focusout(function () {
-    $(this).children().css({"transform": "scale(1)", "color": "#fff"});
+    $(this).children().css({ transform: "scale(1)", color: "#fff" });
   });
 });
