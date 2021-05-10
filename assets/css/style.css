@@ -1,9 +1,14 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 2rem;
 }
 
 h4.card-title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 h6 {
@@ -11,6 +16,10 @@ h6 {
   line-height: 1.3;
   font-size: 1rem;
   max-width: 21rem;
+}
+
+nav {
+  width: 100%;
 }
 
 .navbar {
@@ -61,20 +70,47 @@ h6 {
   font-weight: 400;
 }
 
+.profile-header-nav .nav-item,
+.profile-header-nav .nav-item.active>.nav-link:hover,
+.profile-header-nav .nav-item.active>.nav-link:focus,
+.profile-header-nav .nav-item.active>.nav-link:active {
+  cursor: default;
+}
+
+.profile-header-nav .nav-item:not(.active)>.nav-link:hover,
+.profile-header-nav .nav-item:not(.active)>.nav-link:focus,
+.profile-header-nav .nav-item:not(.active)>.nav-link:active {
+  color: #005960;
+  font-weight: 500;
+}
+
+.profile-header-nav .nav-item:not(.active)>.nav-link:hover {
+  background-color: #fff;
+
+}
+
+.profile-header-nav .nav-item:not(.active)>.nav-link:focus,
+.profile-header-nav .nav-item:not(.active)>.nav-link:active {
+  background-color: #f0f0f0;
+}
+
+.profile-header-nav .nav-item:not(.active)>.nav-link:active {
+  border-color: #007bff;
+}
+
 .profile-header-nav .nav-item>.nav-link {
-  margin-top: 10px;
-  border: .3rem solid #005960;
+  border-right: .225rem solid #005960;
   border-left: none;
+  border-top: none;
   background-color: #303030;
-  min-height: 4rem;
 }
 
 .profile-header-nav .nav-item:first-of-type>.nav-link {
-  border-left: .3rem solid #005960;
+  border-left: .225rem solid #005960;
 }
 
-.profile-header-nav .nav-item:not(.active)>.nav-link {
-  border-bottom: .3rem solid #303030;
+.profile-header-nav .nav-item:last-of-type>.nav-link {
+  border-right: none;
 }
 
 .profile-header-nav .nav-item {
@@ -82,14 +118,22 @@ h6 {
   width: 33.3%;
   text-transform: uppercase;
   font-family: Roboto, sans-serif;
+  border-top-right-radius: .75rem;
+  background-color: #262626;
+  min-height: 3.5rem;
+}
+
+.profile-header-nav .nav-item-spruce {
+  border-top-right-radius: 0;
+  background-color: #005960;
 }
 
 .profile-header-nav .nav-link {
-  font-size: .81rem;
+  font-size: .75rem;
   width: 100%;
 }
 
-.card-block>p {
+.project-blurb {
   font-size: 1.1rem;
 }
 
@@ -151,14 +195,42 @@ h6 {
 }
 
 .profile-header {
-  background: url(../images/main-wallpaper_min.jpg) no-repeat center center;
-  background-size: cover;
   min-height: 28.5rem;
 }
 
-.card-container,
-footer {
-  background-color: #303030;
+body {
+  background: url(../images/main-wallpaper-lg_greyscale_min.jpg);
+}
+
+footer,
+.card-container {
+  background-color: transparent;
+}
+
+.profile-header-nav .nav-item>.nav-link {
+  background-color: #262626;
+}
+
+.nav-tabs {
+  border-top-right-radius: .75rem;
+  border: .225rem solid #005960;
+  border-left: none;
+  background-color: #262626;
+  position: relative;
+}
+
+.nav-tabs-contact {
+  border-top-right-radius: 1.0875rem;
+}
+
+.nav-tabs .nav-link {
+  border-top-right-radius: .75rem;
+  border-top-left-radius: 0;
+  position: relative;
+}
+
+.profile-header-nav .nav {
+  border-bottom: .225rem solid #005960;
 }
 
 .py-2_5 {
@@ -178,12 +250,24 @@ footer {
   font-size: 1.85rem;
 }
 
-.social-icons>a {
+.social-icons>a i {
   color: #fff;
+  transition: color 200ms ease-in-out, transform 300ms ease-in-out;
 }
 
 .social-icons>a:not(:last-of-type) {
   margin-right: 1.5rem;
+}
+
+.social-icons>a:hover i,
+.social-icons>a:focus i {
+  color: #005960;
+  transform: scale(1.4);
+}
+
+.social-icons>a:active i {
+  color: #007bff;
+  transform: scale(1);
 }
 
 .copyright {
@@ -266,6 +350,11 @@ footer {
   padding-left: 5rem;
 }
 
+.featured-list-item-heading {
+  padding-top: 1.37rem;
+  padding-left: .5rem;
+}
+
 .featured-list-icon {
   border: 1px solid #d3d9df;
   border-radius: 50%;
@@ -279,6 +368,10 @@ footer {
   font-size: 1.5rem;
   text-align: center;
   color: #005960;
+}
+
+.fas.fa-check {
+  font-size: 1.7rem;
 }
 
 .card-skills-header,
@@ -321,7 +414,7 @@ textarea:focus {
 }
 
 #contact-main {
-  background-color: #303030;
+  background-color: transparent;
 }
 
 .contact-container {
@@ -504,7 +597,7 @@ textarea:focus {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   h6 {
@@ -561,7 +654,7 @@ textarea:focus {
 
   .dropdown-menu {
     left: unset;
-    margin-top: .7rem;
+    margin-top: .575rem;
     border: none;
   }
 
@@ -581,8 +674,25 @@ textarea:focus {
     font-size: 2.2rem;
   }
 
+  h4.featured-list-item {
+    font-size: 2rem;
+  }
+
+  h4.featured-list-item-heading.card-title {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+
   .profile-header-nav .nav-link {
     font-size: 1rem;
+  }
+
+  .profile-header-nav.profile-header-nav-landing {
+    border-bottom: .225rem solid #005960;
+  }
+
+  .nav-tabs.nav-tabs-landing {
+    border-bottom: none;
   }
 
   .py-md-3_5 {
@@ -595,8 +705,9 @@ textarea:focus {
     padding-bottom: .75rem;
   }
 
-  .card-block>p {
-    font-size: 1.2rem;
+  .project-blurb {
+    font-size: 1.3rem;
+    line-height: 1.45;
   }
 
   .btn-see-more.py-3,
@@ -610,7 +721,7 @@ textarea:focus {
   #card-block-clipadvisor,
   #card-block-strikeforce,
   #card-block-mofh {
-    background-color: #e9e9e9;
+    background-color: #f8f8f8;
   }
 
   .copyright {
@@ -721,24 +832,24 @@ textarea:focus {
 }
 
 @media (min-width: 992px) {
+
   .app-navbar .navbar-brand img {
     width: 14rem;
   }
 
   .profile-header {
     height: 31.5rem;
-    background: url(../images/main-wallpaper-lg_greyscale_min.jpg) no-repeat center center;
-    background-size: cover;
+    background: transparent;
   }
 
   .profile-header-nav .nav-item {
     flex: 0 0 25%;
-    max-width: 18rem;
+    max-width: 16.5rem;
   }
 
   .py-md-3_5 {
-    padding-top: 1.1rem !important;
-    padding-bottom: 1.1rem !important;
+    padding-top: .9rem !important;
+    padding-bottom: .9rem !important;
   }
 
   .card-profile .card-header {
@@ -751,14 +862,28 @@ textarea:focus {
   }
 
   .profile-header-nav .nav-item>.nav-link {
-    background-color: #282828;
-  }
-
-  .profile-header-nav .nav-item:not(.active)>.nav-link {
-    border-bottom: .3rem solid #282828;
+    border: .225rem solid #005960;
+    border-left: none;
+    border-top: none;
   }
 
   .project-blurb {
-    font-size: 1.2rem;
+    font-size: 1.125rem;
+    flex: 1 1 33.333333%;
+    line-height: 1.35;
+  }
+
+  .project-hero-wrapper {
+    flex: 1 1 66.6666666%;
+  }
+
+  .project-hero-img {
+    width: 100%;
+  }
+
+
+  .py-lg-1_5 {
+    padding-top: .375rem;
+    padding-bottom: .375rem;
   }
 }

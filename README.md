@@ -11,3 +11,5 @@
 * Boilerplate for the 'scroll back to top' `button` adpated from [this example](https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555)
 
 * ['Bootstrap 4: Trigger page redirect after modal is hidden'](https://elennion.wordpress.com/2018/10/04/bootstrap-4-trigger-page-redirect-after-modal-is-hidden/)
+
+* [Bootstrap 4 Carousel: Individual data-interval on each slide](https://stackoverflow.com/questions/50968181/bootstrap-4-carousel-individual-data-interval-on-each-slide)

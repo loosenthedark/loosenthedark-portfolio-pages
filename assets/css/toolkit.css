@@ -8181,7 +8181,7 @@ textarea {
   margin-right: -1rem; }
 
 .with-top-navbar {
-  padding-top: 49px; }
+  padding-top: 4rem; }
 
 .navbar-nav > li > a > .badge {
   margin-left: 5px; }
@@ -8497,16 +8497,6 @@ img.zoom-img {
   color: #fff;
   background: transparent;
   border-color: transparent; }
-
-.profile-header-nav .active:before {
-  position: absolute;
-  top: -4px;
-  left: 50%;
-  content: '';
-  margin-left: -15px;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid #005960; }
 
 @media (min-width: 768px) {
   .profile-header-nav .nav > li > a {
