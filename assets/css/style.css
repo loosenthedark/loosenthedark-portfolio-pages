@@ -794,7 +794,7 @@ textarea:focus {
     bottom: 1.25rem;
     right: 3rem;
     z-index: 98;
-    padding: 0.2rem 2.5rem;
+    padding: 0.05rem 2rem;
     border-radius: .4rem;
   }
 
@@ -931,13 +931,13 @@ textarea:focus {
   }
 
   .card-profile .card-header {
-    height: 6rem;
+    height: 5rem;
     border-radius: .35rem .35rem 0 0;
   }
 
   .card-profile-img {
-    max-width: 6.5rem;
-    margin-top: -4.55rem;
+    max-width: 5rem;
+    margin-top: -3rem;
   }
 
   .profile-header-nav .nav-item>.nav-link {
@@ -964,8 +964,8 @@ textarea:focus {
   }
 
   .list-group-item {
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -1005,6 +1005,7 @@ textarea:focus {
     min-width: 34.65rem;
     width: 54vw;
     height: 30.6vw;
+    /* max-width: 41.5rem; */
   }
 
   .carousel-control-prev,
@@ -1049,7 +1050,7 @@ textarea:focus {
   }
 
   #project-hero-wrapper-strikeforce {
-    order: -1;
+    order: -2;
   }
 
   .dropdown-menu {
@@ -1130,7 +1131,24 @@ textarea:focus {
     position: relative;
   }
 
-  #list-group-mofh {
-    max-width: 20rem;
+  #project-hero-wrapper-strikeforce {
+    flex: 1 1 60%;
+  }
+
+  #project-inner-strikeforce {
+    order: -1;
+    flex: 1 1 36%;
+    position: relative;
+    left: -1.5vw;
+    z-index: 999;
+  }
+
+  .btn-wrapper {
+    display: block;
+    position: relative;
+  }
+
+  .card-container {
+    max-width: 80rem;
   }
 }
