@@ -649,7 +649,7 @@ textarea:focus {
   }
 
   .btn {
-    min-width: 12.5rem;
+    min-width: 12.6984rem;
   }
 
   textarea {
@@ -744,10 +744,46 @@ textarea:focus {
     line-height: .95rem;
   }
 
+  .btn-see-more.btn-code {
+    background-color: #28a745;
+    border: 1px solid #28a745;
+  }
+
+  .btn-see-more.btn-code:hover,
+  .btn-see-more.btn-code:focus {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+
+  .btn-see-more.btn-code:focus {
+    box-shadow: 0 0 0 0.2rem rgb(72 180 97 / 50%);
+  }
+
+  .btn-see-more.btn-code:active {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+  }
+
   #card-block-clipadvisor,
   #card-block-strikeforce,
   #card-block-mofh {
     background-color: #f8f8f8;
+  }
+
+  #card-block-strikeforce {
+    position: relative;
+  }
+
+  #project-wrapper-strikeforce {
+    margin-bottom: -2vw;
+  }
+
+  #project-hero-wrapper-strikeforce {
+    flex: 0 0 50%;
+  }
+
+  .btn-wrapper {
+    flex: 0 0 30%;
   }
 
   .copyright {
@@ -816,6 +852,10 @@ textarea:focus {
     max-width: 25rem;
   }
 
+  #project-wrapper-mofh {
+    margin-bottom: -2rem;
+  }
+
   @keyframes laptop-move {
     0% {
       opacity: 0;
@@ -863,6 +903,10 @@ textarea:focus {
     margin-top: 2.25rem !important;
   }
 
+  .pt-lg-4_5 {
+    padding-top: 1.7rem;
+  }
+
   .app-navbar .navbar-brand img {
     width: 14rem;
   }
@@ -902,14 +946,40 @@ textarea:focus {
     border-top: none;
   }
 
+  .project-blurb,
+  .list-group {
+    flex: 1 1 40%;
+  }
+
   .project-blurb {
     font-size: 1.125rem;
-    flex: 1 1 33.333333%;
     line-height: 1.35;
   }
 
+  .list-group {
+    font-size: 1.6rem;
+    color: #005960;
+    width: 100%;
+    line-height: 1;
+  }
+
+  .list-group-item {
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: .5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 16%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  }
+
+  .list-group-item:first-child,
+  .list-group-item:last-child {
+    border-radius: 0.5rem;
+}
+
   .project-hero-wrapper {
-    flex: 1 1 66.6666666%;
+    flex: 1 1 60%;
   }
 
   .project-hero-img {
@@ -931,15 +1001,36 @@ textarea:focus {
   }
 
   .carousel-item {
-    height: 22rem;
-    width: 38.5rem;
+    min-height: 19.8rem;
+    min-width: 34.65rem;
+    width: 54vw;
+    height: 30.6vw;
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 700;
-    color: red;
+    color: #005960;
+    opacity: .7;
+  }
+
+  .carousel-control-prev {
+    left: -2.3rem;
+  }
+
+  .carousel-control-next {
+    right: -2.3rem;
+  }
+
+  .carousel-control-prev:focus,
+  .carousel-control-prev:hover,
+  .carousel-control-next:focus,
+  .carousel-control-next:hover {
+    color: #007bff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
   }
 
   .carousel-img {
@@ -947,13 +1038,14 @@ textarea:focus {
     left: 1.5rem;
   }
 
-  #carousel-img-strikeforce {
+  .carousel-img-strikeforce {
     right: 1.5rem;
   }
 
   .project-blurb {
-    font-size: 1rem;
-    line-height: 1.25;
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.4;
   }
 
   #project-hero-wrapper-strikeforce {
@@ -964,4 +1056,81 @@ textarea:focus {
     margin-top: .55rem;
   }
 
+  #carousel-img-clipadvisor-move-right-and-down {
+    left: 3vw;
+    top: 2.75vw;
+    width: 48.6vw;
+    height: 27.45vw;
+  }
+
+  #carousel-img-mofh-move-right-and-down {
+    left: 3vw;
+    top: 3vw;
+    width: 48.6vw;
+    height: 27.45vw;
+  }
+
+  #carousel-img-clipadvisor-move-left,
+  #carousel-img-mofh-move-left {
+    left: .75vw;
+  }
+
+  #carousel-img-strikeforce-shrink-and-move-left-and-down {
+    width: 46.59vw;
+    height: 26.325vw;
+    top: 1.75vw;
+    left: 2.75vw;
+  }
+
+  #carousel-img-strikeforce-move-left {
+    left: -2vw;
+  }
+
+  #carousel-control-next-strikeforce {
+    right: 0;
+  }
+
+  .carousel-indicators {
+    bottom: -1vw;
+    right: 2.3vw;
+  }
+
+  .carousel-indicators .active {
+    background-color: #005960;
+  }
+
+  .carousel-indicators li {
+    background-color: #d9d9d9;
+    width: 3rem;
+    height: .275rem;
+  }
+
+  .btn {
+    min-width: 11rem;
+    font-size: .8rem;
+  }
+
+  .btn-see-more.py-3,
+  .btn-send.py-3 {
+    font-size: .8rem;
+    line-height: .8rem;
+  }
+
+  .btn-see-more.py-3,
+  .btn-send.py-3 {
+    padding-top: 1.1rem !important;
+    padding-bottom: 1.1rem !important;
+  }
+
+  #project-wrapper-mofh {
+    margin-bottom: unset;
+  }
+
+  .btn-project {
+    position: relative;
+  }
+
+  #list-group-mofh {
+    max-width: 20rem;
+  }
 }
