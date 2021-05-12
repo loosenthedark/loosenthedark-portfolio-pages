@@ -568,40 +568,47 @@ textarea:focus {
   animation: laptop-move 3000ms ease-in-out 1200ms 1 normal forwards;
   position: relative;
   opacity: 0;
+  left: 0;
+  animation-name: laptop-fade-in, laptop-move;
+  animation-duration: 1000ms, 1300ms;
+  animation-delay: 0ms, 1200ms;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: 1, 1;
 }
 
-@keyframes laptop-move {
+@keyframes laptop-fade-in {
   0% {
     opacity: 0;
   }
 
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes laptop-move {
+  0% {
+    left: 0;
+  }
+
   25% {
-    opacity: 1;
+    left: -8rem;
   }
 
-  40% {
-    left: -7rem;
-    opacity: 1;
-  }
-
-  60% {
-    left: 7rem;
-    opacity: 1;
+  50% {
+    left: 8rem;
   }
 
   70% {
-    left: -3.5rem;
-    opacity: 1;
+    left: -5rem;
   }
 
-  85% {
-    left: 3.5rem;
-    opacity: 1;
+  80% {
+    left: 5rem;
   }
 
   100% {
     left: 0;
-    opacity: 1;
   }
 }
 
@@ -1203,10 +1210,109 @@ textarea:focus {
 
   .list-group-item-jquery {
     background: url(../images/jquery-icon-spruce.svg);
-    background-size: 1.2rem;
+  }
+
+  .list-group-item-jquery:hover,
+  .list-group-item-jquery:focus,
+  .list-group-item-jquery:active {
+    background: url(../images/jquery-icon-white.svg);
+  }
+
+  .list-group-item-google-fonts {
+    background: url(../images/google-fonts-icon-spruce.svg);
+  }
+
+  .list-group-item-google-fonts:hover,
+  .list-group-item-google-fonts:focus,
+  .list-group-item-google-fonts:active {
+    background: url(../images/google-fonts-icon-white.svg);
+  }
+
+  .list-group-item-flask {
+    background: url(../images/flask-icon-spruce.svg);
+  }
+
+  .list-group-item-flask:hover,
+  .list-group-item-flask:focus,
+  .list-group-item-flask:active {
+    background: url(../images/flask-icon-white.svg);
+  }
+
+  .list-group-item-jinja {
+    background: url(../images/jinja2-icon-spruce.svg);
+  }
+
+  .list-group-item-jinja:hover,
+  .list-group-item-jinja:focus,
+  .list-group-item-jinja:active {
+    background: url(../images/jinja2-icon-white.svg);
+  }
+
+  .list-group-item-chartjs {
+    background: url(../images/chartjs-icon-spruce.svg);
+  }
+
+  .list-group-item-chartjs:hover,
+  .list-group-item-chartjs:focus,
+  .list-group-item-chartjs:active {
+    background: url(../images/chartjs-icon-white.svg);
+  }
+
+  .list-group-item-emailjs {
+    background: url(../images/emailjs-icon-spruce.svg);
+  }
+
+  .list-group-item-emailjs:hover,
+  .list-group-item-emailjs:focus,
+  .list-group-item-emailjs:active {
+    background: url(../images/emailjs-icon-white.svg);
+  }
+
+  .list-group-item-jasmine {
+    background: url(../images/jasmine-icon-spruce.svg);
+  }
+
+  .list-group-item-jasmine:hover,
+  .list-group-item-jasmine:focus,
+  .list-group-item-jasmine:active {
+    background: url(../images/jasmine-icon-white.svg);
+  }
+
+  .list-group-item-jquery,
+  .list-group-item-google-fonts,
+  .list-group-item-flask,
+  .list-group-item-jinja,
+  .list-group-item-chartjs,
+  .list-group-item-emailjs,
+  .list-group-item-jasmine,
+  .list-group-item-jquery:hover,
+  .list-group-item-jquery:focus,
+  .list-group-item-jquery:active,
+  .list-group-item-google-fonts:hover,
+  .list-group-item-google-fonts:focus,
+  .list-group-item-google-fonts:active,
+  .list-group-item-flask:hover,
+  .list-group-item-flask:focus,
+  .list-group-item-flask:active,
+  .list-group-item-jinja:hover,
+  .list-group-item-jinja:focus,
+  .list-group-item-jinja:active,
+  .list-group-item-chartjs:hover,
+  .list-group-item-chartjs:focus,
+  .list-group-item-chartjs:active,
+  .list-group-item-emailjs:hover,
+  .list-group-item-emailjs:focus,
+  .list-group-item-emailjs:active,
+  .list-group-item-jasmine:hover,
+  .list-group-item-jasmine:focus,
+  .list-group-item-jasmine:active {
+    background-size: 1.333333rem;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
   }
 
   .hvr-grow {
@@ -1217,9 +1323,9 @@ textarea:focus {
     transition-property: all;
   }
 
-  .hvr-grow:active,
+  .hvr-grow:hover,
   .hvr-grow:focus,
-  .hvr-grow:hover {
+  .hvr-grow:active {
     -webkit-transform: scale(1.25);
     transform: scale(1.175);
     color: #fff;

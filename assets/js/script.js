@@ -97,11 +97,7 @@ $(document).ready(function () {
     $(this).children().css({ transform: "scale(1)", color: "#fff" });
   });
 
-  $(".list-group-item-jquery").mouseenter(function () {
-    $(this).css({ backgroundImage: "url(assets/images/jquery-icon-white.svg)", backgroundColor: "#005960" });
-  });
-
-  $(".list-group-item-jquery").mouseleave(function () {
-    $(this).css({ backgroundImage: "url(assets/images/jquery-icon-spruce.svg)", backgroundColor: "#fff" });
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
   });
 });
