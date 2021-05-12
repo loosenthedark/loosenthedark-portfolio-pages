@@ -780,6 +780,10 @@ textarea:focus {
     margin-bottom: -2vw;
   }
 
+  #project-inner-strikeforce {
+    flex: 0 0 100%;
+  }
+
   #project-hero-wrapper-strikeforce {
     flex: 0 0 50%;
   }
@@ -990,10 +994,10 @@ textarea:focus {
   .list-group-item:first-child,
   .list-group-item:last-child {
     border-radius: 0.5rem;
-}
+  }
 
   .project-hero-wrapper {
-    flex: 1 1 60%;
+    flex: 0 0 60%;
   }
 
   .project-hero-img {
@@ -1012,6 +1016,24 @@ textarea:focus {
 
   .project-wrapper {
     margin-top: -1.5rem;
+  }
+
+  #carousel-strikeforce .carousel-item-next.carousel-item-left,
+  #carousel-strikeforce .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  #carousel-strikeforce .carousel-item-next,
+  #carousel-strikeforce .active.carousel-item-right {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+
+  #carousel-strikeforce .carousel-item-prev,
+  #carousel-strikeforce .active.carousel-item-left {
+    -webkit-transform: translate(+100%, 0);
+    transform: translate(+100%, 0);
   }
 
   .carousel-item {
@@ -1069,14 +1091,14 @@ textarea:focus {
   }
 
   #carousel-img-clipadvisor-move-right-and-down {
-    left: 3vw;
+    left: 2vw;
     top: 2.75vw;
     width: 48.6vw;
     height: 27.45vw;
   }
 
   #carousel-img-mofh-move-right-and-down {
-    left: 3vw;
+    left: 2vw;
     top: 3vw;
     width: 48.6vw;
     height: 27.45vw;
@@ -1085,6 +1107,7 @@ textarea:focus {
   #carousel-img-clipadvisor-move-left,
   #carousel-img-mofh-move-left {
     left: .75vw;
+    top: .25vw;
   }
 
   #carousel-img-strikeforce-shrink-and-move-left-and-down {
@@ -1122,6 +1145,10 @@ textarea:focus {
   .btn {
     min-width: 11rem;
     font-size: .8rem;
+  }
+
+  #btn-back-to-top {
+    right: 2rem;
   }
 
   .btn-see-more.py-3,
@@ -1174,9 +1201,38 @@ textarea:focus {
     max-width: 80rem;
   }
 
+  .list-group-item-jquery {
+    background: url(../images/jquery-icon-spruce.svg);
+    background-size: 1.2rem;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+  }
+
+  .hvr-grow {
+    display: flex;
+    cursor: help;
+    transition-duration: .3s;
+    -webkit-transition-property: all;
+    transition-property: all;
+  }
+
+  .hvr-grow:active,
+  .hvr-grow:focus,
+  .hvr-grow:hover {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.175);
+    color: #fff;
+    background-color: #005960;
+  }
+
 }
 
 @media (min-width: 1200px) {
+  .mt-xl-4_5 {
+    margin-top: 2rem;
+  }
+
   .carousel-item {
     width: 47vw;
     height: 26.63vw;
@@ -1195,17 +1251,91 @@ textarea:focus {
   #list-group-clipadvisor,
   #list-group-strikeforce {
     left: unset;
+    max-width: 19rem;
+  }
+
+  .project-hero-wrapper {
+    flex: 0 0 47%;
+    max-width: 42rem;
+    max-height: 23.7rem;
   }
 
   #project-hero-wrapper-strikeforce {
-    max-width: unset;
+    max-width: 42rem;
+    max-height: 23.7rem;
+  }
+
+  /* .img-fluid {
+    max-width: 42.75rem;
+    max-height: 24.15rem;
+  } */
+
+  .project-inner {
+    /* order: -1; */
+    flex: 0 0 35%;
+    max-width: 25rem;
+    position: relative;
+    /* right: 0; */
+    z-index: 999;
   }
 
   #project-inner-strikeforce {
     /* order: -1; */
     flex: 0 0 35%;
-    /* position: relative;
-    left: -1vw;
-    z-index: 999; */
+    max-width: 23rem;
+    position: relative;
+    left: 0;
+    z-index: 999;
   }
+
+  #carousel-img-mofh-move-right-and-down,
+  #carousel-img-clipadvisor-move-right-and-down {
+    left: 0;
+  }
+
+  #btn-back-to-top {
+    right: 1.6rem;
+    bottom: 1.3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: .5rem;
+  }
+
+  #carousel-img-strikeforce-move-left {
+    top: -.25vw;
+    right: .75vw;
+  }
+
+  #carousel-img-strikeforce-shrink-and-move-left-and-down {
+    left: 3vw;
+    top: 1.5vw;
+    max-width: 38rem;
+    max-height: 21.47rem;
+  }
+
+  /* #carousel-img-mofh-move-right-and-down,
+  #carousel-img-clipadvisor-move-right-and-down,
+  #carousel-img-strikeforce-shrink-and-move-left-and-down,
+  #carousel-img-strikeforce-move-left,
+  #carousel-img-clipadvisor-move-left,
+  #carousel-img-mofh-move-left
+   {
+    max-width: 30rem;
+    max-height: 17rem;
+  } */
+
+  #carousel-img-clipadvisor-move-left,
+  #carousel-img-strikeforce-move-left,
+  #carousel-img-mofh-move-left {
+    left: -3vw;
+    max-width: 47rem;
+    max-height: 26.5rem;
+  }
+
+  #carousel-img-mofh-move-right-and-down,
+  #carousel-img-clipadvisor-move-right-and-down {
+    max-width: 41.77rem;
+    max-height: 23.6rem;
+  }
+
 }

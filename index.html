@@ -36,8 +36,10 @@
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/toolkit.css">
   <link rel="stylesheet" href="assets/css/application.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
   <!-- /stylesheets -->
 
   <style>
@@ -77,7 +79,7 @@
           <div class="dropdown-menu collapse mb-2 py-md-3" id="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item pl-3 py-2_5" href="#clipadvisor">Clipadvisor</a>
             <a class="dropdown-item pl-3 py-2_5" href="#strikeforce">StrikeForce</a>
-            <a class="dropdown-item pl-3 py-2_5" href="#mofh">Matter
+            <a class="dropdown-item pl-3 py-2_5" id="mofh-dropdown-link" href="#mofh">Matter
               of
               Heart Psychotherapy</a>
           </div>
@@ -135,19 +137,19 @@
   <main>
     <div class="container card-container pt-3 pt-md-5 pb-5 px-md-5 px-lg-5 pt-lg-5 bg-light">
       <div class="row">
-        <div class="col-12 pb-3 pb-md-5">
+        <div class="col-12 pb-3 pb-md-5" id="clipadvisor">
           <div class="card card-profile border-0">
             <div class="card-header bg-barber-red py-lg-0"></div>
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-clipadvisor">
-              <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png" id="clipadvisor"
-                alt="Python icon">
+              <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png" alt="Python icon">
               <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Clipadvisor</h4>
               <div
                 class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5">
                 <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
-                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-3 project-blurb">
+                  <p
+                    class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pr-xl-4 pt-lg-1 pb-lg-3 project-blurb">
                     Data-centric
                     Python+Flask
                     application with full CRUD functionality,
@@ -155,37 +157,38 @@
                     post, view,
                     edit and delete reviews of barbers</p>
                   <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pr-lg-5 px-xl-5 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start" id="list-group-clipadvisor">
-                    <li class="list-group-item m-lg-1"><i class="fab fa-html5"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-js-square"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-python"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-bootstrap"></i></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-mdb"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/jquery.png" width="21" alt="jQuery icon">
+                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pl-xl-4 pr-lg-5 pr-xl-4 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
+                    id="list-group-clipadvisor">
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-html5"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-js-square"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-python"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-bootstrap"></i></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-mdb"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery">
                     </li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/google-fonts.svg" width="22"
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/google-fonts.svg" width="22"
                         alt="Google Fonts icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-calendar-day"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/flask-icon.svg" width="21"
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-font-awesome-flag"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-calendar-day"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/flask-icon.svg" width="21"
                         alt="Flask icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-database"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/jinja2-icon.svg" width="22"
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-database"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/jinja2-icon.svg" width="22"
                         alt="Jinja icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-mobile"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
-                <div class="project-hero-wrapper mr-lg-3 mr-xl-0">
+                <div class="project-hero-wrapper mr-lg-3 mr-xl-0 mb-xl-4">
                   <img class="d-none d-md-block d-lg-none mt-md-1 mb-md-3 project-hero-img"
                     src="assets/images/clipadvisor-responsive.png" width="660"
                     alt="Clipadvisor responsive device screenshots">
-                  <div id="carousel-example-generic-1" class="d-none d-lg-block carousel carousel-light slide"
+                  <div id="carousel-clipadvisor" class="d-none d-lg-block carousel carousel-light slide"
                     data-ride="carousel">
 
                     <!-- <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+                      <li data-target="#carousel-clipadvisor" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-clipadvisor" data-slide-to="1"></li>
                     </ol> -->
 
                     <div class="carousel-inner" role="listbox">
@@ -199,11 +202,11 @@
                       </div>
                     </div>
 
-                    <!-- <a class="carousel-control-prev" href="#carousel-example-generic-1" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#carousel-clipadvisor" role="button" data-slide="prev">
                       <span class="icon icon-chevron-left" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carousel-example-generic-1" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-clipadvisor" role="button" data-slide="next">
                       <span class="icon icon-chevron-right" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a> -->
@@ -222,17 +225,17 @@
             </div>
           </div>
         </div>
-        <div class="col-12 pb-3 pb-md-5">
+        <div class="col-12 pb-3 pb-md-5" id="strikeforce">
           <div class="card card-profile border-0">
             <div class="card-header bg-strikeforce py-lg-0"></div>
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-strikeforce">
-              <img class="card-profile-img p-3" src="assets/images/jquery.png" id="strikeforce" alt="jQuery icon">
+              <img class="card-profile-img p-3" src="assets/images/jquery.png" alt="jQuery icon">
               <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">StrikeForce</h4>
 
               <div
-                class="project-wrapper d-md-flex flex-md-row justify-content-md-center align-items-md-center align-items-lg-center flex-lg-wrap mb-lg-0 mx-lg-4 mx-xl-5"
+                class="project-wrapper d-md-flex flex-md-row justify-content-md-center align-items-md-center align-items-lg-center flex-md-wrap mb-lg-0 mx-lg-4 mx-xl-5"
                 id="project-wrapper-strikeforce">
                 <div class="project-inner d-lg-flex flex-lg-column" id="project-inner-strikeforce">
                   <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-2 project-blurb">
@@ -243,35 +246,36 @@
                     dynamic data
                     visualisations of English Premier League goalscoring trends</p>
                   <ul
-                    class="d-none d-lg-flex flex-lg-row ml-lg-0 pl-lg-0 pr-lg-0 pt-lg-2 pl-xl-5 flex-lg-wrap list-group list-group-horizontal align-content-lg-start" id="list-group-strikeforce">
-                    <li class="list-group-item m-lg-1"><i class="fab fa-html5"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-js-square"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-bootstrap"></i></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/jquery.png" width="21" alt="jQuery icon">
+                    class="d-none d-lg-flex flex-lg-row ml-lg-0 ml-xl-4 pl-lg-0 pr-lg-0 pt-lg-2 pl-xl-5 flex-lg-wrap list-group list-group-horizontal align-content-lg-start"
+                    id="list-group-strikeforce">
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-html5"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-js-square"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-bootstrap"></i></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery">
                     </li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/chartjs_icon.svg" width="22"
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-font-awesome-flag"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/chartjs_icon.svg" width="22"
                         alt="Chart.js icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-table"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/emailjs.svg" width="22"
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-table"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/emailjs.svg" width="22"
                         alt="EmailJS icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-cogs"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/jasmine.png" width="29"
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-cogs"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/jasmine.png" width="29"
                         alt="Jasmine icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-mobile"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
-                <div class="project-hero-wrapper ml-md-1 pt-lg-1" id="project-hero-wrapper-strikeforce">
+                <div class="project-hero-wrapper ml-md-1 pt-lg-1 mb-xl-4" id="project-hero-wrapper-strikeforce">
                   <img class="d-none d-md-block d-lg-none mt-md-4_5 mb-md-4_5 project-hero-img"
                     src="assets/images/strikeforce-responsive.gif" width="360"
                     alt="StrikeForce responsive device screenshots">
-                  <div id="carousel-example-generic-2" class="d-none d-lg-block carousel carousel-light slide"
+                  <div id="carousel-strikeforce" class="d-none d-lg-block carousel carousel-light slide"
                     data-ride="carousel">
 
                     <!-- <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+                      <li data-target="#carousel-strikeforce" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-strikeforce" data-slide-to="1"></li>
                     </ol> -->
 
                     <div class="carousel-inner" role="listbox">
@@ -287,12 +291,12 @@
                       </div>
                     </div>
 
-                    <!-- <a class="carousel-control-prev" href="#carousel-example-generic-2" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#carousel-strikeforce" role="button" data-slide="prev">
                       <span class="icon icon-chevron-left" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" id="carousel-control-next-strikeforce"
-                      href="#carousel-example-generic-2" role="button" data-slide="next">
+                      href="#carousel-strikeforce" role="button" data-slide="next">
                       <span class="icon icon-chevron-right" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a> -->
@@ -304,7 +308,7 @@
                     href="https://github.com/loosenthedark/strikeforce" target="_blank" role="button">
                     <span class="text-see-more">View Code</span>
                   </a>
-                  
+
                   <a class="btn btn-see-more btn-project btn-strikeforce btn-sm d-lg-block my-2 mt-md-3 mt-lg-2 mb-md-4 mb-lg-0 mx-lg-auto py-3 px-4 px-md-5 px-lg-4"
                     href="http://loosenthedark.tech/strikeforce/" target="_blank" role="button">
                     <span class="text-see-more">View Project</span>
@@ -315,52 +319,51 @@
             </div>
           </div>
         </div>
-        <div class="col-12 mb-md-4">
+        <div class="col-12 mb-md-4" id="mofh">
           <div class="card card-profile border-0">
             <div class="card-header bg-mofh py-lg-0"></div>
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-mofh">
-              <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png" id="mofh"
-                alt="Bootstrap icon">
+              <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png" alt="Bootstrap icon">
               <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
               <div
                 class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5"
                 id="project-wrapper-mofh">
                 <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
-                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-3 project-blurb">
+                  <p
+                    class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pr-xl-4 pt-lg-1 pb-lg-3 project-blurb">
                     Bespoke responsive
                     Frontend site for a local
-                    business, built using
+                    therapy practice, built using
                     Bootstrap 4
                     components
                     and plugins as well as custom HTML and CSS</p>
                   <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pr-lg-5 px-xl-5 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
+                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pl-xl-4 pr-lg-5 pr-xl-4 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
                     id="list-group-mofh">
-                    <li class="list-group-item m-lg-1"><i class="fab fa-html5"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-bootstrap"></i></li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/jquery.png" width="21" alt="jQuery icon">
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-html5"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-bootstrap"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery">
                     </li>
-                    <li class="list-group-item m-lg-1"><img src="assets/images/google-fonts.svg" width="22"
+                    <li class="list-group-item hvr-grow m-lg-1"><img src="assets/images/google-fonts.svg" width="22"
                         alt="Google Fonts icon"></li>
-                    <li class="list-group-item m-lg-1"><i class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-tasks"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-code"></i></li>
-                    <li class="list-group-item m-lg-1"><i class="fas fa-mobile"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fab fa-font-awesome-flag"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-tasks"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-code"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1"><i class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
-                <div class="project-hero-wrapper mr-lg-3 mr-xl-0">
+                <div class="project-hero-wrapper mr-lg-3 mr-xl-0 mb-xl-4">
                   <img class="d-none d-md-block d-lg-none mt-md-5 mb-md-1 project-hero-img"
                     src="assets/images/mofh-responsive.gif" width="640"
                     alt="Matter of Heart responsive device screenshots">
-                  <div id="carousel-example-generic-3" class="d-none d-lg-block carousel carousel-light slide"
-                    data-ride="carousel">
+                  <div id="carousel-mofh" class="d-none d-lg-block carousel carousel-light slide" data-ride="carousel">
 
                     <!-- <ol class="carousel-indicators">
-                      <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic-3" data-slide-to="1"></li>
+                      <li data-target="#carousel-mofh" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-mofh" data-slide-to="1"></li>
                     </ol> -->
 
                     <div class="carousel-inner" role="listbox">
@@ -374,11 +377,11 @@
                       </div>
                     </div>
 
-                    <!-- <a class="carousel-control-prev" href="#carousel-example-generic-3" role="button" data-slide="prev">
+                    <!-- <a class="carousel-control-prev" href="#carousel-mofh" role="button" data-slide="prev">
                       <span class="icon icon-chevron-left" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carousel-example-generic-3" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel-mofh" role="button" data-slide="next">
                       <span class="icon icon-chevron-right" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a> -->
