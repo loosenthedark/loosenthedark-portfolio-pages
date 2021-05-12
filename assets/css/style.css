@@ -207,7 +207,9 @@ nav {
 }
 
 body {
-  background: url(../images/main-wallpaper-lg_greyscale_min.jpg);
+  background: url(../images/main-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-color: #111;
 }
 
 footer,
@@ -949,6 +951,7 @@ textarea:focus {
   .project-blurb,
   .list-group {
     flex: 1 1 40%;
+    position: relative;
   }
 
   .project-blurb {
@@ -963,9 +966,20 @@ textarea:focus {
     line-height: 1;
   }
 
+  #list-group-mofh,
+  #list-group-clipadvisor,
+  #list-group-strikeforce {
+    left: 1rem;
+  }
+
+  .list-group::after {
+    content: "";
+    flex: auto;
+  }
+
   .list-group-item {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.9rem;
+    height: 2.9rem;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -1003,8 +1017,8 @@ textarea:focus {
   .carousel-item {
     min-height: 19.8rem;
     min-width: 34.65rem;
-    width: 54vw;
-    height: 30.6vw;
+    width: 50.5vw;
+    height: 29.05vw;
     /* max-width: 41.5rem; */
   }
 
@@ -1039,10 +1053,6 @@ textarea:focus {
     left: 1.5rem;
   }
 
-  .carousel-img-strikeforce {
-    right: 1.5rem;
-  }
-
   .project-blurb {
     font-size: 1.15rem;
     font-weight: 300;
@@ -1051,6 +1061,7 @@ textarea:focus {
 
   #project-hero-wrapper-strikeforce {
     order: -2;
+    max-width: 40rem;
   }
 
   .dropdown-menu {
@@ -1077,14 +1088,16 @@ textarea:focus {
   }
 
   #carousel-img-strikeforce-shrink-and-move-left-and-down {
-    width: 46.59vw;
-    height: 26.325vw;
-    top: 1.75vw;
-    left: 2.75vw;
+    width: 42.5vw;
+    height: 24.01vw;
+    top: 2vw;
+    left: 2vw;
+    max-width: 35rem;
+    max-height: 19.774rem;
   }
 
   #carousel-img-strikeforce-move-left {
-    left: -2vw;
+    left: -3vw;
   }
 
   #carousel-control-next-strikeforce {
@@ -1132,23 +1145,67 @@ textarea:focus {
   }
 
   #project-hero-wrapper-strikeforce {
-    flex: 1 1 60%;
+    flex: 0 0 47%;
+  }
+
+  .project-inner {
+    position: relative;
   }
 
   #project-inner-strikeforce {
-    order: -1;
-    flex: 1 1 36%;
-    position: relative;
-    left: -1.5vw;
-    z-index: 999;
+    /* order: -1; */
+    flex: 0 0 30%;
+    /* position: relative;
+    left: -1vw;
+    z-index: 999; */
   }
 
   .btn-wrapper {
+    flex: 0 0 100%;
     display: block;
-    position: relative;
+    /* position: relative; */
+  }
+
+  .btn-strikeforce {
+    max-width: 11rem;
   }
 
   .card-container {
     max-width: 80rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .carousel-item {
+    width: 47vw;
+    height: 26.63vw;
+    /* max-width: 41.5rem; */
+  }
+
+  .project-wrapper {
+    width: calc(100% - 6rem);
+  }
+
+  .project-inner {
+    width: 27.5vw;
+  }
+
+  #list-group-mofh,
+  #list-group-clipadvisor,
+  #list-group-strikeforce {
+    left: unset;
+  }
+
+  #project-hero-wrapper-strikeforce {
+    max-width: unset;
+  }
+
+  #project-inner-strikeforce {
+    /* order: -1; */
+    flex: 0 0 35%;
+    /* position: relative;
+    left: -1vw;
+    z-index: 999; */
   }
 }

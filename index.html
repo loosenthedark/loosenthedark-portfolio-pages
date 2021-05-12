@@ -52,7 +52,7 @@
 
 </head>
 
-<body class="with-top-navbar">
+<body id="home" class="with-top-navbar">
 
   <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-ltd app-navbar py-lg-1_5">
     <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse"
@@ -61,14 +61,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand pb-0 pt-md-0" href="index.html">
+    <a class="navbar-brand pb-0 pt-md-0" href="#home">
       <img src="assets/images/brand-white.png" alt="loosenthedark brand logo">
     </a>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav pt-1 mr-auto mr-md-0">
         <li class="nav-item active">
-          <a class="nav-link py-2_5 px-md-3 pt-3" href="index.html">Home</a>
+          <a class="nav-link py-2_5 px-md-3 pt-3" href="#home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link py-2_5 px-md-3 dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -135,18 +135,19 @@
   <main>
     <div class="container card-container pt-3 pt-md-5 pb-5 px-md-5 px-lg-5 pt-lg-5 bg-light">
       <div class="row">
-        <div class="col-12 pb-3 pb-md-5" id="clipadvisor">
+        <div class="col-12 pb-3 pb-md-5">
           <div class="card card-profile border-0">
             <div class="card-header bg-barber-red py-lg-0"></div>
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-clipadvisor">
-              <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png" alt="Python icon">
+              <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png" id="clipadvisor"
+                alt="Python icon">
               <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Clipadvisor</h4>
               <div
-                class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center">
-                <div class="project-inner d-lg-flex flex-lg-column">
-                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-2 mt-lg-1 px-md-3 px-lg-3 pt-lg-1 pb-lg-1 project-blurb">
+                class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5">
+                <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
+                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-3 project-blurb">
                     Data-centric
                     Python+Flask
                     application with full CRUD functionality,
@@ -154,7 +155,7 @@
                     post, view,
                     edit and delete reviews of barbers</p>
                   <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-5 pr-lg-5 pt-lg-2 flex-lg-wrap list-group list-group-horizontal justify-content-lg-center">
+                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pr-lg-5 px-xl-5 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start" id="list-group-clipadvisor">
                     <li class="list-group-item m-lg-1"><i class="fab fa-html5"></i></li>
                     <li class="list-group-item m-lg-1"><i class="fab fa-css3-alt"></i></li>
                     <li class="list-group-item m-lg-1"><i class="fab fa-js-square"></i></li>
@@ -175,7 +176,7 @@
                     <li class="list-group-item m-lg-1"><i class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
-                <div class="project-hero-wrapper pt-lg-1">
+                <div class="project-hero-wrapper mr-lg-3 mr-xl-0">
                   <img class="d-none d-md-block d-lg-none mt-md-1 mb-md-3 project-hero-img"
                     src="assets/images/clipadvisor-responsive.png" width="660"
                     alt="Clipadvisor responsive device screenshots">
@@ -210,7 +211,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-none d-md-block mb-md-0 mt-md-3 mt-lg-1 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-none d-md-block mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
                 href="https://github.com/loosenthedark/clipadvisor-flask-app" target="_blank" role="button">
                 <span class="text-see-more">View Code</span>
               </a>
@@ -221,19 +222,20 @@
             </div>
           </div>
         </div>
-        <div class="col-12 pb-3 pb-md-5" id="strikeforce">
+        <div class="col-12 pb-3 pb-md-5">
           <div class="card card-profile border-0">
             <div class="card-header bg-strikeforce py-lg-0"></div>
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-strikeforce">
-              <img class="card-profile-img p-3" src="assets/images/jquery.png" alt="jQuery icon">
+              <img class="card-profile-img p-3" src="assets/images/jquery.png" id="strikeforce" alt="jQuery icon">
               <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">StrikeForce</h4>
+
               <div
-                class="project-wrapper d-md-flex flex-md-row flex-md-wrap justify-content-md-center align-items-md-center align-items-lg-center flex-lg-row flex-lg-no-wrap mb-lg-0"
+                class="project-wrapper d-md-flex flex-md-row justify-content-md-center align-items-md-center align-items-lg-center flex-lg-wrap mb-lg-0 mx-lg-4 mx-xl-5"
                 id="project-wrapper-strikeforce">
                 <div class="project-inner d-lg-flex flex-lg-column" id="project-inner-strikeforce">
-                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-2 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-1  project-blurb">
+                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-2 project-blurb">
                     Interactive Frontend
                     website leveraging an
                     external
@@ -241,7 +243,7 @@
                     dynamic data
                     visualisations of English Premier League goalscoring trends</p>
                   <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-5 pr-lg-5 pt-lg-2 flex-lg-wrap list-group list-group-horizontal justify-content-lg-center">
+                    class="d-none d-lg-flex flex-lg-row ml-lg-0 pl-lg-0 pr-lg-0 pt-lg-2 pl-xl-5 flex-lg-wrap list-group list-group-horizontal align-content-lg-start" id="list-group-strikeforce">
                     <li class="list-group-item m-lg-1"><i class="fab fa-html5"></i></li>
                     <li class="list-group-item m-lg-1"><i class="fab fa-css3-alt"></i></li>
                     <li class="list-group-item m-lg-1"><i class="fab fa-js-square"></i></li>
@@ -260,7 +262,7 @@
                     <li class="list-group-item m-lg-1"><i class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
-                <div class="project-hero-wrapper ml-md-1 pt-lg-1 ml-lg-0" id="project-hero-wrapper-strikeforce">
+                <div class="project-hero-wrapper ml-md-1 pt-lg-1" id="project-hero-wrapper-strikeforce">
                   <img class="d-none d-md-block d-lg-none mt-md-4_5 mb-md-4_5 project-hero-img"
                     src="assets/images/strikeforce-responsive.gif" width="360"
                     alt="StrikeForce responsive device screenshots">
@@ -273,12 +275,12 @@
                     </ol> -->
 
                     <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item mr-0 active" data-interval="5000">
+                      <div class="carousel-item mr-0 active carousel-item-strikeforce" data-interval="5000">
                         <img class="d-block img-fluid carousel-img carousel-img-strikeforce"
                           id="carousel-img-strikeforce-move-left" src="assets/images/strikeforce-responsive.png"
                           alt="First slide">
                       </div>
-                      <div class="carousel-item mr-0 pt-1" data-interval="10000">
+                      <div class="carousel-item carousel-item-strikeforce mr-0 pt-1" data-interval="10000">
                         <img class="d-block img-fluid carousel-img carousel-img-strikeforce"
                           id="carousel-img-strikeforce-shrink-and-move-left-and-down"
                           src="assets/images/strikeforce-responsive-2.gif" alt="Second slide">
@@ -298,32 +300,35 @@
                   </div>
                 </div>
                 <div class="btn-wrapper mb-lg-2">
-                  <a class="btn btn-see-more btn-code btn-project btn-strikeforce btn-sm d-none d-md-inline-block mb-md-0 mt-md-3 mt-lg-1 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+                  <a class="btn btn-see-more btn-code btn-project btn-strikeforce btn-sm d-none d-md-inline-block d-lg-block mx-lg-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
                     href="https://github.com/loosenthedark/strikeforce" target="_blank" role="button">
                     <span class="text-see-more">View Code</span>
                   </a>
-                  <a class="btn btn-see-more btn-project btn-strikeforce btn-sm my-2 mt-md-3 mt-lg-2 mb-md-4 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+                  
+                  <a class="btn btn-see-more btn-project btn-strikeforce btn-sm d-lg-block my-2 mt-md-3 mt-lg-2 mb-md-4 mb-lg-0 mx-lg-auto py-3 px-4 px-md-5 px-lg-4"
                     href="http://loosenthedark.tech/strikeforce/" target="_blank" role="button">
                     <span class="text-see-more">View Project</span>
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
-        <div class="col-12 mb-md-4" id="mofh">
+        <div class="col-12 mb-md-4">
           <div class="card card-profile border-0">
             <div class="card-header bg-mofh py-lg-0"></div>
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-mofh">
-              <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png" alt="Bootstrap icon">
+              <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png" id="mofh"
+                alt="Bootstrap icon">
               <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
               <div
-                class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center"
+                class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5"
                 id="project-wrapper-mofh">
-                <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center">
-                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-2 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-3 project-blurb">
+                <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
+                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-3 project-blurb">
                     Bespoke responsive
                     Frontend site for a local
                     business, built using
@@ -331,7 +336,7 @@
                     components
                     and plugins as well as custom HTML and CSS</p>
                   <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-5 pr-lg-5 flex-lg-wrap list-group list-group-horizontal justify-content-lg-center"
+                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pr-lg-5 px-xl-5 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
                     id="list-group-mofh">
                     <li class="list-group-item m-lg-1"><i class="fab fa-html5"></i></li>
                     <li class="list-group-item m-lg-1"><i class="fab fa-css3-alt"></i></li>
@@ -346,7 +351,7 @@
                     <li class="list-group-item m-lg-1"><i class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
-                <div class="project-hero-wrapper">
+                <div class="project-hero-wrapper mr-lg-3 mr-xl-0">
                   <img class="d-none d-md-block d-lg-none mt-md-5 mb-md-1 project-hero-img"
                     src="assets/images/mofh-responsive.gif" width="640"
                     alt="Matter of Heart responsive device screenshots">
@@ -381,7 +386,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-none d-md-block mb-md-0 mt-md-3 mt-lg-1 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-none d-md-block mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
                 href="https://github.com/loosenthedark/matter-of-heart-psychotherapy" target="_blank" role="button">
                 <span class="text-see-more">View Code</span>
               </a>
