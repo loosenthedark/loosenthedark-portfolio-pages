@@ -200,6 +200,7 @@ nav {
 
 .card-profile .card-about-header {
   height: 9.25rem;
+  overflow: hidden;
 }
 
 .profile-header {
@@ -564,19 +565,47 @@ textarea:focus {
   pointer-events: all;
 }
 
-#about-laptop {
-  animation: laptop-move 3000ms ease-in-out 1200ms 1 normal forwards;
+#about-laptop,
+#about-laptop-no-code {
   position: relative;
+  width: 20vw;
   opacity: 0;
-  left: 0;
-  animation-name: laptop-fade-in, laptop-move;
-  animation-duration: 1000ms, 1300ms;
-  animation-delay: 0ms, 1200ms;
-  animation-timing-function: ease-in-out, ease-in-out;
-  animation-iteration-count: 1, 1;
 }
 
-@keyframes laptop-fade-in {
+#about-laptop {
+  animation-delay: 2500ms;
+  animation-name: final-icon-fade-in-and-expand;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#about-laptop-no-code {
+  left: -10vw;
+  animation-delay: 200ms, 1000ms, 2000ms;
+  animation-name: icon-fade-in, laptop-move-right, icon-fade-out;
+  animation-duration: 400ms, 466ms, 335ms;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  animation-iteration-count: 1, 1, 1;
+  animation-fill-mode: forwards, forwards, forwards;
+}
+
+#code-icon {
+  left: 10vw;
+  opacity: 0;
+  position: relative;
+  width: 20vw;
+  top: -.5rem;
+  animation-delay: 600ms, 1500ms, 2000ms;
+  animation-name: icon-fade-in, code-icon-move-left, icon-fade-out;
+  animation-duration: 400ms, 466ms, 335ms;
+  animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  animation-iteration-count: 1, 1, 1;
+  animation-fill-mode: forwards, forwards, forwards;
+}
+
+@keyframes icon-fade-in {
   0% {
     opacity: 0;
   }
@@ -586,29 +615,47 @@ textarea:focus {
   }
 }
 
-@keyframes laptop-move {
+@keyframes icon-fade-out {
   0% {
-    left: 0;
-  }
-
-  25% {
-    left: -8rem;
-  }
-
-  50% {
-    left: 8rem;
-  }
-
-  70% {
-    left: -5rem;
-  }
-
-  80% {
-    left: 5rem;
+    opacity: 1;
   }
 
   100% {
-    left: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes laptop-move-right {
+  0% {
+    left: -10vw;
+  }
+
+  100% {
+    left: 20vw;
+  }
+}
+
+@keyframes code-icon-move-left {
+  0% {
+    transform: scale(1);
+    left: 10vw;
+  }
+
+  100% {
+    transform: scale(0.4);
+    left: -20vw;
+  }
+}
+
+@keyframes final-icon-fade-in-and-expand {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.5);
   }
 }
 
@@ -812,7 +859,7 @@ textarea:focus {
   }
 
   .card-profile .card-about-header {
-    height: 11rem;
+    height: 11.225rem;
   }
 
   #about-laptop {
@@ -869,45 +916,100 @@ textarea:focus {
     margin-bottom: -2rem;
   }
 
-  @keyframes laptop-move {
+  #about-laptop,
+  #about-laptop-no-code {
+    position: relative;
+    width: 6.5rem;
+    opacity: 0;
+  }
+
+  #about-laptop {
+    animation-delay: 2500ms;
+    animation-name: final-icon-fade-in-and-expand;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  #about-laptop-no-code {
+    left: -10vw;
+    animation-delay: 200ms, 1000ms, 2000ms;
+    animation-name: icon-fade-in, laptop-move-right, icon-fade-out;
+    animation-duration: 400ms, 466ms, 335ms;
+    animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    animation-iteration-count: 1, 1, 1;
+    animation-fill-mode: forwards, forwards, forwards;
+  }
+
+  #code-icon {
+    left: 10vw;
+    opacity: 0;
+    position: relative;
+    width: 6.5rem;
+    top: -.75rem;
+    animation-delay: 600ms, 1500ms, 2000ms;
+    animation-name: icon-fade-in, code-icon-move-left, icon-fade-out;
+    animation-duration: 400ms, 466ms, 335ms;
+    animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    animation-iteration-count: 1, 1, 1;
+    animation-fill-mode: forwards, forwards, forwards;
+  }
+
+  @keyframes icon-fade-in {
     0% {
       opacity: 0;
     }
 
-    10% {
+    100% {
       opacity: 1;
     }
+  }
 
-    25% {
-      left: 0;
-      opacity: 1;
-    }
-
-    50% {
-      left: -13rem;
-      opacity: 1;
-    }
-
-    60% {
-      left: 12rem;
-      opacity: 1;
-    }
-
-    70% {
-      left: -5.5rem;
-      opacity: 1;
-    }
-
-    85% {
-      left: 4.5rem;
+  @keyframes icon-fade-out {
+    0% {
       opacity: 1;
     }
 
     100% {
-      left: 0;
-      opacity: 1;
+      opacity: 0;
     }
   }
+
+  @keyframes laptop-move-right {
+    0% {
+      left: -10vw;
+    }
+
+    100% {
+      left: 6.5rem;
+    }
+  }
+
+  @keyframes code-icon-move-left {
+    0% {
+      transform: scale(1);
+      left: 10vw;
+    }
+
+    100% {
+      transform: scale(0.4);
+      left: -6.5rem;
+    }
+  }
+
+  @keyframes final-icon-fade-in-and-expand {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1.4);
+    }
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -925,7 +1027,7 @@ textarea:focus {
   }
 
   .profile-header {
-    height: 31.5rem;
+    height: 30.5rem;
     background: transparent;
   }
 
@@ -1017,7 +1119,8 @@ textarea:focus {
     padding-bottom: .375rem;
   }
 
-  .nav-tabs.nav-tabs-landing {
+  .nav-tabs.nav-tabs-landing,
+  .nav-tabs.nav-tabs-contact {
     max-width: 48rem;
   }
 
@@ -1330,6 +1433,110 @@ textarea:focus {
     transform: scale(1.175);
     color: #fff;
     background-color: #005960;
+  }
+
+  .card-profile .card-about-header {
+    min-height: 8.225rem;
+  }
+
+  .card-about .btn-see-more.py-3 {
+    position: relative;
+    left: -.5vw;
+  }
+
+  #about-laptop,
+  #about-laptop-no-code {
+    position: relative;
+    width: 5rem;
+    opacity: 0;
+  }
+
+  #about-laptop {
+    animation-delay: 2500ms;
+    animation-name: final-icon-fade-in-and-expand;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    left: -.5vw;
+  }
+
+  #about-laptop-no-code {
+    left: -10.5vw;
+    animation-delay: 200ms, 1000ms, 2000ms;
+    animation-name: icon-fade-in, laptop-move-right, icon-fade-out;
+    animation-duration: 400ms, 466ms, 335ms;
+    animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    animation-iteration-count: 1, 1, 1;
+    animation-fill-mode: forwards, forwards, forwards;
+  }
+
+  #code-icon {
+    left: 9.5vw;
+    opacity: 0;
+    position: relative;
+    width: 5rem;
+    top: -.5rem;
+    animation-delay: 600ms, 1500ms, 2000ms;
+    animation-name: icon-fade-in, code-icon-move-left, icon-fade-out;
+    animation-duration: 400ms, 466ms, 335ms;
+    animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
+    animation-iteration-count: 1, 1, 1;
+    animation-fill-mode: forwards, forwards, forwards;
+  }
+
+  @keyframes icon-fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes icon-fade-out {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes laptop-move-right {
+    0% {
+      left: -10.5vw;
+    }
+
+    100% {
+      left: calc(5rem - 0.5vw);
+    }
+  }
+
+  @keyframes code-icon-move-left {
+    0% {
+      transform: scale(1);
+      left: 9.5vw;
+    }
+
+    100% {
+      transform: scale(0.4);
+      left: calc(-.5vw - 5rem);
+    }
+  }
+
+  @keyframes final-icon-fade-in-and-expand {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1.5);
+    }
   }
 
 }

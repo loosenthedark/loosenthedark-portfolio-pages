@@ -8,6 +8,8 @@
 
 * Several Font Awesome icons have been modified for use in the site's custom `.card-profile-img` components - this is permitted under [the terms of Font Awesome's user licence](https://fontawesome.com/license)
 
+* <div>Code symbol SVG icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+
 * Boilerplate for the 'scroll back to top' `button` adpated from [this example](https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555)
 
 * [Stack Overflow: 'Bootstrap 4: Trigger page redirect after modal is hidden'](https://elennion.wordpress.com/2018/10/04/bootstrap-4-trigger-page-redirect-after-modal-is-hidden/)
