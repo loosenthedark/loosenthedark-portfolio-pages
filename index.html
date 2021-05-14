@@ -21,7 +21,7 @@
   <!-- /title -->
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="assets/images/laptop-code-solid.svg" type="image/png">
+  <link rel="shortcut icon" href="assets/images/laptop-code-spruce.svg" type="image/png">
   <!-- /favicon -->
 
   <!-- Font Awesome JS -->
@@ -95,30 +95,33 @@
   </nav>
 
   <header>
-    <div class="profile-header">
+    <div class="profile-header d-lg-flex flex-lg-column justify-content-lg-center align-content-lg-center">
       <div class="container">
-        <div class="container-inner mt-5 mt-lg-1 mt-xl-3">
+        <div class="container-inner mt-5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
           <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
-          <h1 class="profile-header-user">Paul Harrington</h1>
-          <p class="profile-header-bio mb-2">
-            Junior Full Stack Developer
-          </p>
-          <p class="profile-header-bio social-icons mb-5 mb-lg-4">
-            <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
-                class="fab fa-github"></i></a>
-            <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i class="fas fa-at"></i></a>
-            <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
-                class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
-                class="fab fa-twitter"></i></a>
-          </p>
+          <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
+            <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
+            <p class="profile-header-bio mb-2 text-lg-left">
+              Junior Full Stack Developer
+            </p>
+            <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
+              <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i
+                  class="fas fa-at"></i></a>
+              <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
+                  class="fab fa-twitter"></i></a>
+            </p>
+          </div>
         </div>
       </div>
 
       <nav class="profile-header-nav profile-header-nav-landing">
         <ul class="nav nav-tabs nav-tabs-landing justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
           <li class="nav-item active d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="index.html">Recent
+            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="#home">Recent
               Projects</a>
           </li>
           <li class="nav-item d-flex">
@@ -143,8 +146,8 @@
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-clipadvisor">
-              <img class="card-profile-img p-3" src="assets/images/python-brands-spruce.png" alt="Python icon">
-              <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Clipadvisor</h4>
+              <i class="card-profile-img p-3 fas fa-laptop-code laptop-circle d-flex align-items-center justify-content-center mx-auto" id="card-profile-img-clipadvisor"></i>
+              <h4 class="card-title mt-3 mt-md-4 mt-lg-2_5 mb-3 mb-md-4">Clipadvisor</h4>
               <div
                 class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5">
                 <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
@@ -159,24 +162,39 @@
                   <ul
                     class="d-none d-lg-flex flex-lg-row pl-lg-0 pl-xl-4 pr-lg-5 pr-xl-4 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
                     id="list-group-clipadvisor">
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i class="fab fa-html5"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="JavaScript"><i class="fab fa-js-square"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Python"><i class="fab fa-python"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i class="fab fa-bootstrap"></i></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Material Design for Bootstrap"><i class="fab fa-mdb"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip" title="jQuery">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i
+                        class="fab fa-html5"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i
+                        class="fab fa-css3-alt"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="JavaScript"><i
+                        class="fab fa-js-square"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Python"><i
+                        class="fab fa-python"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i
+                        class="fab fa-bootstrap"></i></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip"
+                      title="Material Design for Bootstrap"><i class="fab fa-mdb"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip"
+                      title="jQuery">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-google-fonts" data-toggle="tooltip" title="Google Fonts"></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="jQuery DateTimePicker plugin"><i class="fas fa-calendar-day"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-flask" data-toggle="tooltip" title="Flask">
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-google-fonts" data-toggle="tooltip"
+                      title="Google Fonts"></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i
+                        class="fab fa-font-awesome-flag"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip"
+                      title="jQuery DateTimePicker plugin"><i class="fas fa-calendar-day"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-flask" data-toggle="tooltip"
+                      title="Flask">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="SQLAlchemy"><i class="fas fa-database"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jinja" data-toggle="tooltip" title="Jinja">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="SQLAlchemy"><i
+                        class="fas fa-database"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jinja" data-toggle="tooltip"
+                      title="Jinja">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Full Stack"><i class="fas fa-layer-group"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i class="fas fa-mobile"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Full Stack"><i
+                        class="fas fa-layer-group"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i
+                        class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
                 <div class="project-hero-wrapper mr-lg-3 mr-xl-0 mb-xl-4">
@@ -214,7 +232,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-none d-md-block mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-block mx-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
                 href="https://github.com/loosenthedark/clipadvisor-flask-app" target="_blank" role="button">
                 <span class="text-see-more">View Code</span>
               </a>
@@ -231,8 +249,8 @@
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-strikeforce">
-              <img class="card-profile-img p-3" src="assets/images/jquery.png" alt="jQuery icon">
-              <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">StrikeForce</h4>
+              <i class="card-profile-img p-3 fas fa-laptop-code laptop-circle d-flex align-items-center justify-content-center mx-auto" id="card-profile-img-strikeforce"></i>
+              <h4 class="card-title mt-3 mt-md-4 mt-lg-2_5 mb-3 mb-md-4">StrikeForce</h4>
 
               <div
                 class="project-wrapper d-md-flex flex-md-row justify-content-md-center align-items-md-center align-items-lg-center flex-md-wrap mb-lg-0 mx-lg-4 mx-xl-5"
@@ -248,24 +266,38 @@
                   <ul
                     class="d-none d-lg-flex flex-lg-row ml-lg-0 ml-xl-4 pl-lg-0 pr-lg-0 pt-lg-2 pl-xl-5 flex-lg-wrap list-group list-group-horizontal align-content-lg-start"
                     id="list-group-strikeforce">
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i class="fab fa-html5"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="JavaScript"><i class="fab fa-js-square"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i class="fab fa-bootstrap"></i></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip" title="jQuery">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i
+                        class="fab fa-html5"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i
+                        class="fab fa-css3-alt"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="JavaScript"><i
+                        class="fab fa-js-square"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i
+                        class="fab fa-bootstrap"></i></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip"
+                      title="jQuery">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-chartjs" data-toggle="tooltip" title="Chart.js">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i
+                        class="fab fa-font-awesome-flag"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-chartjs" data-toggle="tooltip"
+                      title="Chart.js">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="tablesorter"><i class="fas fa-table"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-emailjs" data-toggle="tooltip" title="EmailJS">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="tablesorter"><i
+                        class="fas fa-table"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-emailjs" data-toggle="tooltip"
+                      title="EmailJS">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="TransferMarket API"><i class="fas fa-cogs"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jasmine" data-toggle="tooltip" title="Jasmine (unit testing)">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="TransferMarket API"><i
+                        class="fas fa-cogs"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jasmine" data-toggle="tooltip"
+                      title="Jasmine (unit testing)">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="interactive"><i class="fas fa-users-cog"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Frontend"><i class="fas fa-code"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i class="fas fa-mobile"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="interactive"><i
+                        class="fas fa-users-cog"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Frontend"><i
+                        class="fas fa-code"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i
+                        class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
                 <div class="project-hero-wrapper ml-md-1 pt-lg-1 mb-xl-4" id="project-hero-wrapper-strikeforce">
@@ -306,7 +338,7 @@
                   </div>
                 </div>
                 <div class="btn-wrapper mb-lg-2">
-                  <a class="btn btn-see-more btn-code btn-project btn-strikeforce btn-sm d-none d-md-inline-block d-lg-block mx-lg-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+                  <a class="btn btn-see-more btn-code btn-project btn-strikeforce btn-sm d-block mx-auto d-md-inline-block d-lg-block mx-lg-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
                     href="https://github.com/loosenthedark/strikeforce" target="_blank" role="button">
                     <span class="text-see-more">View Code</span>
                   </a>
@@ -327,8 +359,8 @@
             <div
               class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
               id="card-block-mofh">
-              <img class="card-profile-img p-3" src="assets/images/bootstrap-brands-spruce.png" alt="Bootstrap icon">
-              <h4 class="card-title mt-2 mt-md-3 mt-lg-2 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
+              <i class="card-profile-img p-3 fas fa-laptop-code laptop-circle d-flex align-items-center justify-content-center mx-auto" id="card-profile-img-mofh"></i>
+              <h4 class="card-title mt-3 mt-md-4 mt-lg-2_5 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
               <div
                 class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5"
                 id="project-wrapper-mofh">
@@ -344,16 +376,25 @@
                   <ul
                     class="d-none d-lg-flex flex-lg-row pl-lg-0 pl-xl-4 pr-lg-5 pr-xl-4 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
                     id="list-group-mofh">
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i class="fab fa-html5"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i class="fab fa-bootstrap"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip" title="jQuery">
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i
+                        class="fab fa-html5"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i
+                        class="fab fa-css3-alt"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i
+                        class="fab fa-bootstrap"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip"
+                      title="jQuery">
                     </li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-google-fonts" data-toggle="tooltip" title="Google Fonts"></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="form validation"><i class="fas fa-tasks"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Frontend"><i class="fas fa-code"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i class="fas fa-mobile"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-google-fonts" data-toggle="tooltip"
+                      title="Google Fonts"></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i
+                        class="fab fa-font-awesome-flag"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="form validation"><i
+                        class="fas fa-tasks"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Frontend"><i
+                        class="fas fa-code"></i></li>
+                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i
+                        class="fas fa-mobile"></i></li>
                   </ul>
                 </div>
                 <div class="project-hero-wrapper mr-lg-3 mr-xl-0 mb-xl-4">
@@ -390,7 +431,7 @@
                   </div>
                 </div>
               </div>
-              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-none d-md-block mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
+              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-block mx-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
                 href="https://github.com/loosenthedark/matter-of-heart-psychotherapy" target="_blank" role="button">
                 <span class="text-see-more">View Code</span>
               </a>
@@ -433,6 +474,7 @@
 
   <!-- custom script -->
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/float.js"></script>
   <!-- /custom script -->
 
 </body>

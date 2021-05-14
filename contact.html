@@ -21,7 +21,7 @@
   <!-- /title -->
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="assets/images/laptop-code-solid.svg" type="image/png">
+  <link rel="shortcut icon" href="assets/images/laptop-code-spruce.svg" type="image/png">
   <!-- /favicon -->
 
   <!-- Font Awesome JS -->
@@ -58,7 +58,7 @@
 
 </head>
 
-<body class="with-top-navbar">
+<body id="contact" class="with-top-navbar">
 
   <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-ltd app-navbar py-lg-1_5">
     <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse"
@@ -93,7 +93,7 @@
           <a class="nav-link py-2_5 px-md-3" href="about.html">About Me</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link py-2_5 px-md-3" href="contact.html">Contact</a>
+          <a class="nav-link py-2_5 px-md-3" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -102,18 +102,24 @@
   <header>
     <div class="profile-header">
       <div class="container">
-        <div class="container-inner mt-5 mt-lg-1 mt-xl-3">
+        <div class="container-inner mt-5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
           <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
-          <h1 class="profile-header-user">Paul Harrington</h1>
-          <p class="profile-header-bio mb-2">
-            Junior Full Stack Developer
-          </p>
-          <p class="profile-header-bio social-icons mb-5 mb-lg-4">
-            <a href="https://github.com/loosenthedark" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:hello@loosenthedark.tech" target="_blank"><i class="fas fa-at"></i></a>
-            <a href="https://www.linkedin.com/in/paulharrington05/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/loosenthedark" target="_blank"><i class="fab fa-twitter"></i></a>
-          </p>
+          <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
+            <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
+            <p class="profile-header-bio mb-2 text-lg-left">
+              Junior Full Stack Developer
+            </p>
+            <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
+              <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i
+                  class="fas fa-at"></i></a>
+              <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
+                  class="fab fa-twitter"></i></a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -129,7 +135,7 @@
           </li>
           <li class="nav-item active d-flex">
             <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
-              href="contact.html">Contact</a>
+              href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

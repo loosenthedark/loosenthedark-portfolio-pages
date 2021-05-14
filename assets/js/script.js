@@ -13,7 +13,7 @@ $(document).ready(function () {
     } else if ($(window).width() < 1440) {
       $("html, body").animate(
         {
-          scrollTop: $(divId).offset().top - 22.5,
+          scrollTop: $(divId).offset().top - 32,
         },
         300
       );
@@ -100,4 +100,5 @@ $(document).ready(function () {
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
   });
+
 });

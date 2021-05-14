@@ -19,3 +19,7 @@
 * [Stack Overflow: 'Change Bootstrap 4 carousel direction'](https://stackoverflow.com/questions/44378836/change-bootstrap-4-carousel-direction)
 
 * [W3Schools: 'jQuery scrollTop() Method'](https://www.w3schools.com/jquery/css_scrolltop.asp)
+
+* [GeeksforGeeks: 'CSS Floating Animation'](https://www.geeksforgeeks.org/css-floating-animation/)
+
+* [Stack Overflow: 'How to check if element is visible after scrolling?' (jQuery utility function)](https://stackoverflow.com/questions/487073/how-to-check-if-element-is-visible-after-scrolling)

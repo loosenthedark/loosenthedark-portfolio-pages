@@ -21,7 +21,7 @@
   <!-- /title -->
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="assets/images/laptop-code-solid.svg" type="image/png">
+  <link rel="shortcut icon" href="assets/images/laptop-code-spruce.svg" type="image/png">
   <!-- /favicon -->
 
   <!-- Font Awesome JS -->
@@ -51,7 +51,7 @@
 
 </head>
 
-<body class="with-top-navbar">
+<body id="about" class="with-top-navbar">
 
   <nav class="navbar navbar-toggleable-sm fixed-top navbar-inverse bg-ltd app-navbar py-lg-1_5">
     <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse"
@@ -85,7 +85,7 @@
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link py-2_5 px-md-3" href="about.html">About Me</a>
+          <a class="nav-link py-2_5 px-md-3" href="#about">About Me</a>
         </li>
         <li class="nav-item">
           <a class="nav-link py-2_5 px-md-3" href="contact.html">Contact</a>
@@ -97,28 +97,34 @@
   <header>
     <div class="profile-header">
       <div class="container">
-        <div class="container-inner mt-5 mt-lg-1 mt-xl-3">
+        <div class="container-inner mt-5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
           <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
-          <h1 class="profile-header-user">Paul Harrington</h1>
-          <p class="profile-header-bio mb-2">
-            Junior Full Stack Developer
-          </p>
-          <p class="profile-header-bio social-icons mb-5 mb-lg-4">
-            <a href="https://github.com/loosenthedark" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:hello@loosenthedark.tech" target="_blank"><i class="fas fa-at"></i></a>
-            <a href="https://www.linkedin.com/in/paulharrington05/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/loosenthedark" target="_blank"><i class="fab fa-twitter"></i></a>
-          </p>
+          <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
+            <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
+            <p class="profile-header-bio mb-2 text-lg-left">
+              Junior Full Stack Developer
+            </p>
+            <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
+              <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
+                  class="fab fa-github"></i></a>
+              <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i
+                  class="fas fa-at"></i></a>
+              <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
+                  class="fab fa-twitter"></i></a>
+            </p>
+          </div>
         </div>
       </div>
-      <nav class="profile-header-nav">
-        <ul class="nav nav-tabs nav-tabs-contact justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
+      <nav class="profile-header-nav profile-header-nav-about">
+        <ul class="nav nav-tabs nav-tabs-contact nav-tabs-about justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
           <li class="nav-item nav-item-spruce d-flex">
             <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="index.html">Recent
               Projects</a>
           </li>
           <li class="nav-item active d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="about.html">About
+            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="#about">About
               Me</a>
           </li>
           <li class="nav-item d-flex">
@@ -131,36 +137,37 @@
     </div>
   </header>
 
-  <main>
-    <div class="container card-container about-container pt-0 pb-3 px-md-5 bg-light">
+  <main class="main-about">
+    <div class="container card-container about-container pt-0 pb-3 px-md-5 px-lg-0 bg-light">
       <div class="row">
-        <div class="col-xl-4 pb-3 pb-md-4 mb-3">
-          <div class="card card-profile card-about border-0">
-            <div class="card-header card-about-header d-flex justify-content-center align-items-center bg-ltd rounded-0 p-lg-4">
+        <div class="col-12 pb-3 pb-md-4 pb-lg-0 mb-3">
+          <div class="card card-profile card-about card-about-top border-0">
+            <div class="card-header card-about-header card-header-collapse d-flex justify-content-center align-items-center bg-ltd rounded-0">
               <img id="about-laptop-no-code" src="assets/images/laptop-solid-white.svg" alt="white laptop icon">
               <img id="about-laptop" src="assets/images/laptop-code-solid-white.svg"
                 alt="white laptop with code symbols icon">
               <img id="code-icon" src="assets/images/code-icon-white.svg" alt="white code symbols icon">
             </div>
-            <div class="card-block text-xs-center">
-              <p class="mx-3 mx-md-5 px-md-4 mt-3 mt-md-4 mb-4 text-left">Thanks for taking the time to check out my
+            <div class="card-block text-xs-center pt-lg-3 px-lg-0 mx-lg-auto">
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mt-3 mt-md-4 mt-lg-4 mb-4 mb-lg-4_5 text-left">Thanks for taking the time to check out my
                 site! Below you'll find a list of some
                 of the languages and frameworks I'm proficient in, as well as a snapshot of what I'm learning at the
                 moment (I love discovering new tools and technologies 👨‍💻).</p>
-              <p class="mx-3 mx-md-5 px-md-4 mb-4 text-left">By hiring me, you'll be getting a dedicated and resourceful
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">As a <span class="emphasise">Junior Full Stack Developer</span>, I combine a mastery of <span class="emphasise">Frontend</span> languages (HTML, CSS, JavaScript) and libraries (Bootstrap, jQuery) with a strong grasp of <span class="emphasise">Backend</span> programming (Python+Flask) and database management systems (PostgreSQL, MongoDB).</p>
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">By hiring me, you'll be getting a dedicated and resourceful
                 team player with a keen eye for
-                design and a strong command of UX best practices.</p>
-              <p class="mx-3 mx-md-5 px-md-4 mb-4 get-in-touch text-left">I'm always looking for new challenges and
+                design and a deep understanding of UX best practices.</p>
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 get-in-touch mb-lg-5 text-left emphasise">I'm always looking for new challenges and
                 opportunities, so feel free to get in touch today!</p>
-              <a class="btn btn-see-more btn-sm py-3 my-2 mb-md-4 px-4 px-md-5" href="contact.html" role="button">
+              <a class="btn btn-see-more btn-sm py-3 mt-3 mt-lg-0 mb-2 mb-md-4 px-4 px-md-5" href="contact.html" role="button">
                 <span class="text-see-more">Get In Touch</span>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 pb-3 pb-md-4">
+        <div class="col-12 pb-3 pb-md-4">
           <ul
-            class="card card-profile card-about featured-list featured-list-bordered p-0 pb-2 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 rounded-top">
+            class="card card-profile card-about featured-list featured-list-bordered p-0 pb-2 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
             <div class="card-skills-header d-flex justify-content-center text-white px-5 py-4 bg-success rounded-top">
               <h3 class="my-1">Existing skills</h3>
             </div>
@@ -236,9 +243,9 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-4 pb-3">
+        <div class="col-12 pb-3">
           <ul
-            class="card card-profile card-about featured-list featured-list-bordered p-0 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 rounded-top">
+            class="card card-profile card-about featured-list featured-list-bordered p-0 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
             <div class="card-focus-header d-flex justify-content-center text-white px-5 py-4 bg-primary rounded-top"
               id="current-focus">
               <h3 class="my-1">Current focus</h3>
@@ -292,7 +299,7 @@
   <a href="#" id="btn-back-to-top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
     data-abc="true"><i class="fas fa-chevron-up"></i></a>
 
-  <footer class="pt-md-3">
+  <footer class="pt-md-3 footer-about">
     <p class="copyright mb-0 mx-3 py-3 pt-md-4 text-center">
       © 2021 Paul Harrington
     </p>
