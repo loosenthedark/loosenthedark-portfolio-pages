@@ -15,6 +15,10 @@ h4.card-title {
   font-size: 1.5rem;
 }
 
+#home h4.card-title {
+  font-size: 1.75rem;
+}
+
 h6 {
   font-weight: 300;
   line-height: 1.3;
@@ -32,17 +36,24 @@ nav {
 }
 
 .navbar-toggler-icon {
-  height: 2.15rem;
+  height: 2.3rem;
   width: 2.15rem;
 }
 
-.navbar-brand {
-  padding-top: .2rem;
+.navbar-toggler-right {
+  position: absolute;
+  right: .8rem;
+  top: .45rem;
 }
 
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-item {
   font-size: 1.15rem;
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+  float: none;
 }
 
 #dropdown-menu {
@@ -171,10 +182,13 @@ nav {
 .btn-secondary,
 .btn-code {
   color: #fff;
+  width: 11rem;
   text-transform: uppercase;
   border-radius: 0.45rem;
   font-size: .85rem;
   line-height: .85rem;
+  padding-top: 1.125rem !important;
+  padding-bottom: 1.125rem !important;
 }
 
 .btn-send>.fas {
@@ -246,8 +260,22 @@ footer,
 }
 
 .py-2_5 {
-  padding-top: .65rem;
-  padding-bottom: .65rem;
+  padding-top: .675rem;
+  padding-bottom: .675rem;
+}
+
+.px-2_5 {
+  padding-left: .7rem;
+  padding-right: .7rem;
+}
+
+.navbar-nav .nav-link.px-2_5 {
+  padding-left: .7rem;
+  padding-right: .7rem;
+}
+
+.pl-2_5 {
+  padding-left: .7rem;
 }
 
 .mt-4_5 {
@@ -389,7 +417,11 @@ footer {
 }
 
 .fas.fa-check {
-  font-size: 1.7rem;
+  font-size: 2rem;
+}
+
+.fas.fa-user-cog {
+  font-size: 1.85rem;
 }
 
 .card-skills-header,
@@ -569,7 +601,7 @@ textarea:focus {
 .btn-see-more.btn-code {
   background-color: #28a745;
   border: 1px solid #28a745;
-  width: 9.007857rem;
+  width: 11rem;
 }
 
 .about-container .card-block {
@@ -579,6 +611,14 @@ textarea:focus {
 .emphasise {
   font-weight: 600;
   color: #005960;
+}
+
+.btn-get-in-touch {
+  padding-top: 1.3rem !important;
+  padding-bottom: 1.3rem !important;
+  font-size: .875rem;
+  line-height: .875rem;
+  width: 12.6984rem;
 }
 
 .laptop-circle {
@@ -645,8 +685,25 @@ textarea:focus {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  /* margin-left: 30px;
-  margin-top: 5px; */
+}
+
+.fas.fa-check {
+  color: #4eb76e;
+  opacity: 0;
+}
+
+.fas.fa-user-cog {
+  color: #3097d1;
+  opacity: 0;
+}
+
+.flashing {
+  animation-delay: 1000ms;
+  animation-name: flashing;
+  animation-duration: 1200ms;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 .card-header-collapse {
@@ -656,6 +713,10 @@ textarea:focus {
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.skills-blurb {
+  opacity: 0;
 }
 
 @keyframes icon-fade-in {
@@ -723,6 +784,20 @@ textarea:focus {
 
   100% {
     transform: translate(0, -0px);
+  }
+}
+
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .01;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -804,9 +879,7 @@ textarea:focus {
   }
 
   .navbar-nav {
-    position: relative;
-    right: 0;
-    margin-left: auto;
+    width: 15rem;
   }
 
   .navbar-nav .nav-link,
@@ -1002,6 +1075,14 @@ textarea:focus {
     margin-bottom: -2rem;
   }
 
+  .btn-get-in-touch.btn-see-more.py-3 {
+    padding-top: 1.4rem !important;
+    padding-bottom: 1.4rem !important;
+    font-size: .95rem;
+    line-height: .95rem;
+    width: 13.25rem;
+  }
+
   .laptop-circle {
     width: 8rem;
     height: 8rem;
@@ -1022,12 +1103,12 @@ textarea:focus {
   }
 
   #about-laptop {
-    animation-delay: 2500ms;
-    animation-name: final-icon-fade-in-and-expand;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation-delay: 2500ms, 3200ms;
+    animation-name: final-icon-fade-in-and-expand, final-icon-fade-out;
+    animation-duration: 500ms, 300ms;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-iteration-count: 1, 1;
+    animation-fill-mode: forwards, forwards;
   }
 
   #about-laptop-no-code {
@@ -1052,6 +1133,19 @@ textarea:focus {
     animation-timing-function: ease-in-out, ease-in-out, ease-in-out;
     animation-iteration-count: 1, 1, 1;
     animation-fill-mode: forwards, forwards, forwards;
+  }
+
+  .flashing {
+    animation-delay: 2000ms;
+  }
+
+  .fade-in {
+    animation-delay: 4500ms;
+    animation-name: icon-fade-in;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
   }
 
   @keyframes icon-fade-in {
@@ -1110,12 +1204,12 @@ textarea:focus {
 
   @keyframes header-collapse {
     0% {
-      height: 9.25rem;
+      height: 10.25rem;
       padding: 0.75rem 1.25rem;
       top: -.3rem;
       margin-bottom: 0;
     }
-  
+
     100% {
       height: 0;
       padding: 0;
@@ -1145,7 +1239,7 @@ textarea:focus {
   }
 
   .mb-lg-4_5 {
-    margin-bottom: 2rem!important;
+    margin-bottom: 2rem !important;
   }
 
   .app-navbar .navbar-brand img {
@@ -1384,25 +1478,8 @@ textarea:focus {
     height: .275rem;
   }
 
-  .btn {
-    min-width: 11rem;
-    font-size: .8rem;
-  }
-
   #btn-back-to-top {
     right: 2rem;
-  }
-
-  .btn-see-more.py-3,
-  .btn-send.py-3 {
-    font-size: .8rem;
-    line-height: .8rem;
-  }
-
-  .btn-see-more.py-3,
-  .btn-send.py-3 {
-    padding-top: 1.1rem !important;
-    padding-bottom: 1.1rem !important;
   }
 
   #project-wrapper-mofh {
@@ -1631,7 +1708,6 @@ textarea:focus {
     background: url(../images/main-wallpaper_resized.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
-    backdrop-filter: blur(4px);
   }
 
   .featured-list {
