@@ -17,7 +17,21 @@ $(document).ready(function () {
 
           if (fullyInView === true) {
             return pageTop < elementTop && pageBottom > elementBottom;
-          } else if ($(window).width() < 768 && elementTop - pageTop < 300 || 768 <= $(window).width() && $(window).width() < 992 && elementTop - pageTop < 800) {
+          } else if (
+            ($(window).width() < 768 && elementTop - pageTop < 300) ||
+            (768 <= $(window).width() &&
+              $(window).width() < 992 &&
+              elementTop - pageTop < 600) ||
+            (992 <= $(window).width() &&
+              $(window).width() < 1200 &&
+              elementTop - pageTop < 300) ||
+            (1200 <= $(window).width() &&
+              $(window).width() < 1440 &&
+              elementTop - pageTop < 500) ||
+            (1440 <= $(window).width() &&
+              $(window).width() < 1920 &&
+              elementTop - pageTop < 750)
+          ) {
             return elementTop <= pageBottom || elementBottom >= pageTop;
           }
         },

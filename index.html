@@ -10,7 +10,7 @@
   <meta name="description" content="Welcome to loosenthedark! Here you'll find an overview of my work to date...">
 
   <meta property="og:title" content="Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer" />
-  <meta property="og:image" content="assets/images/main-wallpaper_min.jpg" />
+  <meta property="og:image" content="assets/images/brand-white.png" />
   <meta property="og:description"
     content="Welcome to loosenthedark! Here you'll find an overview of my work to date..." />
   <meta property="og:url" content="http://loosenthedark.tech/" />
@@ -30,74 +30,70 @@
 
   <!-- stylesheets -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/toolkit.css">
   <link rel="stylesheet" href="assets/css/application.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-    integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
-    crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
   <!-- /stylesheets -->
 
   <style>
     /* note: this is a hack for ios iframe for bootstrap themes shopify page */
     /* this chunk of css is not part of the toolkit :) */
-    /* body {
+    body {
       width: 1px;
       min-width: 100%;
       *width: 100%;
-    } */
+    }
   </style>
+
+  <!-- load ScrollReveal script here before body renders to prevent flickering -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script>
+    ScrollReveal({
+    })
+  </script>
 
 </head>
 
-<body id="home" class="with-top-navbar">
+<body id="about" class="with-top-navbar">
 
   <nav class="navbar fixed-top navbar-inverse app-navbar p-0">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+    <button class="navbar-toggler navbar-toggler-right collapsed d-lg-block p-lg-0" id="nav-toggler" type="button"
+      data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
       aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon d-lg-none"></span>
+      <span class='nav-toggler-icon d-none d-lg-flex justify-content-lg-center align-content-lg-center'><i
+          class="d-block nav-toggler-icon-bars"></i></span>
+      <span class="sr-only">Toggle nav</span>
     </button>
 
-    <a class="navbar-brand bg-ltd pl-3 py-2_5 mr-0" href="#home">
-      <img src="assets/images/brand-white.png" alt="loosenthedark brand logo">
+    <a class="navbar-brand bg-ltd pl-3 pl-lg-4 py-2_5 py-lg-2 mr-0" href="#about">
+      <img class="py-md-0" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
     </a>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-md-auto pt-1 bg-ltd">
+      <ul class="navbar-nav ml-md-auto bg-ltd">
         <li class="nav-item active">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-2" href="#home">Home</a>
+          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="#about">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 dropdown-toggle" href="#" id="navbarDropdown" role="button"
-            data-toggle="collapse" data-target="#dropdown-menu" aria-haspopup="true" aria-expanded="false">Recent
-            Projects </a>
-          <div class="dropdown-menu collapse mb-2 mx-3 py-md-3" id="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item pl-3 py-2_5" href="#clipadvisor">Clipadvisor</a>
-            <a class="dropdown-item pl-3 py-2_5" href="#strikeforce">StrikeForce</a>
-            <a class="dropdown-item pl-3 py-2_5" href="#mofh">Matter
-              of
-              Heart Psychotherapy</a>
-          </div>
+          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="projects.html">Recent Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5" href="about.html">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pb-3" href="contact.html">Contact</a>
+          <a class="nav-link py-2_5 pl-3 px-2_5 pb-3_5" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <header>
-    <div class="profile-header d-lg-flex flex-lg-column justify-content-lg-center align-content-lg-center">
+    <div class="profile-header">
       <div class="container">
-        <div class="container-inner mt-5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
+        <div
+          class="container-inner mt-5 mt-md-4_5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
           <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
           <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
             <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
@@ -109,6 +105,8 @@
                   class="fab fa-github"></i></a>
               <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i
                   class="fas fa-at"></i></a>
+              <a href="assets/files/Paul Harrington Junior Web Developer CV 2021.pdf" class="social-links"
+                target="_blank"><i class="fas fa-file"></i></a>
               <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
                   class="fab fa-linkedin"></i></a>
               <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
@@ -117,16 +115,14 @@
           </div>
         </div>
       </div>
-
-      <nav class="profile-header-nav profile-header-nav-landing">
-        <ul class="nav nav-tabs nav-tabs-landing justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
+      <nav class="profile-header-nav profile-header-nav-about">
+        <ul class="nav nav-tabs nav-tabs-contact nav-tabs-about justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
           <li class="nav-item active d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="#home">Recent
-              Projects</a>
+            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="#about">About Me</a>
           </li>
           <li class="nav-item d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="about.html">About
-              Me</a>
+            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
+              href="projects.html">Recent Projects</a>
           </li>
           <li class="nav-item d-flex">
             <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
@@ -134,316 +130,185 @@
           </li>
         </ul>
       </nav>
+
     </div>
   </header>
 
-  <main>
-    <div class="container card-container pt-3 pt-md-5 pb-5 px-md-5 px-lg-5 pt-lg-5 bg-light">
+  <main class="main-about">
+    <div class="container card-container about-container pt-0 pb-3 px-md-5 px-lg-0 bg-light">
       <div class="row">
-        <div class="col-12 pb-3 pb-md-5" id="clipadvisor">
-          <div class="card card-profile border-0">
-            <div class="card-header bg-barber-red py-lg-0"></div>
+        <div class="col-12 pb-3 pb-md-4 pb-lg-0 mb-3 mb-xl-5">
+          <div class="card card-profile card-about card-about-top border-0">
             <div
-              class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
-              id="card-block-clipadvisor">
-              <i class="card-profile-img p-3 fas fa-laptop-code laptop-circle d-flex align-items-center justify-content-center mx-auto"
-                id="card-profile-img-clipadvisor"></i>
-              <h4 class="card-title mt-3 mt-md-4 mt-lg-2_5 mb-3 mb-md-4">Clipadvisor</h4>
-              <div
-                class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5">
-                <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
-                  <p
-                    class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pr-xl-4 pt-lg-1 pb-lg-3 project-blurb">
-                    Data-centric
-                    Python+Flask
-                    application with full CRUD functionality,
-                    enabling users to
-                    post, view,
-                    edit and delete reviews of barbers</p>
-                  <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pl-xl-4 pr-lg-5 pr-xl-4 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
-                    id="list-group-clipadvisor">
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i
-                        class="fab fa-html5"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i
-                        class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="JavaScript"><i
-                        class="fab fa-js-square"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Python"><i
-                        class="fab fa-python"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i
-                        class="fab fa-bootstrap"></i></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip"
-                      title="Material Design for Bootstrap"><i class="fab fa-mdb"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip"
-                      title="jQuery">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-google-fonts" data-toggle="tooltip"
-                      title="Google Fonts"></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i
-                        class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip"
-                      title="jQuery DateTimePicker plugin"><i class="fas fa-calendar-day"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-flask" data-toggle="tooltip"
-                      title="Flask">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="SQLAlchemy"><i
-                        class="fas fa-database"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jinja" data-toggle="tooltip"
-                      title="Jinja">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Full Stack"><i
-                        class="fas fa-layer-group"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i
-                        class="fas fa-mobile"></i></li>
-                  </ul>
-                </div>
-                <div class="project-hero-wrapper mr-lg-3 mr-xl-0 mb-xl-4">
-                  <img class="d-none d-md-block d-lg-none mt-md-1 mb-md-3 project-hero-img"
-                    src="assets/images/clipadvisor-responsive.png" width="660"
-                    alt="Clipadvisor responsive device screenshots">
-                  <div id="carousel-clipadvisor" class="d-none d-lg-block carousel carousel-light slide"
-                    data-ride="carousel">
-
-                    <!-- <ol class="carousel-indicators">
-                      <li data-target="#carousel-clipadvisor" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-clipadvisor" data-slide-to="1"></li>
-                    </ol> -->
-
-                    <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item mr-0 active" data-interval="5000">
-                        <img class="d-block img-fluid carousel-img" src="assets/images/clipadvisor-responsive.png"
-                          id="carousel-img-clipadvisor-move-left" alt="First slide">
-                      </div>
-                      <div class="carousel-item mr-0 pt-1" data-interval="10000">
-                        <img class="d-block img-fluid carousel-img" src="assets/images/clipadvisor-responsive.gif"
-                          id="carousel-img-clipadvisor-move-right-and-down" alt="Second slide">
-                      </div>
-                    </div>
-
-                    <!-- <a class="carousel-control-prev" href="#carousel-clipadvisor" role="button" data-slide="prev">
-                      <span class="icon icon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-clipadvisor" role="button" data-slide="next">
-                      <span class="icon icon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a> -->
-
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-block mx-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
-                href="https://github.com/loosenthedark/clipadvisor-flask-app" target="_blank" role="button">
-                <span class="text-see-more">View Code</span>
+              class="card-header card-about-header card-header-collapse d-flex justify-content-center align-items-center bg-ltd rounded-0">
+              <img id="about-laptop-no-code" src="assets/images/laptop-solid-white.svg" alt="white laptop icon">
+              <img id="about-laptop" src="assets/images/laptop-code-solid-white.svg"
+                alt="white laptop with code symbols icon">
+              <img id="code-icon" src="assets/images/code-icon-white.svg" alt="white code symbols icon">
+            </div>
+            <div class="card-block text-xs-center pt-lg-3 px-lg-0 mx-lg-auto">
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mt-3 mt-md-4 mt-lg-4 mb-4 mb-lg-4_5 text-left">Thanks for
+                taking the time to check out my
+                site! Below you'll find a list of some
+                of the languages and frameworks I'm proficient in, as well as a snapshot of what I'm learning at the
+                moment (I love discovering new tools and technologies 👨‍💻).</p>
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">As a <span
+                  class="emphasise">Junior Full Stack Developer</span>, I combine a mastery of <span
+                  class="emphasise">Frontend</span> languages (HTML, CSS, JavaScript) and libraries (Bootstrap, jQuery)
+                with a strong grasp of <span class="emphasise">Backend</span> programming (Python+Flask) and database
+                management systems (PostgreSQL, MongoDB).</p>
+              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">By hiring me, you'll be getting a
+                dedicated and resourceful
+                team player with a keen eye for
+                design and a deep understanding of UX best practices.</p>
+              <p
+                class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 get-in-touch mb-md-4_25 mb-lg-4_5 text-left emphasise">
+                I'm always
+                looking for new challenges and
+                opportunities, so feel free to get in touch today!</p>
+              <a class="btn btn-see-more btn-code btn-get-in-touch btn-sm d-md-block mx-md-auto py-3 mt-3 mt-lg-0 mb-2_5 mb-lg-3 px-4 px-md-5"
+                href="contact.html" role="button">
+                <span class="text-see-more">Get In Touch</span>
               </a>
-              <a class="btn btn-see-more btn-project btn-left btn-sm my-2 mt-md-3 mt-lg-2 mb-md-4 mb-lg-2 py-3 px-4 px-md-5 px-lg-4"
-                href="https://clipadvisor-flask-app.herokuapp.com/" target="_blank" role="button">
-                <span class="text-see-more">View Project</span>
+              <a class="btn btn-see-more btn-get-in-touch btn-sm d-md-block mx-md-auto py-3 mt-0 mb-2 px-4 px-md-5"
+                href="assets/files/Paul Harrington Junior Web Developer CV 2021.pdf" target="_blank" role="button">
+                <span class="text-see-more">Download CV</span>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-12 pb-3 pb-md-5" id="strikeforce">
-          <div class="card card-profile border-0">
-            <div class="card-header bg-strikeforce py-lg-0"></div>
-            <div
-              class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
-              id="card-block-strikeforce">
-              <i class="card-profile-img p-3 fas fa-laptop-code laptop-circle d-flex align-items-center justify-content-center mx-auto"
-                id="card-profile-img-strikeforce"></i>
-              <h4 class="card-title mt-3 mt-md-4 mt-lg-2_5 mb-3 mb-md-4">StrikeForce</h4>
-
-              <div
-                class="project-wrapper d-md-flex flex-md-row justify-content-md-center align-items-md-center align-items-lg-center flex-md-wrap mb-lg-0 mx-lg-4 mx-xl-5"
-                id="project-wrapper-strikeforce">
-                <div class="project-inner d-lg-flex flex-lg-column" id="project-inner-strikeforce">
-                  <p class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pt-lg-1 pb-lg-2 project-blurb">
-                    Interactive Frontend
-                    website leveraging an
-                    external
-                    API to create
-                    dynamic data
-                    visualisations of English Premier League goalscoring trends</p>
-                  <ul
-                    class="d-none d-lg-flex flex-lg-row ml-lg-0 ml-xl-4 pl-lg-0 pr-lg-0 pt-lg-2 pl-xl-5 flex-lg-wrap list-group list-group-horizontal align-content-lg-start"
-                    id="list-group-strikeforce">
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i
-                        class="fab fa-html5"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i
-                        class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="JavaScript"><i
-                        class="fab fa-js-square"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i
-                        class="fab fa-bootstrap"></i></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip"
-                      title="jQuery">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i
-                        class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-chartjs" data-toggle="tooltip"
-                      title="Chart.js">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="tablesorter"><i
-                        class="fas fa-table"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-emailjs" data-toggle="tooltip"
-                      title="EmailJS">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="TransferMarket API"><i
-                        class="fas fa-cogs"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jasmine" data-toggle="tooltip"
-                      title="Jasmine (unit testing)">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="interactive"><i
-                        class="fas fa-users-cog"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Frontend"><i
-                        class="fas fa-code"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i
-                        class="fas fa-mobile"></i></li>
-                  </ul>
-                </div>
-                <div class="project-hero-wrapper ml-md-1 pt-lg-1 mb-xl-4" id="project-hero-wrapper-strikeforce">
-                  <img class="d-none d-md-block d-lg-none mt-md-4_5 mb-md-4_5 project-hero-img"
-                    src="assets/images/strikeforce-responsive.gif" width="360"
-                    alt="StrikeForce responsive device screenshots">
-                  <div id="carousel-strikeforce" class="d-none d-lg-block carousel carousel-light slide"
-                    data-ride="carousel">
-
-                    <!-- <ol class="carousel-indicators">
-                      <li data-target="#carousel-strikeforce" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-strikeforce" data-slide-to="1"></li>
-                    </ol> -->
-
-                    <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item mr-0 active carousel-item-strikeforce" data-interval="5000">
-                        <img class="d-block img-fluid carousel-img carousel-img-strikeforce"
-                          id="carousel-img-strikeforce-move-left" src="assets/images/strikeforce-responsive.png"
-                          alt="First slide">
-                      </div>
-                      <div class="carousel-item carousel-item-strikeforce mr-0 pt-1" data-interval="10000">
-                        <img class="d-block img-fluid carousel-img carousel-img-strikeforce"
-                          id="carousel-img-strikeforce-shrink-and-move-left-and-down"
-                          src="assets/images/strikeforce-responsive-2.gif" alt="Second slide">
-                      </div>
-                    </div>
-
-                    <!-- <a class="carousel-control-prev" href="#carousel-strikeforce" role="button" data-slide="prev">
-                      <span class="icon icon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" id="carousel-control-next-strikeforce"
-                      href="#carousel-strikeforce" role="button" data-slide="next">
-                      <span class="icon icon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a> -->
-
-                  </div>
-                </div>
-                <div class="btn-wrapper mb-lg-2">
-                  <a class="btn btn-see-more btn-code btn-project btn-strikeforce btn-sm d-block mx-auto d-md-inline-block d-lg-block mx-lg-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
-                    href="https://github.com/loosenthedark/strikeforce" target="_blank" role="button">
-                    <span class="text-see-more">View Code</span>
-                  </a>
-
-                  <a class="btn btn-see-more btn-project btn-strikeforce btn-sm d-lg-block my-2 mt-md-3 mt-lg-2 mb-md-4 mb-lg-0 mx-lg-auto py-3 px-4 px-md-5 px-lg-4"
-                    href="http://loosenthedark.tech/strikeforce/" target="_blank" role="button">
-                    <span class="text-see-more">View Project</span>
-                  </a>
-                </div>
-              </div>
-
+        <div class="col-12 pb-3 pb-md-4 mb-xl-4">
+          <ul
+            class="card card-profile card-about featured-list card-skills featured-list-bordered p-0 pb-2 pb-xl-3 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
+            <div class="card-skills-header d-flex justify-content-center text-white px-5 py-4 bg-success rounded-top">
+              <h3 class="my-1">Existing skills</h3>
             </div>
-          </div>
+            <li class="mt-4_5 mt-xl-5 mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">HTML <i class="pl-2 fas fa-check"></i></h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Including a thorough and up-to-date understanding of
+                HTML5 semantic
+                elements</p>
+            </li>
+            <li class="mb-4_5 mt-xl-5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center" id="css-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title mt-md-4_5 mt-xl-0">CSS <i class="pl-2 fas fa-check"></i>
+              </h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Expertise in working with media queries (RWD),
+                animations/transitions
+                and Flexbox</p>
+            </li>
+            <li class="mb-4_5 mt-xl-5 mb-xl-3 mt-xl-4_5 ml-2 ml-md-0 featured-list-item">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">JavaScript <i class="pl-2 fas fa-check"></i></h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Equally at ease with Vanilla JS or a host of
+                libraries/frameworks
+                including jQuery, Chart.js, D3.js and Bootstrap</p>
+            </li>
+            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div
+                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                <img width="20" src="assets/images/jquery.png" alt="jQuery icon">
+              </div>
+              <h4 class="featured-list-item-heading card-title">jQuery <i class="pl-2 fas fa-check"></i>
+              </h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Advanced knowledge of DOM traversal and manipulation
+                methods, as well
+                as processing AJAX requests</p>
+            </li>
+            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-python"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">Python <i class="pl-2 fas fa-check"></i>
+              </h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Familiarity with numerous modules and frameworks (Flask,
+                SQLAlchemy
+                etc.), Jinja templating and database management (PostgreSQL and MongoDB)</p>
+            </li>
+            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-php"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">PHP <i class="pl-2 fas fa-check"></i></h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Well versed in modern practices such as PHP OOP; also
+                adept at form
+                handling, error logging and file manipulation</p>
+            </li>
+            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div
+                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                <img width="28" src="assets/images/jasmine.png" alt="Jasmine icon">
+              </div>
+              <h4 class="featured-list-item-heading card-title">Unit testing <i class="pl-2 fas fa-check"></i></h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Mindful of the need to adhere to test-driven development
+                principles
+                and adopt a defensive programming approach to project builds</p>
+            </li>
+            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">Version control <i class="pl-2 fas fa-check"></i></h4>
+              <p class="skills-blurb d-none d-md-block pl-md-2">Mastery of command line fundamentals required for
+                streamlined
+                collaboration with other dev team members</p>
+            </li>
+          </ul>
         </div>
-        <div class="col-12 mb-md-4" id="mofh">
-          <div class="card card-profile border-0">
-            <div class="card-header bg-mofh py-lg-0"></div>
-            <div
-              class="card-block text-xs-center d-md-flex flex-md-column align-items-md-center justify-content-center pt-lg-2 pb-lg-4 px-lg-3"
-              id="card-block-mofh">
-              <i class="card-profile-img p-3 fas fa-laptop-code laptop-circle d-flex align-items-center justify-content-center mx-auto"
-                id="card-profile-img-mofh"></i>
-              <h4 class="card-title mt-3 mt-md-4 mt-lg-2_5 mb-3 mb-md-4">Matter of Heart Psychotherapy</h4>
-              <div
-                class="project-wrapper d-md-flex flex-md-column justify-content-md-center align-items-md-center flex-lg-row align-items-lg-center mx-lg-4 mx-xl-5"
-                id="project-wrapper-mofh">
-                <div class="project-inner d-lg-flex flex-lg-column align-items-lg-center ml-xl-0">
-                  <p
-                    class="mb-4 mb-md-1 mx-2 mx-md-3 mx-lg-0 mt-lg-1 px-md-3 px-lg-0 pr-xl-4 pt-lg-1 pb-lg-3 project-blurb">
-                    Bespoke responsive
-                    Frontend site for a local
-                    therapy practice, built using
-                    Bootstrap 4
-                    components
-                    and plugins as well as custom HTML and CSS</p>
-                  <ul
-                    class="d-none d-lg-flex flex-lg-row pl-lg-0 pl-xl-4 pr-lg-5 pr-xl-4 flex-lg-wrap list-group list-group-horizontal justify-content-lg-start"
-                    id="list-group-mofh">
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="HTML5"><i
-                        class="fab fa-html5"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="CSS3"><i
-                        class="fab fa-css3-alt"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Bootstrap"><i
-                        class="fab fa-bootstrap"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-jquery" data-toggle="tooltip"
-                      title="jQuery">
-                    </li>
-                    <li class="list-group-item hvr-grow m-lg-1 list-group-item-google-fonts" data-toggle="tooltip"
-                      title="Google Fonts"></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Font Awesome"><i
-                        class="fab fa-font-awesome-flag"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="form validation"><i
-                        class="fas fa-tasks"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="Frontend"><i
-                        class="fas fa-code"></i></li>
-                    <li class="list-group-item hvr-grow m-lg-1" data-toggle="tooltip" title="mobile-first"><i
-                        class="fas fa-mobile"></i></li>
-                  </ul>
-                </div>
-                <div class="project-hero-wrapper mr-lg-3 mr-xl-0 mb-xl-4">
-                  <img class="d-none d-md-block d-lg-none mt-md-5 mb-md-1 project-hero-img"
-                    src="assets/images/mofh-responsive.gif" width="640"
-                    alt="Matter of Heart responsive device screenshots">
-                  <div id="carousel-mofh" class="d-none d-lg-block carousel carousel-light slide" data-ride="carousel">
-
-                    <!-- <ol class="carousel-indicators">
-                      <li data-target="#carousel-mofh" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-mofh" data-slide-to="1"></li>
-                    </ol> -->
-
-                    <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item mr-0 active" data-interval="5000">
-                        <img class="d-block img-fluid carousel-img" src="assets/images/mofh-responsive.png"
-                          id="carousel-img-mofh-move-left" alt="First slide">
-                      </div>
-                      <div class="carousel-item mr-0 pt-1" data-interval="10000">
-                        <img class="d-block img-fluid carousel-img" src="assets/images/mofh-responsive.gif"
-                          id="carousel-img-mofh-move-right-and-down" alt="Second slide">
-                      </div>
-                    </div>
-
-                    <!-- <a class="carousel-control-prev" href="#carousel-mofh" role="button" data-slide="prev">
-                      <span class="icon icon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carousel-mofh" role="button" data-slide="next">
-                      <span class="icon icon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a> -->
-
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn-see-more btn-code btn-project btn-left btn-sm d-block mx-auto mb-md-0 mt-md-3 mt-lg-1 mt-xl-3 mb-lg-0 py-3 px-4 px-md-5 px-lg-4"
-                href="https://github.com/loosenthedark/matter-of-heart-psychotherapy" target="_blank" role="button">
-                <span class="text-see-more">View Code</span>
-              </a>
-              <a class="btn btn-see-more btn-project btn-left btn-sm my-2 mt-md-3 mt-lg-2 mb-md-4 mb-lg-2 py-3 px-4 px-md-5 px-lg-4"
-                href="http://loosenthedark.tech/matter-of-heart-psychotherapy/" target="_blank" role="button">
-                <span class="text-see-more">View Project</span>
-              </a>
+        <div class="col-12 pb-3">
+          <ul
+            class="card card-profile card-about card-focus featured-list featured-list-bordered p-0 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
+            <div class="card-focus-header d-flex justify-content-center text-white px-5 py-4 bg-primary rounded-top"
+              id="current-focus">
+              <h3 class="my-1">Current focus</h3>
             </div>
-          </div>
+            <li class="mt-4_5 mt-md-5 mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="react">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-react"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">React <i class="pl-2 fas fa-user-cog"></i>
+              </h4>
+              <p></p>
+            </li>
+            <li class="mb-4_5 mt-xl-5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="css-grid">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center" id="css3-icon">
+                <i class="fab fa-css3"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">CSS grid <i class="pl-2 fas fa-user-cog"></i></h4>
+              <p></p>
+            </li>
+            <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="sass">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-sass"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">Sass <i class="pl-2 fas fa-user-cog"></i>
+              </h4>
+              <p></p>
+            </li>
+            <li class="mt-md-5 mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="django">
+              <div
+                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                <img width="20" src="assets/images/django-icon-spruce.svg" alt="Django icon">
+              </div>
+              <h4 class="featured-list-item-heading card-title">Django <i class="pl-2 fas fa-user-cog"></i>
+              </h4>
+              <p></p>
+            </li>
+            <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="e-commerce">
+              <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                <i class="fab fa-stripe-s"></i>
+              </div>
+              <h4 class="featured-list-item-heading card-title">E-commerce <i class="pl-2 fas fa-user-cog"></i></h4>
+              <p></p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -452,8 +317,8 @@
   <a href="#" id="btn-back-to-top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
     data-abc="true"><i class="fas fa-chevron-up"></i></a>
 
-  <footer>
-    <p class="copyright mb-0 mx-3 py-3 pb-3 text-center">
+  <footer class="pt-md-3 footer-about">
+    <p class="copyright mb-0 mx-3 py-3 pt-md-4 text-center">
       © 2021 Paul Harrington
     </p>
   </footer>
@@ -477,7 +342,7 @@
 
   <!-- custom script -->
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/float.js"></script>
+  <script src="assets/js/reveal.js"></script>
   <!-- /custom script -->
 
 </body>

@@ -1,7 +1,12 @@
 $(document).ready(function () {
+  const animateNavToggler = document.getElementById("nav-toggler");
+  const navTogglerIcons = document.querySelectorAll(".nav-toggler-icon");
+
   // 'Offset scroll anchor in HTML with Bootstrap 4 fixed navbar' code block adapted from https://stackoverflow.com/questions/49331572/offset-scroll-anchor-in-html-with-bootstrap-4-fixed-navbar/49331692 | https://codepen.io/anon/pen/NYRvaL
   var divId;
   $(".dropdown-item").click(function () {
+    $(navTogglerIcons).toggleClass("active");
+    $(animateNavToggler).toggleClass("no-border btn-wide");
     divId = $(this).attr("href");
     if ($(window).width() < 992) {
       $("html, body").animate(
@@ -10,39 +15,41 @@ $(document).ready(function () {
         },
         300
       );
-    } else if ($(window).width() < 1200) {
-      $("html, body").animate(
-        {
-          scrollTop: $(divId).offset().top - 20,
-        },
-        300
-      );
     } else if ($(window).width() < 1440) {
       $("html, body").animate(
         {
-          scrollTop: $(divId).offset().top - 0,
+          scrollTop: $(divId).offset().top - 28,
         },
         300
       );
     } else {
       $("html, body").animate(
         {
-          scrollTop: $(divId).offset().top - 80,
+          scrollTop: $(divId).offset().top - 70,
         },
         300
       );
-    }
+      }
+    // } else {
+    //   $("html, body").animate(
+    //     {
+    //       scrollTop: $(divId).offset().top - 80,
+    //     },
+    //     300
+    //   );
+    // }
   });
 
-  $(".navbar-nav .dropdown-item, .navbar-nav .nav-link:not(#navbarDropdown), .navbar-brand").on(
-    "click",
-    function () {
-      setTimeout(function () {
-        $(".navbar-collapse").collapse("hide");
-        $(".dropdown-menu").collapse("hide");
-      }, 300);
-    }
-  );
+  $(
+    ".navbar-nav .dropdown-item"
+  ).on("click", function () {
+    setTimeout(function () {
+      $(".navbar-collapse").collapse("hide");
+      $(".dropdown-menu").collapse("hide");
+      $(navTogglerIcons).removeClass("active");
+      $(animateNavToggler).removeClass("no-border btn-wide");
+    }, 300);
+  });
 
   if ($(window).scrollTop() <= 500) {
     $("#btn-back-to-top").hide();
@@ -111,5 +118,12 @@ $(document).ready(function () {
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  // Custom nav toggler icon animation on click - code block adapted from https://www.youtube.com/watch?v=g7v4BB9IMRw
+  $(animateNavToggler).click(function () {
+    $(navTogglerIcons).toggleClass("active");
+    $(animateNavToggler).toggleClass("no-border");
+    $(this).toggleClass("btn-wide");
   });
 });
