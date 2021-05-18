@@ -2612,7 +2612,16 @@ textarea:focus {
 @media (min-width: 1440px) {
 
   #header-contact .profile-header .container-inner {
-    left: 10vw;
+    left: 12vw;
+  }
+
+  #header-contact .profile-header {
+    padding-bottom: 0;
+  }
+
+  #header-contact .profile-header .container-inner,
+  .card-container.contact-container {
+    height: calc(100vh - 13.5rem);
   }
 
 }
