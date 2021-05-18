@@ -29,7 +29,7 @@ $(document).ready(function () {
         },
         300
       );
-      }
+    }
     // } else {
     //   $("html, body").animate(
     //     {
@@ -40,9 +40,7 @@ $(document).ready(function () {
     // }
   });
 
-  $(
-    ".navbar-nav .dropdown-item"
-  ).on("click", function () {
+  $(".navbar-nav .dropdown-item").on("click", function () {
     setTimeout(function () {
       $(".navbar-collapse").collapse("hide");
       $(".dropdown-menu").collapse("hide");
@@ -113,6 +111,46 @@ $(document).ready(function () {
   });
 
   $(".social-links").focusout(function () {
+    $(this).children().css({ transform: "scale(1)", color: "#fff" });
+  });
+
+  setTimeout(function(){ $("#contact .social-links:first-of-type").children().css({ color: "#005960" }); }, 1000);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(2)").children().css({ color: "#005960" }); }, 1150);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(3)").children().css({ color: "#005960" }); }, 1300);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(4)").children().css({ color: "#005960" }); }, 1450);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(5)").children().css({ color: "#005960" }); }, 1600);
+
+  setTimeout(function(){ $("#contact .social-links:first-of-type").children().css({ color: "#fff" }); }, 2000);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(2)").children().css({ color: "#fff" }); }, 2150);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(3)").children().css({ color: "#fff" }); }, 2300);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(4)").children().css({ color: "#fff" }); }, 2450);
+
+  setTimeout(function(){ $("#contact .social-links:nth-of-type(5)").children().css({ color: "#fff" }); }, 2600);
+
+  $("#contact .social-links").click(function () {
+    $(this).children().css({ transform: "scale(1)", color: "#fff" });
+  });
+
+  $("#contact .social-links").mouseenter(function () {
+    $(this).children().css({ transform: "scale(1.4)", color: "#005960" });
+  });
+
+  $("#contact .social-links").mouseleave(function () {
+    $(this).children().css({ transform: "scale(1)", color: "#fff" });
+  });
+
+  $("#contact .social-links").focusin(function () {
+    $(this).children().css({ transform: "scale(1.4)", color: "#005960" });
+  });
+
+  $("#contact .social-links").focusout(function () {
     $(this).children().css({ transform: "scale(1)", color: "#fff" });
   });
 
