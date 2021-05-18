@@ -112,7 +112,7 @@ nav {
 }
 
 .profile-header-nav .nav-item:not(.active)>.nav-link:hover {
-  background-color: #f8f8f8;
+  background-color: #ecf0f3;
 
 }
 
@@ -427,6 +427,7 @@ footer {
 .card-about.rounded-top {
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
+  background-color: #f8f8f8;
 }
 
 .get-in-touch {
@@ -448,6 +449,7 @@ footer {
 }
 
 .featured-list-icon {
+  background-color: #fff;
   border: 1px solid #d3d9df;
   border-radius: 50%;
   height: 3.3rem;
@@ -1312,7 +1314,7 @@ textarea:focus {
   }
 
   .pt-lg-4_5 {
-    padding-top: 1.7rem;
+    padding-top: 1.7rem !important;
   }
 
   .mt-lg-2_5 {
@@ -1680,8 +1682,13 @@ textarea:focus {
     margin-right: 0;
   }
 
-  .card-container {
-    background-color: #f8f8f8;
+  .card-container.about-container {
+    background-color: #ecf0f3;
+  }
+
+  .card-container.contact-container {
+    background-color: #ecf0f3;
+    border-top: .3rem solid #005960;
   }
 
   .list-group-item-jquery {
@@ -1844,11 +1851,11 @@ textarea:focus {
     border-top: .225rem solid #005960;
     position: relative;
     top: -.225rem;
-    background-color: #f8f8f8;
+    background-color: #ecf0f3;
   }
 
   .footer-about {
-    background-color: #f8f8f8;
+    background-color: #ecf0f3;
     top: -.225rem;
   }
 
@@ -1859,11 +1866,11 @@ textarea:focus {
 
   .card-about-top {
     border-radius: 0;
-    background-color: #f8f8f8;
+    background-color: #ecf0f3;
   }
 
   #about {
-    background-color: #f8f8f8;
+    background-color: #ecf0f3;
     background: url(../images/main-wallpaper_resized.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
@@ -1872,6 +1879,87 @@ textarea:focus {
   .featured-list {
     max-width: 66rem;
     box-shadow: 0 15px 50px 0 rgb(0 0 0 / 10%);
+  }
+
+  #contact-form {
+    background-color: #ecf0f3;
+    border: none;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    border-radius: 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .contact-container {
+    margin-bottom: -.3rem;
+  }
+
+  .form-control {
+    background-color: #ecf0f3;
+    border: none;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    padding: .85rem;
+  }
+
+  textarea {
+    border: none;
+    background-color: #ecf0f3;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+    padding: .85rem;
+  }
+
+  textarea:focus {
+    border: none;
+    background-color: #fff;
+    outline: none;
+  }
+
+  #contact-form h6.text-white {
+    color: #292b2c !important;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    /* font-weight: 400; */
+  }
+
+  .btn-send {
+    background-color: #005960;
+    border: 1px solid #005960;
+  }
+
+  .btn-send:hover,
+  .btn-send:focus {
+    background-color: #00474d;
+    border-color: #003033;
+  }
+
+  .btn-send:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 143 153 / 50%);
+  }
+
+  .btn-send:active {
+    background-color: #003033;
+    border-color: #00181a;
+  }
+
+  .app-login-form {
+    max-width: 36rem;
+  }
+
+  #form-profile-img {
+    margin-top: unset;
+    border: none;
+    background-color: #ecf0f3;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+    width: 8rem;
+    height: 8rem;
+    font-size: 4.2rem;
+  }
+
+  #form-profile-img::before {
+    top: -.1rem;
+  }
+
+  .footer-contact {
+    background-color: #ecf0f3;
   }
 
   #about-laptop,
@@ -2230,6 +2318,64 @@ textarea:focus {
   .btn-wrapper {
     position: relative;
     top: -3rem;
+  }
+
+  .navbar-nav-contact {
+    width: calc(100vw - 15.5rem);
+    border-bottom-left-radius: 0;
+    position: relative;
+    right: 0;
+    margin-left: auto;
+  }
+
+  .navbar-nav .nav-link-contact {
+    position: relative;
+    left: -2.5rem;
+    font-size: 1.2rem;
+  }
+
+  #header-contact {
+    flex: 0 1 40%;
+  }
+
+  #header-contact .profile-header .container-inner {
+    top: unset;
+    height: calc(100vh - 4.05rem);
+  }
+
+  #main-contact {
+    flex: 0 1 60%;
+  }
+
+  #main-contact,
+  .card-container.contact-container {
+    background-color: transparent;
+  }
+
+  #contact-form {
+    box-shadow: none;
+    border-radius: 2.85rem 0;
+  }
+
+  .app-login-form {
+    max-width: 50vw;
+    height: calc(100vh - 7rem);
+  }
+
+  .form-group {
+    width: 25rem;
+  }
+
+  #form-profile-img {
+    margin-top: unset;
+    border: none;
+    background-color: #ecf0f3;
+    box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    position: relative;
+    font-size: 4.2rem;
   }
 
 }

@@ -60,143 +60,152 @@
 
 <body id="contact" class="with-top-navbar">
 
-  <nav class="navbar fixed-top navbar-inverse app-navbar p-0">
-    <button class="navbar-toggler navbar-toggler-right collapsed d-lg-block p-lg-0" id="nav-toggler" type="button"
-      data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-      aria-label="Toggle navigation">
+  <nav class="navbar fixed-top navbar-inverse app-navbar p-0 flex-xl-row">
+    <button class="navbar-toggler navbar-toggler-right collapsed d-lg-block d-xl-none p-lg-0" id="nav-toggler"
+      type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon d-lg-none"></span>
       <span class='nav-toggler-icon d-none d-lg-flex justify-content-lg-center align-content-lg-center'><i
           class="d-block nav-toggler-icon-bars"></i></span>
       <span class="sr-only">Toggle nav</span>
     </button>
 
-    <a class="navbar-brand bg-ltd pl-3 pl-lg-4 py-2_5 py-lg-2 mr-0" href="index.html">
+    <a class="navbar-brand bg-ltd pl-3 pl-lg-4 py-2_5 py-lg-2 mr-0 d-xl-block" href="index.html">
       <img class="py-md-0" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
     </a>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-md-auto bg-ltd">
+    <div class="collapse navbar-collapse d-xl-flex flex-xl-row" id="navbarResponsive">
+      <ul
+        class="navbar-nav navbar-nav-contact d-xl-flex flex-xl-row justify-content-xl-end align-items-xl-center ml-xl-auto ml-md-auto bg-ltd">
         <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="index.html">About Me</a>
+          <a class="nav-link nav-link-contact py-2_5 py-xl-3 pl-3 px-2_5 px-xl-3 pt-3" href="index.html">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="projects.html">Recent Projects</a>
+          <a class="nav-link nav-link-contact py-2_5 py-xl-3 pl-3 px-2_5 px-xl-3 pt-3" href="projects.html">Recent
+            Projects</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pb-3_5" href="#contact">Contact</a>
+          <a class="nav-link nav-link-contact py-2_5 py-xl-3 pl-3 px-2_5 px-xl-3 pb-3_5" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <header>
-    <div class="profile-header">
-      <div class="container">
-        <div class="container-inner mt-5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
-          <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
-          <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
-            <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
-            <p class="profile-header-bio mb-2 text-lg-left">
-              Junior Full Stack Developer
-            </p>
-            <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
-              <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
-                  class="fab fa-github"></i></a>
-              <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i
-                  class="fas fa-at"></i></a>
-              <a href="assets/files/Paul Harrington Junior Web Developer CV 2021.pdf" class="social-links"
-                target="_blank"><i class="fas fa-file"></i></a>
-              <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
-                  class="fab fa-linkedin"></i></a>
-              <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
-                  class="fab fa-twitter"></i></a>
-            </p>
+  <div class="contact-wrapper d-xl-flex">
+
+    <header id="header-contact">
+      <div class="profile-header">
+        <div class="container">
+          <div class="container-inner mt-5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center d-xl-flex flex-xl-column align-items-xl-center justify-content-xl-center">
+            <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
+            <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
+              <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
+              <p class="profile-header-bio mb-2 text-lg-left">
+                Junior Full Stack Developer
+              </p>
+              <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
+                <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
+                    class="fab fa-github"></i></a>
+                <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank"><i
+                    class="fas fa-at"></i></a>
+                <a href="assets/files/Paul Harrington Junior Web Developer CV 2021.pdf" class="social-links"
+                  target="_blank"><i class="fas fa-file"></i></a>
+                <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <nav class="profile-header-nav">
-        <ul class="nav nav-tabs nav-tabs-contact justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
-          <li class="nav-item d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="index.html">About
-              Me</a>
-          </li>
-          <li class="nav-item nav-item-spruce d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
-              href="projects.html">Recent Projects</a>
-          </li>
-          <li class="nav-item active d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
-              href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-contact">
-    <div class="container card-container contact-container py-4 mx-md-5 mx-lg-0 bg-light">
-      <div class="row">
-        <div class="col-lg-4 pb-3 mb-3">
-          <form role="form" class="mx-auto text-center app-login-form mt-3" id="contact-form" method="POST" novalidate>
-            <h6 class="text-white mx-auto mb-4 mt-md-4 mb-md-4_5">I'd love to hear from you via any of the channels
-              above, or simply post a
-              message below and I'll get back to you as soon as I can!</h6>
-            <div class="form-group mx-auto">
-              <div id="error-message" class='mt-1'></div>
-            </div>
-            <div class="form-group mx-auto">
-              <input type="text" name="name" id="name" class="form-control" placeholder="Name">
-            </div>
-            <div class="form-group mx-auto">
-              <input type="hidden" name="contact_number">
-              <input type="email" name="email" id="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="form-group mx-auto mb-4">
-              <textarea class="w-100" name="message" id="message" rows="5"
-                placeholder="Please post your message here..."></textarea>
-            </div>
-            <div class="mb-2">
-              <button class="btn btn-send btn-sm py-3 px-5 mt-md-1 mb-md-4" type="submit">
-                <span class="text-see-more" id="text-send">Send</span>
-              </button>
-            </div>
-          </form>
-        </div>
+        <nav class="profile-header-nav d-xl-none">
+          <ul class="nav nav-tabs nav-tabs-contact justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
+            <li class="nav-item d-flex">
+              <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="index.html">About
+                Me</a>
+            </li>
+            <li class="nav-item nav-item-spruce d-flex">
+              <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
+                href="projects.html">Recent Projects</a>
+            </li>
+            <li class="nav-item active d-flex">
+              <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
+                href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!-- Modal -->
-      <div class="modal fade" id='modal-contact' tabindex="-1" role="dialog">
-        <div class="modal-dialog-wrapper">
-          <div class="modal-dialog vertical-align-center" role="document">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header bg-ltd">
-                <a class="navbar-brand pr-4 py-0 d-block mx-auto" href="index.html">
-                  <img width="200" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
-                </a><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+    </header>
+
+    <main id="main-contact">
+      <div class="container card-container contact-container py-4 pt-lg-4_5 pb-lg-0 mx-md-5 mx-lg-0 bg-light">
+        <div class="row">
+          <div class="col-12 pb-3 mb-3">
+            <form role="form" class="mx-auto text-center app-login-form pb-lg-4 pb-xl-5 pt-xl-5 mb-xl-0 ml-xl-auto mr-xl-3 mt-3 mt-xl-0 d-xl-flex flex-xl-column justify-content-xl-center align-items-xl-center" id="contact-form" method="POST"
+              novalidate>
+              <i class="d-none card-profile-img p-3 mb-xl-0 fas fa-laptop-code laptop-circle d-lg-flex align-items-center justify-content-center mx-auto"
+                id="form-profile-img"></i>
+              <h6 class="text-white mx-auto mb-4 mt-md-4 mb-md-4_5 mb-xl-0 d-xl-none">I'd love to hear from you via any of the channels
+                above, or simply post a
+                message below and I'll get back to you as soon as I can!</h6>
+              <div class="form-group mx-auto m-xl-0">
+                <div id="error-message" class='mt-1'></div>
+              </div>
+              <div class="form-group mx-auto">
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group mx-auto">
+                <input type="hidden" name="contact_number">
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group mx-auto mb-4 mb-xl-0">
+                <textarea class="w-100" name="message" id="message" rows="5"
+                  placeholder="Please post your message here..."></textarea>
+              </div>
+              <div class="mb-2 mb-xl-0">
+                <button class="btn btn-send btn-sm py-3 px-5 mt-md-1 mb-md-4 mb-xl-0" type="submit">
+                  <span class="text-see-more" id="text-send">Send</span>
                 </button>
               </div>
-              <div class="modal-body py-4 text-center">
-                <p class='px-3 mb-2'>Thanks for reaching out!</p>
-                <p class='px-3 mb-1'>I'll do my best to get back to you as soon as possible <i
-                    class="pl-1 fas fa-handshake"></i></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary py-3 px-5 mx-auto" data-dismiss="modal">Close</button>
+            </form>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id='modal-contact' tabindex="-1" role="dialog">
+          <div class="modal-dialog-wrapper">
+            <div class="modal-dialog vertical-align-center" role="document">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header bg-ltd">
+                  <a class="navbar-brand pr-4 py-0 d-block mx-auto" href="index.html">
+                    <img width="200" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
+                  </a><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body py-4 text-center">
+                  <p class='px-3 mb-2'>Thanks for reaching out!</p>
+                  <p class='px-3 mb-1'>I'll do my best to get back to you as soon as possible <i
+                      class="pl-1 fas fa-handshake"></i></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary py-3 px-5 mx-auto" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- End modal -->
       </div>
-      <!-- End modal -->
-    </div>
-  </main>
+    </main>
+
+  </div>
 
   <a href="#" id="btn-back-to-top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
     data-abc="true"><i class="fas fa-chevron-up"></i></a>
 
-  <footer class="pt-md-4">
+  <footer class="pt-md-4 footer-contact">
     <p class="copyright mb-0 mx-3 pb-3 pt-5 text-center">
       © 2021 Paul Harrington
     </p>
