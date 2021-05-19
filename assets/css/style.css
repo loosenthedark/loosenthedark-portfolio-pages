@@ -95,6 +95,7 @@ nav {
 .profile-header-nav .nav-item.active>.nav-link {
   background-color: #005960;
   font-weight: 400;
+  top: -.025rem;
 }
 
 .profile-header-nav .nav-item,
@@ -320,7 +321,7 @@ footer,
 }
 
 .social-icons>a:not(:last-of-type) {
-  margin-right: 1.5rem;
+  margin-right: 1.2rem;
 }
 
 .social-icons>a:hover i,
@@ -1160,6 +1161,10 @@ textarea:focus {
   .btn-see-more.btn-code:active {
     background-color: #1e7e34;
     border-color: #1c7430;
+  }
+
+  .social-icons>a:not(:last-of-type) {
+    margin-right: 1.5rem;
   }
 
   #card-block-strikeforce {
