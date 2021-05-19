@@ -6,11 +6,11 @@
 
 
 
-<p align="center"><a href="https://loosenthedark.tech" style="font-weight:bold;">Live link to deployed project</a> (hosted on loosenthedark.tech)</p>
+<p align="center"><a href="https://loosenthedark.tech" style="font-weight:bold;" target="_blank">Live link to deployed project</a> (hosted on loosenthedark.tech)</p>
 
 
 
-<p align="center"><a href="https://loosenthedark.github.io/loosenthedark-portfolio-pages/" style="font-weight:bold;">Alternative link</a> (hosted on GitHub Pages)</p>
+<p align="center"><a href="https://loosenthedark.github.io/loosenthedark-portfolio-pages/" style="font-weight:bold;" target="_blank">Alternative link</a> (hosted on GitHub Pages)</p>
 
 
 
