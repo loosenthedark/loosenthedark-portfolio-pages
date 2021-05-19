@@ -1,3 +1,19 @@
+<h1 align='center'>loosenthedark.tech Portfolio Website</h1>
+
+
+
+<p align="center"><img src="docs/images/screenshots/clipadvisor-logo.png" alt="Clipadvisor logo" width="200" height="auto"></p>
+
+
+
+<p align="center"><a href="http://loosenthedark.tech/strikeforce/" style="font-weight:bold;">Live link to deployed project</a> (hosted on loosenthedark.tech)</p>
+
+
+
+<p align="center"><a href="https://loosenthedark.github.io/strikeforce/" style="font-weight:bold;">Alternative link</a> (hosted on GitHub Pages)</p>
+
+
+
 ## References & Resources
 
 * 'Undulating negative space' photo by [Tobias van Schneider](https://unsplash.com/@vanschneider?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), compressed using [TinyJPG](https://tinyjpg.com/) and used with permission
