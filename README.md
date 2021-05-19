@@ -2,15 +2,15 @@
 
 
 
-<p align="center"><img src="docs/images/screenshots/clipadvisor-logo.png" alt="Clipadvisor logo" width="200" height="auto"></p>
+<p align="center"><img src="assets/images/brand-white.png" alt="loosenthedark logo" width="200" height="auto"></p>
 
 
 
-<p align="center"><a href="http://loosenthedark.tech/strikeforce/" style="font-weight:bold;">Live link to deployed project</a> (hosted on loosenthedark.tech)</p>
+<p align="center"><a href="https://loosenthedark.tech" style="font-weight:bold;">Live link to deployed project</a> (hosted on loosenthedark.tech)</p>
 
 
 
-<p align="center"><a href="https://loosenthedark.github.io/strikeforce/" style="font-weight:bold;">Alternative link</a> (hosted on GitHub Pages)</p>
+<p align="center"><a href="https://loosenthedark.tech" style="font-weight:bold;">Alternative link</a> (hosted on GitHub Pages)</p>
 
 
 
