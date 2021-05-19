@@ -10,7 +10,7 @@
 
 
 
-<p align="center"><a href="https://loosenthedark.tech" style="font-weight:bold;">Alternative link</a> (hosted on GitHub Pages)</p>
+<p align="center"><a href="https://loosenthedark.github.io/loosenthedark-portfolio-pages/" style="font-weight:bold;">Alternative link</a> (hosted on GitHub Pages)</p>
 
 
 
