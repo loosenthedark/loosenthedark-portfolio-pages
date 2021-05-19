@@ -16,7 +16,6 @@
 
 ## References & Resources
 
-* 'Undulating negative space' photo by [Tobias van Schneider](https://unsplash.com/@vanschneider?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), compressed using [TinyJPG](https://tinyjpg.com/) and used with permission
 
 * 'Black computer keyboard' photo by [Lukas Mayer](https://www.pexels.com/@lmay) from [Pexels](https://www.pexels.com/photo/black-computer-keyboard-785429/), compressed using [TinyJPG](https://tinyjpg.com/), edited using [PicResize](https://picresize.com/) and used with permission
 
