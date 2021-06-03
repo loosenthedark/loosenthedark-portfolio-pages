@@ -1923,6 +1923,7 @@ textarea:focus {
     height: 9.225rem;
     padding: 1.5rem;
     border-radius: 0;
+    border-bottom: 0;
   }
 
   .card-about .btn-see-more.py-3 {
