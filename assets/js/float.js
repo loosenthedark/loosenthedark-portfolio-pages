@@ -1,64 +1,75 @@
-$(document).ready(function () {
-  
-  // jQuery utility function adapted from https://stackoverflow.com/questions/487073/how-to-check-if-element-is-visible-after-scrolling
-  $(function () {
-    $("#card-profile-img-clipadvisor").addClass("icon-float");
-    $(window).scroll(function () {
-      function Utils() {}
+$(document).ready(function() {
 
-      Utils.prototype = {
-        constructor: Utils,
-        isElementInMiddle: function (element, fullyInView) {
-          var pageTop = $(window).scrollTop();
-          var pageBottom = pageTop + $(window).height();
-          elementTop = $(element).offset().top;
-          elementBottom = elementTop + $(element).height();
+    // jQuery utility function adapted from https://stackoverflow.com/questions/487073/how-to-check-if-element-is-visible-after-scrolling
+    $(function() {
+        $("#card-profile-img-countries").addClass("icon-float");
+        $(window).scroll(function() {
+            function Utils() {}
 
-          if (fullyInView === true) {
-            return pageTop < elementTop && pageBottom > elementBottom;
-          } else if (
-            pageBottom - elementBottom >= 75 &&
-            elementTop - pageTop > 75
-          ) {
-            return elementTop <= pageBottom && elementBottom >= pageTop;
-          }
-        },
-      };
+            Utils.prototype = {
+                constructor: Utils,
+                isElementInMiddle: function(element, fullyInView) {
+                    var pageTop = $(window).scrollTop();
+                    var pageBottom = pageTop + $(window).height();
+                    elementTop = $(element).offset().top;
+                    elementBottom = elementTop + $(element).height();
 
-      var Utils = new Utils();
+                    if (fullyInView === true) {
+                        return pageTop < elementTop && pageBottom > elementBottom;
+                    } else if (
+                        pageBottom - elementBottom >= 75 &&
+                        elementTop - pageTop > 75
+                    ) {
+                        return elementTop <= pageBottom && elementBottom >= pageTop;
+                    }
+                },
+            };
 
-      var isClipadvisorInMiddle = Utils.isElementInMiddle(
-        $("#card-profile-img-clipadvisor"),
-        false
-      );
+            var Utils = new Utils();
 
-      if (isClipadvisorInMiddle) {
-        $("#card-profile-img-clipadvisor").addClass("icon-float");
-      } else {
-        $("#card-profile-img-clipadvisor").removeClass("icon-float");
-      }
+            var isCountriesInMiddle = Utils.isElementInMiddle(
+                $("#card-profile-img-countries"),
+                false
+            );
 
-      var isStrikeForceInMiddle = Utils.isElementInMiddle(
-        $("#card-profile-img-strikeforce"),
-        false
-      );
+            if (isCountriesInMiddle) {
+                $("#card-profile-img-countries").addClass("icon-float");
+            } else {
+                $("#card-profile-img-countries").removeClass("icon-float");
+            }
 
-      if (isStrikeForceInMiddle) {
-        $("#card-profile-img-strikeforce").addClass("icon-float");
-      } else {
-        $("#card-profile-img-strikeforce").removeClass("icon-float");
-      }
+            var isClipadvisorInMiddle = Utils.isElementInMiddle(
+                $("#card-profile-img-clipadvisor"),
+                false
+            );
 
-      var isMofHInMiddle = Utils.isElementInMiddle(
-        $("#card-profile-img-mofh"),
-        false
-      );
+            if (isClipadvisorInMiddle) {
+                $("#card-profile-img-clipadvisor").addClass("icon-float");
+            } else {
+                $("#card-profile-img-clipadvisor").removeClass("icon-float");
+            }
 
-      if (isMofHInMiddle) {
-        $("#card-profile-img-mofh").addClass("icon-float");
-      } else {
-        $("#card-profile-img-mofh").removeClass("icon-float");
-      }
+            var isStrikeForceInMiddle = Utils.isElementInMiddle(
+                $("#card-profile-img-strikeforce"),
+                false
+            );
+
+            if (isStrikeForceInMiddle) {
+                $("#card-profile-img-strikeforce").addClass("icon-float");
+            } else {
+                $("#card-profile-img-strikeforce").removeClass("icon-float");
+            }
+
+            var isMofHInMiddle = Utils.isElementInMiddle(
+                $("#card-profile-img-mofh"),
+                false
+            );
+
+            if (isMofHInMiddle) {
+                $("#card-profile-img-mofh").addClass("icon-float");
+            } else {
+                $("#card-profile-img-mofh").removeClass("icon-float");
+            }
+        });
     });
-  });
 });

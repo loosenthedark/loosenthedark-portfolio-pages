@@ -1689,6 +1689,32 @@ textarea:focus {
     .list-group-item-google-fonts:active {
         background: url(../images/google-fonts-icon-white.svg);
     }
+    .list-group-item-react-router {
+        background: url(../images/react-router-icon-spruce.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .list-group-item-react-router:hover,
+    .list-group-item-react-router:focus,
+    .list-group-item-react-router:active {
+        background: url(../images/react-router-icon-white.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .list-group-item-styled-components {
+        background: url(../images/styled-components-icon-spruce.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+    }
+    .list-group-item-styled-components:hover,
+    .list-group-item-styled-components:focus,
+    .list-group-item-styled-components:active {
+        background: url(../images/styled-components-icon-white.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+    }
     .list-group-item-flask {
         background: url(../images/flask-icon-spruce.svg);
     }
