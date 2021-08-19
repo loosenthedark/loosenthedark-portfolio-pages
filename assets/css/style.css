@@ -1693,6 +1693,7 @@ textarea:focus {
         background: url(../images/react-router-icon-spruce.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 70%;
     }
     .list-group-item-react-router:hover,
     .list-group-item-react-router:focus,
@@ -1700,6 +1701,7 @@ textarea:focus {
         background: url(../images/react-router-icon-white.png);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 70%;
     }
     .list-group-item-styled-components {
         background: url(../images/styled-components-icon-spruce.png);
