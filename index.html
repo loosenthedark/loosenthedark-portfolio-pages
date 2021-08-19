@@ -3,364 +3,306 @@
 
 <head>
 
-  <!-- meta tags -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Welcome to loosenthedark! Here you'll find an overview of my work to date...">
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to loosenthedark! Here you'll find an overview of my work to date...">
 
-  <meta property="og:title" content="Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer" />
-  <meta property="og:image" content="assets/images/laptop-code-spruce_cropped.png" />
-  <meta property="og:description"
-    content="Welcome to loosenthedark! Here you'll find an overview of my work to date..." />
-  <meta property="og:url" content="http://loosenthedark.tech/" />
-  <!-- /meta tags -->
+    <meta property="og:title" content="Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer" />
+    <meta property="og:image" content="assets/images/laptop-code-spruce_cropped.png" />
+    <meta property="og:description" content="Welcome to loosenthedark! Here you'll find an overview of my work to date..." />
+    <meta property="og:url" content="http://loosenthedark.tech/" />
 
-  <!-- title -->
-  <title>Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer</title>
-  <!-- /title -->
+    <!-- title -->
+    <title>Paul Harrington &#60;loosenthedark&#62; 💻 Web Developer</title>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="assets/images/laptop-code-spruce.svg" type="image/png">
-  <!-- /favicon -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/laptop-code-spruce.svg" type="image/png">
 
-  <!-- Font Awesome JS -->
-  <script src="https://kit.fontawesome.com/4ca5255d6d.js" crossorigin="anonymous"></script>
-  <!-- /Font Awesome JS -->
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/4ca5255d6d.js" crossorigin="anonymous"></script>
 
-  <!-- stylesheets -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/toolkit.css">
-  <link rel="stylesheet" href="assets/css/application.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-  <!-- /stylesheets -->
+    <!-- stylesheets -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/toolkit.css">
+    <link rel="stylesheet" href="assets/css/application.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <style>
-    /* note: this is a hack for ios iframe for bootstrap themes shopify page */
-    /* this chunk of css is not part of the toolkit :) */
-    body {
-      width: 1px;
-      min-width: 100%;
-      *width: 100%;
-    }
-  </style>
+    <style>
+        /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+        /* this chunk of css is not part of the toolkit :) */
+        
+        body {
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
+        }
+    </style>
 
-  <!-- load ScrollReveal script here before body renders to prevent flickering -->
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  <script>
-    ScrollReveal({
-    })
-  </script>
+    <!-- load ScrollReveal script here before body renders to prevent flickering -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal({})
+    </script>
 
 </head>
 
 <body id="about" class="with-top-navbar">
 
-  <nav class="navbar fixed-top navbar-inverse app-navbar p-0">
-    <button class="navbar-toggler navbar-toggler-right collapsed d-lg-block p-lg-0" id="nav-toggler" type="button"
-      data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-      aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-inverse app-navbar p-0">
+        <button class="navbar-toggler navbar-toggler-right collapsed d-lg-block p-lg-0" id="nav-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon d-lg-none"></span>
       <span class='nav-toggler-icon d-none d-lg-flex justify-content-lg-center align-content-lg-center'><i
           class="d-block nav-toggler-icon-bars"></i></span>
       <span class="sr-only">Toggle nav</span>
     </button>
 
-    <a class="navbar-brand bg-ltd pl-3 pl-lg-4 py-2_5 py-lg-2 mr-0" href="#about">
-      <img class="py-md-0" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
-    </a>
+        <a class="navbar-brand bg-ltd pl-3 pl-lg-4 py-2_5 py-lg-2 mr-0" href="#about">
+            <img class="py-md-0" src="assets/images/brand-white.png" alt="loosenthedark brand logo">
+        </a>
 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-md-auto bg-ltd">
-        <li class="nav-item active">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="#about">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="projects.html">Recent Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2_5 pl-3 px-2_5 pb-3_5" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-md-auto bg-ltd">
+                <li class="nav-item active">
+                    <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2_5 pl-3 px-2_5 pt-3" href="projects.html">Recent Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2_5 pl-3 px-2_5 pb-3_5" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <header>
-    <div class="profile-header">
-      <div class="container">
-        <div
-          class="container-inner mt-5 mt-md-4_5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
-          <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
-          <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
-            <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
-            <p class="profile-header-bio mb-2 text-lg-left">
-              Junior Full Stack Developer
-            </p>
-            <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
-              <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
+    <header>
+        <div class="profile-header">
+            <div class="container">
+                <div class="container-inner mt-5 mt-md-4_5 mt-lg-1 mt-xl-3 d-lg-flex justify-content-lg-center align-items-lg-center">
+                    <img class="rounded-circle media-object" src="assets/images/avatar-harro.png">
+                    <div class="profile-header-wrapper ml-lg-4 pt-lg-2">
+                        <h1 class="profile-header-user text-lg-left">Paul Harrington</h1>
+                        <p class="profile-header-bio mb-2 text-lg-left">
+                            Full Stack Web Developer
+                        </p>
+                        <p class="profile-header-bio social-icons mb-5 mb-lg-4 d-lg-flex">
+                            <a href="https://github.com/loosenthedark" class="social-links" target="_blank"><i
                   class="fab fa-github"></i></a>
-              <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank" data-toggle="tooltip"
-                title="email hello@loosenthedark.tech"><i class="fas fa-at"></i></a>
-              <a href="assets/files/Paul Harrington FE Engineer CV August 2021.pdf" class="social-links"
-                target="_blank" data-toggle="tooltip" title="download CV"><i class="fas fa-file"></i></a>
-              <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
+                            <a href="mailto:hello@loosenthedark.tech" class="social-links" target="_blank" data-toggle="tooltip" title="email hello@loosenthedark.tech"><i class="fas fa-at"></i></a>
+                            <a href="assets/files/Paul Harrington FE Engineer CV August 2021.pdf" class="social-links" target="_blank" data-toggle="tooltip" title="download CV"><i class="fas fa-file"></i></a>
+                            <a href="https://www.linkedin.com/in/paulharrington05/" class="social-links" target="_blank"><i
                   class="fab fa-linkedin"></i></a>
-              <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
+                            <a href="https://twitter.com/loosenthedark" class="social-links" target="_blank"><i
                   class="fab fa-twitter"></i></a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <nav class="profile-header-nav profile-header-nav-about">
-        <ul class="nav nav-tabs nav-tabs-contact nav-tabs-about justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
-          <li class="nav-item active d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="#about">About Me</a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
-              href="projects.html">Recent Projects</a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center"
-              href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main-about">
-    <div class="container card-container about-container pt-0 pb-3 px-md-5 px-lg-0 bg-light">
-      <div class="row">
-        <div class="col-12 pb-3 pb-md-4 pb-lg-0 mb-3 mb-xl-5">
-          <div class="card card-profile card-about card-about-top border-0">
-            <div
-              class="card-header card-about-header card-header-collapse d-flex justify-content-center align-items-center bg-ltd rounded-0">
-              <img id="about-laptop-no-code" src="assets/images/laptop-solid-white.svg" alt="white laptop icon">
-              <img id="about-laptop" src="assets/images/laptop-code-solid-white.svg"
-                alt="white laptop with code symbols icon">
-              <img id="code-icon" src="assets/images/code-icon-white.svg" alt="white code symbols icon">
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="card-block text-xs-center pt-lg-3 px-lg-0 mx-lg-auto">
-              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mt-3 mt-md-4 mt-lg-4 mb-4 mb-lg-4_5 text-left">Thanks for
-                taking the time to check out my
-                site! Below you'll find a list of some
-                of the languages and frameworks I'm proficient in, as well as a snapshot of what I'm learning at the
-                moment (I love discovering new tools and technologies 👨‍💻).</p>
-              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">As a <span
-                  class="emphasise">Junior Full Stack Developer</span>, I combine a mastery of <span
-                  class="emphasise">Frontend</span> languages (HTML, CSS, JavaScript) and libraries (Bootstrap, jQuery)
-                with a strong grasp of <span class="emphasise">Backend</span> programming (Python+Flask) and database
-                management systems (MySQL, PostgreSQL, MongoDB).</p>
-              <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">By hiring me, you'll be getting a
-                dedicated and resourceful
-                team player with a keen eye for
-                design and a deep understanding of UX best practices.</p>
-              <p
-                class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4_5 get-in-touch mb-md-4_25 mb-lg-4_5 text-left emphasise">
-                I'm always
-                looking for new challenges and
-                opportunities, so feel free to get in touch today!</p>
-              <a class="btn btn-see-more btn-code btn-get-in-touch btn-sm d-block mx-auto py-3 mt-3 mt-lg-0 mb-2_5 mb-lg-3 px-4 px-md-5"
-                href="contact.html" role="button">
-                <span class="text-see-more">Get In Touch</span>
-              </a>
-              <a class="btn btn-see-more btn-get-in-touch btn-sm d-md-block mx-md-auto py-3 mt-0 mb-2 px-4 px-md-5"
-                href="assets/files/Paul Harrington FE Engineer CV August 2021.pdf" id="btn-cv" target="_blank"
-                role="button">
-                <span class="text-see-more">Download CV</span>
-              </a>
-            </div>
-          </div>
+            <nav class="profile-header-nav profile-header-nav-about">
+                <ul class="nav nav-tabs nav-tabs-contact nav-tabs-about justify-content-center mx-3 mx-md-5 mx-lg-auto d-flex">
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="projects.html">Recent Projects</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link flex-column d-flex px-3 py-2 py-md-3_5 justify-content-center" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
-        <div class="col-12 pb-3 pb-md-4 mb-xl-4">
-          <ul
-            class="card card-profile card-about featured-list card-skills featured-list-bordered p-0 pb-2 pb-xl-3 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
-            <div class="card-skills-header d-flex justify-content-center text-white px-5 py-4 bg-success rounded-top">
-              <h3 class="my-1">Existing skills</h3>
+    </header>
+
+    <main class="main-about">
+        <div class="container card-container about-container pt-0 pb-3 px-md-5 px-lg-0 bg-light">
+            <div class="row">
+                <div class="col-12 pb-3 pb-md-4 pb-lg-0 mb-3 mb-xl-5">
+                    <div class="card card-profile card-about card-about-top border-0">
+                        <div class="card-header card-about-header card-header-collapse d-flex justify-content-center align-items-center bg-ltd rounded-0">
+                            <img id="about-laptop-no-code" src="assets/images/laptop-solid-white.svg" alt="white laptop icon">
+                            <img id="about-laptop" src="assets/images/laptop-code-solid-white.svg" alt="white laptop with code symbols icon">
+                            <img id="code-icon" src="assets/images/code-icon-white.svg" alt="white code symbols icon">
+                        </div>
+                        <div class="card-block text-xs-center pt-lg-3 px-lg-0 mx-lg-auto">
+                            <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mt-3 mt-md-4 mt-lg-4 mb-4 mb-lg-4_5 text-left">Thanks for taking the time to check out my site! Below you'll find a list of some of the languages and frameworks I'm proficient in, as well as a snapshot of what I'm learning at the moment (I love discovering new tools and
+                                technologies 👨‍💻).</p>
+                            <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">As a <span class="emphasise">Full Stack Developer</span>, I combine a mastery of <span class="emphasise">Frontend</span> languages (HTML, CSS, JavaScript) and libraries (Bootstrap, jQuery) with a strong grasp of <span class="emphasise">Backend</span>                                programming (Python+Flask) and database management systems (MySQL, PostgreSQL, MongoDB).</p>
+                            <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4 mb-lg-4_5 text-left">By hiring me, you'll be getting a dedicated and resourceful team player with a keen eye for design and a deep understanding of UX best practices.</p>
+                            <p class="mx-3 mx-md-5 mx-lg-0 px-md-4 px-lg-0 mb-4_5 get-in-touch mb-md-4_25 mb-lg-4_5 text-left emphasise">
+                                I'm always looking for new challenges and opportunities, so feel free to get in touch today!</p>
+                            <a class="btn btn-see-more btn-code btn-get-in-touch btn-sm d-block mx-auto py-3 mt-3 mt-lg-0 mb-2_5 mb-lg-3 px-4 px-md-5" href="contact.html" role="button">
+                                <span class="text-see-more">Get In Touch</span>
+                            </a>
+                            <a class="btn btn-see-more btn-get-in-touch btn-sm d-md-block mx-md-auto py-3 mt-0 mb-2 px-4 px-md-5" href="assets/files/Paul Harrington FE Engineer CV August 2021.pdf" id="btn-cv" target="_blank" role="button">
+                                <span class="text-see-more">Download CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pb-3 pb-md-4 mb-xl-4">
+                    <ul class="card card-profile card-about featured-list card-skills featured-list-bordered p-0 pb-2 pb-xl-3 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
+                        <div class="card-skills-header d-flex justify-content-center text-white px-5 py-4 bg-success rounded-top">
+                            <h3 class="my-1">Existing skills</h3>
+                        </div>
+                        <li class="mt-4_5 mt-xl-5 mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">HTML <i class="pl-2 fas fa-check"></i></h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Including a thorough and up-to-date understanding of HTML5 semantic elements
+                            </p>
+                        </li>
+                        <li class="mb-4_5 mt-xl-5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center" id="css-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title mt-md-4_5 mt-xl-0">CSS <i class="pl-2 fas fa-check"></i>
+                            </h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Expertise in working with media queries (RWD), animations/transitions and Flexbox</p>
+                        </li>
+                        <li class="mb-4_5 mt-xl-5 mb-xl-3 mt-xl-4_5 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">JavaScript <i class="pl-2 fas fa-check"></i></h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Equally at ease with Vanilla JS or a host of libraries/frameworks including jQuery, Chart.js, D3.js and Bootstrap</p>
+                        </li>
+                        <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                                <img width="20" src="assets/images/jquery.png" alt="jQuery icon">
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">jQuery <i class="pl-2 fas fa-check"></i>
+                            </h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Advanced knowledge of DOM traversal and manipulation methods, as well as processing AJAX requests</p>
+                        </li>
+                        <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Python <i class="pl-2 fas fa-check"></i>
+                            </h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Familiarity with numerous modules and frameworks (Flask, SQLAlchemy), Jinja templating and implementation of CRUD functionality, user authentication and pagination</p>
+                        </li>
+                        <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">PHP <i class="pl-2 fas fa-check"></i></h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Well versed in modern practices such as PHP OOP; also adept at form handling, error logging and file manipulation</p>
+                        </li>
+                        <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Databases <i class="pl-2 fas fa-check"></i></h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Proficiency in dealing with relational database management systems (MySQL, PostgreSQL) and NoSQL database programmes (MongoDB)</p>
+                        </li>
+                        <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                                <img width="28" src="assets/images/jasmine.png" alt="Jasmine icon">
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Unit testing <i class="pl-2 fas fa-check"></i></h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Mindful of the need to adhere to test-driven development principles and adopt a defensive programming approach to project builds</p>
+                        </li>
+                        <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Version control <i class="pl-2 fas fa-check"></i></h4>
+                            <p class="skills-blurb d-none d-md-block pl-md-2">Mastery of command line fundamentals required for streamlined collaboration with other dev team members</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 pb-3">
+                    <ul class="card card-profile card-about card-focus featured-list featured-list-bordered p-0 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
+                        <div class="card-focus-header d-flex justify-content-center text-white px-5 py-4 bg-primary rounded-top" id="current-focus">
+                            <h3 class="my-1">Current focus</h3>
+                        </div>
+                        <li class="mt-4_5 mt-md-5 mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="react">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">React <i class="pl-2 fas fa-user-cog"></i>
+                            </h4>
+                            <p></p>
+                        </li>
+                        <li class="mb-4_5 mt-xl-5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="css-grid">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center" id="css3-icon">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">CSS grid <i class="pl-2 fas fa-user-cog"></i></h4>
+                            <p></p>
+                        </li>
+                        <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="sass">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Sass <i class="pl-2 fas fa-user-cog"></i>
+                            </h4>
+                            <p></p>
+                        </li>
+                        <li class="mt-md-5 mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="django">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                                <img width="20" src="assets/images/django-icon-spruce.svg" alt="Django icon">
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Django <i class="pl-2 fas fa-user-cog"></i>
+                            </h4>
+                            <p></p>
+                        </li>
+                        <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="typescript">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
+                                <img width="20" src="assets/images/typescript-icon-spruce.png" alt="TypeScript icon">
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">TypeScript <i class="pl-2 fas fa-user-cog"></i></h4>
+                            <p></p>
+                        </li>
+                        <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="next-js">
+                            <div class="featured-list-icon d-flex justify-content-center align-items-center">
+                                <img width="24" src="assets/images/next-js-icon.svg" alt="Next.js icon">
+                            </div>
+                            <h4 class="featured-list-item-heading card-title">Next.js <i class="pl-2 fas fa-user-cog"></i></h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <li class="mt-4_5 mt-xl-5 mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-html5"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">HTML <i class="pl-2 fas fa-check"></i></h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Including a thorough and up-to-date understanding of
-                HTML5 semantic
-                elements</p>
-            </li>
-            <li class="mb-4_5 mt-xl-5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center" id="css-icon">
-                <i class="fab fa-css3-alt"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title mt-md-4_5 mt-xl-0">CSS <i class="pl-2 fas fa-check"></i>
-              </h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Expertise in working with media queries (RWD),
-                animations/transitions
-                and Flexbox</p>
-            </li>
-            <li class="mb-4_5 mt-xl-5 mb-xl-3 mt-xl-4_5 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-js-square"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">JavaScript <i class="pl-2 fas fa-check"></i></h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Equally at ease with Vanilla JS or a host of
-                libraries/frameworks
-                including jQuery, Chart.js, D3.js and Bootstrap</p>
-            </li>
-            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div
-                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
-                <img width="20" src="assets/images/jquery.png" alt="jQuery icon">
-              </div>
-              <h4 class="featured-list-item-heading card-title">jQuery <i class="pl-2 fas fa-check"></i>
-              </h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Advanced knowledge of DOM traversal and manipulation
-                methods, as well
-                as processing AJAX requests</p>
-            </li>
-            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-python"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">Python <i class="pl-2 fas fa-check"></i>
-              </h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Familiarity with numerous modules and frameworks (Flask,
-                SQLAlchemy), Jinja templating and implementation of CRUD functionality, user authentication and pagination</p>
-            </li>
-            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-php"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">PHP <i class="pl-2 fas fa-check"></i></h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Well versed in modern practices such as PHP OOP; also
-                adept at form
-                handling, error logging and file manipulation</p>
-            </li>
-            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fas fa-database"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">Databases <i class="pl-2 fas fa-check"></i></h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Proficiency in dealing with relational database management systems (MySQL, PostgreSQL) and NoSQL database programmes (MongoDB)</p>
-            </li>
-            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div
-                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
-                <img width="28" src="assets/images/jasmine.png" alt="Jasmine icon">
-              </div>
-              <h4 class="featured-list-item-heading card-title">Unit testing <i class="pl-2 fas fa-check"></i></h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Mindful of the need to adhere to test-driven development
-                principles
-                and adopt a defensive programming approach to project builds</p>
-            </li>
-            <li class="mb-4_5 mb-xl-3 ml-2 ml-md-0 featured-list-item">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-git-alt"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">Version control <i class="pl-2 fas fa-check"></i></h4>
-              <p class="skills-blurb d-none d-md-block pl-md-2">Mastery of command line fundamentals required for
-                streamlined
-                collaboration with other dev team members</p>
-            </li>
-          </ul>
         </div>
-        <div class="col-12 pb-3">
-          <ul
-            class="card card-profile card-about card-focus featured-list featured-list-bordered p-0 d-md-flex flex-md-row flex-md-wrap pl-md-4 pr-md-5 mx-lg-auto rounded-top">
-            <div class="card-focus-header d-flex justify-content-center text-white px-5 py-4 bg-primary rounded-top"
-              id="current-focus">
-              <h3 class="my-1">Current focus</h3>
-            </div>
-            <li class="mt-4_5 mt-md-5 mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="react">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-react"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">React <i class="pl-2 fas fa-user-cog"></i>
-              </h4>
-              <p></p>
-            </li>
-            <li class="mb-4_5 mt-xl-5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="css-grid">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center" id="css3-icon">
-                <i class="fab fa-css3"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">CSS grid <i class="pl-2 fas fa-user-cog"></i></h4>
-              <p></p>
-            </li>
-            <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="sass">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <i class="fab fa-sass"></i>
-              </div>
-              <h4 class="featured-list-item-heading card-title">Sass <i class="pl-2 fas fa-user-cog"></i>
-              </h4>
-              <p></p>
-            </li>
-            <li class="mt-md-5 mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="django">
-              <div
-                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
-                <img width="20" src="assets/images/django-icon-spruce.svg" alt="Django icon">
-              </div>
-              <h4 class="featured-list-item-heading card-title">Django <i class="pl-2 fas fa-user-cog"></i>
-              </h4>
-              <p></p>
-            </li>
-            <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="typescript">
-              <div
-                class="featured-list-icon d-flex justify-content-center align-items-center d-flex align-items-center justify-content-center">
-                <img width="20" src="assets/images/typescript-icon-spruce.png" alt="TypeScript icon">
-              </div>
-              <h4 class="featured-list-item-heading card-title">TypeScript <i class="pl-2 fas fa-user-cog"></i></h4>
-              <p></p>
-            </li>
-            <li class="mb-4_5 mb-md-5 ml-2 ml-md-0 featured-list-item" id="next-js">
-              <div class="featured-list-icon d-flex justify-content-center align-items-center">
-                <img width="24" src="assets/images/next-js-icon.svg" alt="Next.js icon">
-              </div>
-              <h4 class="featured-list-item-heading card-title">Next.js <i class="pl-2 fas fa-user-cog"></i></h4>
-              <p></p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </main>
+    </main>
 
-  <a href="#" id="btn-back-to-top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
-    data-abc="true"><i class="fas fa-chevron-up"></i></a>
+    <a href="#" id="btn-back-to-top" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><i class="fas fa-chevron-up"></i></a>
 
-  <footer class="pt-md-3 py-lg-3 footer-about">
-    <p class="copyright mb-0 mx-3 py-3 pt-md-4 text-center"> © 2021 Paul Harrington
-    </p>
-    <a href="https://www.ecowebhosting.co.uk/green-credentials" alt="Planting trees every month with Eco Web Hosting" target="_blank" rel="noopener"><img class="d-block mx-auto mt-1 mb-4" 
-        width="140" src="https://eco-cdn.co.uk/eco-badge-2.svg"
-        alt="Planting trees every month with Eco Web Hosting"></a>
-  </footer>
+    <footer class="pt-md-3 py-lg-3 footer-about">
+        <p class="copyright mb-0 mx-3 py-3 pt-md-4 text-center"> © 2021 Paul Harrington
+        </p>
+        <a href="https://www.ecowebhosting.co.uk/green-credentials" alt="Planting trees every month with Eco Web Hosting" target="_blank" rel="noopener"><img class="d-block mx-auto mt-1 mb-4" width="140" src="https://eco-cdn.co.uk/eco-badge-2.svg" alt="Planting trees every month with Eco Web Hosting"></a>
+    </footer>
 
-  <!-- library & CDN scripts -->
-  <script src="assets/js/libraries/jquery.min.js"></script>
-  <script src="assets/js/libraries/tether.min.js"></script>
-  <script src="assets/js/libraries/chart.js"></script>
-  <script src="assets/js/libraries/toolkit.js"></script>
-  <script src="assets/js/libraries/application.js"></script>
-  <!-- /library & CDN scripts -->
+    <!-- library & CDN scripts -->
+    <script src="assets/js/libraries/jquery.min.js"></script>
+    <script src="assets/js/libraries/tether.min.js"></script>
+    <script src="assets/js/libraries/chart.js"></script>
+    <script src="assets/js/libraries/toolkit.js"></script>
+    <script src="assets/js/libraries/application.js"></script>
 
-  <script>
-    // execute/clear BS loaders for docs
-    $(function () {
-      if (window.BS && window.BS.loader && window.BS.loader.length) {
-        while (BS.loader.length) { (BS.loader.pop())() }
-      }
-    })
-  </script>
+    <script>
+        // execute/clear BS loaders for docs
+        $(function() {
+            if (window.BS && window.BS.loader && window.BS.loader.length) {
+                while (BS.loader.length) {
+                    (BS.loader.pop())()
+                }
+            }
+        })
+    </script>
 
-  <!-- custom script -->
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/reveal.js"></script>
-  <!-- /custom script -->
+    <!-- custom scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/reveal.js"></script>
 
 </body>
 
