@@ -1210,12 +1210,6 @@ textarea:focus {
     #current-focus {
         order: -3;
     }
-    #react {
-        order: -2;
-    }
-    #django {
-        order: -1;
-    }
     .app-login-form {
         max-width: 30rem;
     }
