@@ -29,7 +29,7 @@ $(document).ready(function () {
               $(window).width() < 1440 &&
               elementTop - pageTop < 500) ||
             (1440 <= $(window).width() &&
-              $(window).width() < 1920 &&
+              $(window).width() < 3000 &&
               elementTop - pageTop < 750)
           ) {
             return elementTop <= pageBottom || elementBottom >= pageTop;
