@@ -177,6 +177,10 @@ nav {
     border: 1px solid #007bff;
 }
 
+.bg-perfectmatch {
+    background-color: #ffc8dd;
+}
+
 .bg-countries {
     background-color: #d2ebf9;
 }
@@ -1618,6 +1622,10 @@ textarea:focus {
         left: .75vw;
         top: .25vw;
     }
+    #carousel-img-perfect-match-move-left {
+        left: .75vw;
+        top: 1vw;
+    }
     #carousel-img-countries-shrink-and-move-left-and-down,
     #carousel-img-strikeforce-shrink-and-move-left-and-down {
         width: 42.5vw;
@@ -2232,11 +2240,18 @@ textarea:focus {
     #carousel-img-countries-move-left,
     #carousel-img-clipadvisor-move-left,
     #carousel-img-strikeforce-move-left,
-    #carousel-img-mofh-move-left {
+    #carousel-img-mofh-move-left,
+    #carousel-img-perfect-match-move-left {
         left: -1vw;
         max-width: 47rem;
         max-height: 26.5rem;
     }
+
+    #carousel-img-perfect-match-move-left {
+        max-width: 44rem;
+        max-height: 24rem;
+    }
+
     #carousel-img-mofh-move-right-and-down,
     #carousel-img-clipadvisor-move-right-and-down,
     #carousel-img-countries-move-left-and-down {
