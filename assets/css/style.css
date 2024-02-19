@@ -333,6 +333,7 @@ footer,
     margin-bottom: 2rem;
 }
 
+#card-block-perfectmatch,
 #card-block-countries,
 #card-block-clipadvisor,
 #card-block-strikeforce,
@@ -1223,6 +1224,7 @@ textarea:focus {
     .form-control {
         font-size: 1.2rem;
     }
+    #project-wrapper-perfectmatch,
     #project-wrapper-mofh {
         margin-bottom: -2rem;
     }
@@ -1479,12 +1481,6 @@ textarea:focus {
         width: 100%;
         line-height: 1;
     }
-    #list-group-mofh,
-    #list-group-clipadvisor,
-    #list-group-strikeforce,
-    #list-group-countries {
-        left: 1rem;
-    }
     .list-group::after {
         content: "";
         flex: auto;
@@ -1605,6 +1601,7 @@ textarea:focus {
         width: 48.6vw;
         height: 27.45vw;
     }
+    #carousel-img-perfectmatch-move-right-and-down,
     #carousel-img-countries-move-left-and-down,
     #carousel-img-mofh-move-right-and-down {
         top: 3vw;
@@ -1614,6 +1611,7 @@ textarea:focus {
     #carousel-img-countries-move-left-and-down {
         left: 0;
     }
+    #carousel-img-perfectmatch-move-right-and-down,
     #carousel-img-mofh-move-right-and-down {
         left: 2vw;
     }
@@ -1622,7 +1620,7 @@ textarea:focus {
         left: .75vw;
         top: .25vw;
     }
-    #carousel-img-perfect-match-move-left {
+    #carousel-img-perfectmatch-move-left {
         left: .75vw;
         top: 1vw;
     }
@@ -1657,6 +1655,7 @@ textarea:focus {
     #btn-back-to-top {
         right: 2rem;
     }
+    #project-wrapper-perfectmatch,
     #project-wrapper-mofh {
         margin-bottom: unset;
     }
@@ -2076,15 +2075,17 @@ textarea:focus {
     #home h4.card-title {
         font-size: 2.175rem;
     }
+    #home #card-block-perfectmatch h4.card-title,
     #home #card-block-clipadvisor h4.card-title,
     #home #card-block-mofh h4.card-title {
-        margin-left: 5.5rem;
+        margin-left: 5.75rem;
         width: 25rem;
     }
     #card-block-countries h4.card-title,
     #card-block-strikeforce h4.card-title {
-        margin-right: 6.5rem;
+        margin-right: 6.25rem;
     }
+    #card-block-countries h4.card-title,
     #card-block-strikeforce h4.card-title {
         width: 23rem;
     }
@@ -2131,21 +2132,25 @@ textarea:focus {
         margin-top: .675rem;
     }
     .project-wrapper,
+    #project-wrapper-perfectmatch,
     #project-wrapper-mofh {
         width: calc(100% - 6rem);
     }
     .project-wrapper {
         margin-bottom: -4rem;
     }
+    #project-wrapper-perfectmatch,
     #project-wrapper-mofh {
         margin-bottom: -6.57rem;
     }
+    #project-wrapper-perfectmatch .project-hero-wrapper,
     #project-wrapper-mofh .project-hero-wrapper {
         top: -5.77rem;
     }
     .project-inner {
         width: 27.5vw;
     }
+    #list-group-perfectmatch,
     #list-group-mofh,
     #list-group-clipadvisor,
     #list-group-strikeforce,
@@ -2153,13 +2158,11 @@ textarea:focus {
         left: unset;
         max-width: 19rem;
     }
+    #list-group-perfectmatch,
     #list-group-mofh,
+    #list-group-strikeforce,
     #list-group-clipadvisor {
-        left: -.75rem;
-    }
-    #list-group-countries,
-    #list-group-strikeforce {
-        left: .75rem;
+        left: 0;
     }
     .project-hero-wrapper {
         flex: 0 0 47%;
@@ -2202,6 +2205,7 @@ textarea:focus {
         left: 0;
         z-index: 999;
     }
+    #carousel-img-perfectmatch-move-right-and-down,
     #carousel-img-mofh-move-right-and-down,
     #carousel-img-clipadvisor-move-right-and-down {
         left: 0;
@@ -2241,17 +2245,17 @@ textarea:focus {
     #carousel-img-clipadvisor-move-left,
     #carousel-img-strikeforce-move-left,
     #carousel-img-mofh-move-left,
-    #carousel-img-perfect-match-move-left {
+    #carousel-img-perfectmatch-move-left {
         left: -1vw;
         max-width: 47rem;
         max-height: 26.5rem;
     }
 
-    #carousel-img-perfect-match-move-left {
+    #carousel-img-perfectmatch-move-left {
         max-width: 44rem;
         max-height: 24rem;
     }
-
+    #carousel-img-perfectmatch-move-right-and-down,
     #carousel-img-mofh-move-right-and-down,
     #carousel-img-clipadvisor-move-right-and-down,
     #carousel-img-countries-move-left-and-down {
@@ -2381,13 +2385,14 @@ textarea:focus {
     .featured-list {
         max-width: 84rem;
     }
+    #home #card-block-perfectmatch h4.card-title,
     #home #card-block-clipadvisor h4.card-title,
     #home #card-block-mofh h4.card-title {
-        margin-left: 7.5rem;
+        margin-left: 7.75rem;
     }
     #card-block-countries h4.card-title,
     #card-block-strikeforce h4.card-title {
-        margin-right: 8.5rem;
+        margin-right: 8.25rem;
     }
     /* .profile-header {
     min-height: unset;
@@ -2408,6 +2413,7 @@ textarea:focus {
     .project-wrapper {
         margin-bottom: -.5rem;
     }
+    #project-wrapper-perfectmatch,
     #project-wrapper-mofh {
         margin-bottom: -3.07rem;
     }

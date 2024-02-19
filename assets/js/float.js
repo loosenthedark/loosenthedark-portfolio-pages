@@ -27,6 +27,17 @@ $(document).ready(function() {
 
             var Utils = new Utils();
 
+            var isPerfectMatchInMiddle = Utils.isElementInMiddle(
+                $("#card-profile-img-perfectmatch"),
+                false
+            );
+
+            if (isPerfectMatchInMiddle) {
+                $("#card-profile-img-perfectmatch").addClass("icon-float");
+            } else {
+                $("#card-profile-img-perfectmatch").removeClass("icon-float");
+            }
+
             var isCountriesInMiddle = Utils.isElementInMiddle(
                 $("#card-profile-img-countries"),
                 false
