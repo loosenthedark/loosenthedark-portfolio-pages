@@ -2252,6 +2252,10 @@ textarea:focus {
     }
 
     #carousel-img-perfectmatch-move-left {
+        left: 1vw;
+    }
+
+    #carousel-img-perfectmatch-move-left {
         max-width: 44rem;
         max-height: 24rem;
     }
