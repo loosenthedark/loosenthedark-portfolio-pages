@@ -1703,6 +1703,7 @@ textarea:focus {
     }
     .list-group-item-jquery {
         background: url(../images/jquery-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-jquery:hover,
     .list-group-item-jquery:focus,
@@ -1711,6 +1712,7 @@ textarea:focus {
     }
     .list-group-item-google-fonts {
         background: url(../images/google-fonts-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-google-fonts:hover,
     .list-group-item-google-fonts:focus,
@@ -1722,6 +1724,7 @@ textarea:focus {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 70%;
+        background-color: #fff;
     }
     .list-group-item-react-router:hover,
     .list-group-item-react-router:focus,
@@ -1736,6 +1739,7 @@ textarea:focus {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 60%;
+        background-color: #fff;
     }
     .list-group-item-styled-components:hover,
     .list-group-item-styled-components:focus,
@@ -1747,6 +1751,7 @@ textarea:focus {
     }
     .list-group-item-flask {
         background: url(../images/flask-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-flask:hover,
     .list-group-item-flask:focus,
@@ -1755,6 +1760,7 @@ textarea:focus {
     }
     .list-group-item-jinja {
         background: url(../images/jinja2-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-jinja:hover,
     .list-group-item-jinja:focus,
@@ -1763,6 +1769,7 @@ textarea:focus {
     }
     .list-group-item-chartjs {
         background: url(../images/chartjs-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-chartjs:hover,
     .list-group-item-chartjs:focus,
@@ -1771,6 +1778,7 @@ textarea:focus {
     }
     .list-group-item-emailjs {
         background: url(../images/emailjs-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-emailjs:hover,
     .list-group-item-emailjs:focus,
@@ -1779,6 +1787,7 @@ textarea:focus {
     }
     .list-group-item-jasmine {
         background: url(../images/jasmine-icon-spruce.svg);
+        background-color: #fff;
     }
     .list-group-item-jasmine:hover,
     .list-group-item-jasmine:focus,
@@ -2474,7 +2483,7 @@ textarea:focus {
         max-height: 25rem;
     }
     #card-block-countries h4.card-title {
-        margin-right: 6.75rem;
+        margin-right: 6.25rem;
     }
 }
 
